@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>沪深300 × 科创50：近一年技术指标分析</title>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+<style>
+:root{--ink:#1f2937;--sub:#6b7280;--line:#e5e7eb;--bg:#f6f7f9;--card:#ffffff;--blue:#185fa5;--orange:#c2410c;--up:#d64545;--down:#2e9e6b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;font-size:13px;line-height:1.6}
+.wrap{max-width:1080px;margin:0 auto;padding:20px 20px 48px}
+header{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 24px;margin-bottom:16px}
+h1{font-size:19px;font-weight:600;margin:0 0 6px}
+.meta{color:var(--sub);font-size:12px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.card h3{font-size:14px;margin:0 0 8px;font-weight:600}
+.card.blue h3{color:var(--blue)}
+.card.orange h3{color:var(--orange)}
+.kv{display:flex;justify-content:space-between;font-size:12.5px;padding:3px 0;border-bottom:1px dashed #f0f1f3}
+.kv:last-child{border-bottom:none}
+.kv .k{color:var(--sub)}
+.up{color:var(--up);font-weight:500}
+.down{color:var(--down);font-weight:500}
+section{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-bottom:16px}
+h2{font-size:15px;font-weight:600;margin:0 0 4px}
+h3.sub{font-size:13px;font-weight:600;margin:14px 0 6px;color:#374151}
+.note{color:var(--sub);font-size:12px;margin:0 0 12px}
+table{width:100%;border-collapse:collapse;font-size:12.5px}
+th,td{padding:6px 8px;border-bottom:1px solid #f0f1f3;text-align:right;white-space:nowrap}
+th{background:#f9fafb;color:#374151;font-weight:500;position:sticky;top:0}
+th:first-child,td:first-child{text-align:left}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.chart{width:100%;height:320px}
+.chart.tall{height:380px}
+.segbar{display:flex;gap:8px;margin:0 0 10px}
+.seg{border:1px solid var(--line);background:#fff;border-radius:6px;padding:3px 12px;font-size:12px;cursor:pointer;color:var(--sub)}
+.seg.active{background:#eef4fb;border-color:#b5d4f4;color:var(--blue)}
+.tablewrap{max-height:420px;overflow:auto;border:1px solid var(--line);border-radius:8px}
+.tag{display:inline-block;padding:1px 8px;border-radius:10px;font-size:11px;vertical-align:middle}
+.tag.bear{background:#fdecec;color:#a32d2d}
+.tag.bull{background:#eaf3de;color:#3b6d11}
+.tag.mid{background:#f1efe8;color:#5f5e5a}
+.verdict{background:#f8fafc;border-left:3px solid var(--blue);padding:8px 12px;border-radius:0 8px 8px 0;margin:10px 0 0;font-size:12.5px}
+ul{margin:6px 0;padding-left:20px}
+li{margin:3px 0}
+.src{color:var(--sub);font-size:12px}
+.disc{margin-top:14px;padding:12px 14px;background:#fdf6f0;border:1px solid #f0e0d4;border-radius:8px;font-size:12px;color:#6b4f3a}
+@media (max-width:900px){.cards,.grid2{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+<h1>沪深300 × 科创50：近一年技术指标全景分析</h1>
+<div class="meta">数据窗口 2025-10-24 至 2026-10-23（242 个交易日） · 截至 2026-10-23 收盘 · 数据拉取于 2026-10-24 · 指标由原始日 K 本地计算，并与 westock-data 快照交叉校验（38 项零偏差） · 指标口径：MACD(12,26,9) / RSI(6,12,24) / KDJ(9,3,3) / BOLL(20,2) / MA(5-250) / OBV / ADX(14) / ATR(14)</div>
+</header>
+
+<div class="cards">__TLDR__</div>
+
+<section>
+<h2>一、近一年关键数字与整体走势</h2>
+<p class="note">沪深300 近一年 -11.92%（年初至今 -11.33%），科创50 近一年 -7.98%（年初至今 +0.10%）——但两者路径完全不同：300 自 6/22 高点 5059.66 单边回落，科创50 则是 4-6 月急涨（1256→2208，+76%）后 7-10 月急跌的「过山车」。</p>
+__STATS_TABLE__
+<h3 class="sub">归一化走势对比（2025-10-24 = 100）</h3>
+<div class="segbar">
+<button id="btn-chart" class="seg active" onclick="showView('chart')">图</button>
+<button id="btn-table" class="seg" onclick="showView('table')">表</button>
+</div>
+<div id="view-chart"><div id="chart1" class="chart tall"></div></div>
+<div id="view-table" style="display:none"><div class="tablewrap">__NORM_TABLE__</div></div>
+</section>
+
+<section>
+<h2>二、走势节奏：月度涨跌与极端波动日</h2>
+<p class="note">科创50 月度振幅极端（4 月 +25.05%、6 月 +26.07%、7 月 -25.90%），沪深300 月度波幅相对温和；7 月上旬两天指数同步剧烈波动（7/9 双涨、7/17 双跌、7/21 双涨），为市场级事件周。</p>
+<div class="grid2">__MONTHLY__</div>
+<div class="grid2" style="margin-top:14px">__TOPMOVES__</div>
+</section>
+
+<section>
+<h2>三、价格结构：日 K + 均线 + 布林带</h2>
+<p class="note">两者价格均运行于全部常用均线下方（完全空头排列），10 月起多次收盘跌破布林下轨；10/22 共振创低、10/23 长下影反弹，价格正测试下轨支撑。</p>
+<div class="grid2">
+<div><div id="chart2" class="chart"></div></div>
+<div><div id="chart3" class="chart"></div></div>
+</div>
+</section>
+
+<section>
+<h2>四、动量与趋势强度：MACD / RSI / KDJ</h2>
+<p class="note">MACD 双线均在零轴下方且未金叉（绿柱未尽）；RSI、KDJ 双双超卖，J 值率先回升；ADX 显示空头趋势仍强（300 更强）。</p>
+<div class="grid2">
+<div><div id="chart4" class="chart"></div></div>
+<div><div id="chart5" class="chart"></div></div>
+</div>
+<h3 class="sub">RSI 对比（6 日 / 12 日）</h3>
+<div id="chart6" class="chart"></div>
+<h3 class="sub">KDJ 对比（K / D）</h3>
+<div id="chart7" class="chart"></div>
+</section>
+
+<section>
+<h2>五、指标状态总表（2026-10-23 收盘）</h2>
+<p class="note">本地计算值，已与 westock-data 快照逐项交叉校验一致；偏离度 = 收盘价相对该均线的百分比。</p>
+__SNAP_TABLE__
+</section>
+
+<section>
+<h2>六、三维度投票与引擎信号</h2>
+<p class="note">按「趋势维（EMA12/26 + ADX）+ 均值回归维（BOLL + RSI）+ 量价维（OBV + 量比）」生产引擎在近一年 242 个交易日的输出统计。注意：10/23 反弹日两者最新信号仍为「做空」——趋势维与量价维未反转，恰好印证「反弹 ≠ 反转」。</p>
+__ENGINE_TABLE__
+</section>
+
+<section>
+<h2>七、近一年关键信号事件（按时间倒序，各取最近 14 条）</h2>
+<div class="grid2">__EVENTS__</div>
+</section>
+
+<section>
+<h2>八、综合结论与情景推演</h2>
+<h3 class="sub">1. 共同状态：中期空头趋势中的超卖修复初期</h3>
+<ul>
+<li><b>均线</b>：两者均为完全空头排列，价格位于所有常用均线下方；</li>
+<li><b>MACD</b>：双线零轴下方、绿柱未尽、未金叉，趋势动量仍偏空；</li>
+<li><b>RSI / KDJ</b>：双双超卖——沪深300 的 RSI12 27.80 已破 30，两者 KDJ 的 K/D 均在 20 附近，J 值率先回升；</li>
+<li><b>BOLL</b>：价格贴合下轨（%B 分别 0.19 / 0.26），10 月多次收盘跌破下轨；</li>
+<li><b>ADX</b>：沪深300 达 47.6（-DI 43.6），空头趋势强度高；科创50 为 36.3（-DI 41.3），方向相同、强度稍弱；</li>
+<li><b>10/22 共振创低、10/23 放量反弹</b>（+1.71% / +3.04%，科创50 留长下影）——属超跌反弹第一波，而非趋势反转。</li>
+</ul>
+<h3 class="sub">2. 关键差异</h3>
+<ul>
+<li><b>短期信号</b>：科创50 已站上 MA5（1345.51 &gt; 1333.25），沪深300 仍在 MA5 下方（4105.33 &lt; 4116.04）——科创50 反弹启动更早、更明确；</li>
+<li><b>超跌深度</b>：科创50 距 MA20 -8.61%、距 MA60 -15.61%；沪深300 为 -4.44% / -8.72%——科创50 反弹弹性理论上更大；</li>
+<li><b>风险代价</b>：年化波动 41.03% vs 17.49%（约 2.3 倍），ATR 占价比 4.04% vs 1.79%，60 日跌幅 -24.82% vs -13.17%；</li>
+<li><b>估值与安全边际</b>（westock-data 快照）：PE(TTM) 12.84 倍、股息率 2.81% vs 110.05 倍、0.29%——沪深300 防御属性明显；科创50 高估值意味着反弹失败时下行空间更大（前低 1256.21、布林下轨 1213.49）。</li>
+</ul>
+<h3 class="sub">3. 情景推演（条件化框架，非预测）</h3>
+<table>
+<tr><th style="text-align:left">情景</th><th style="text-align:left">触发条件</th><th style="text-align:left">可能路径</th></tr>
+<tr><td>A · 超卖反弹延续</td><td style="text-align:left;white-space:normal">科创50 守住 MA5、沪深300 站稳 10/22 低点 4036 上方，量能维持（量比 &gt; 1）</td><td style="text-align:left;white-space:normal">反弹第一目标为 MA20：沪深300 4295.86（+4.6%）、科创50 1472.27（+9.4%）</td></tr>
+<tr><td>B · 反弹失败再探底</td><td style="text-align:left;white-space:normal">MACD 柱重新放大走绿、收盘再度跌破布林下轨</td><td style="text-align:left;white-space:normal">下一支撑：沪深300 看 4000 / 3950 区域；科创50 看 1256.21（4/3 低点）与 1213.49（布林下轨）</td></tr>
+<tr><td>C · 中期趋势反转</td><td style="text-align:left;white-space:normal">站上 MA20 + MACD 零轴附近金叉且红柱连续放大 + ADX 回落后重新上行</td><td style="text-align:left;white-space:normal">空头排列修复需要时间，短期概率低，需等待右侧确认</td></tr>
+</table>
+<h3 class="sub">4. 反向声音</h3>
+<ul>
+<li>市场普遍知道「两者都在跌」，但可能未充分定价的是：科创50 的 KDJ-J 与 RSI 已从极值回升且站上 MA5，若接下来放量收复 MA20（1472.27），技术叙事将从「下跌趋势中的反弹」切换为「潜在双底 / 反转」——这是最可能超出当前悲观预期的路径；</li>
+<li>反之，沪深300 的 ADX 47.6 提示空头动能仍强，若把 10/23 的反弹简单理解为「见底」，可能低估强趋势末端二次探底的风险——10/22 收在当日最低价的形态更像投降式下跌，仍需确认。</li>
+</ul>
+</section>
+
+<section>
+<h2>数据来源与校验说明</h2>
+<ul class="src">
+<li>行情原始数据：东方财富公开行情接口（push2his.eastmoney.com）日 K 线，2026-10-24 拉取，覆盖 2024-09-02 至 2026-10-23；近一年窗口 2025-10-24 至 2026-10-23（242 个交易日）；</li>
+<li>指标口径：MA 为简单移动平均；MACD(12,26,9)，柱 = (DIF − DEA) × 2；RSI(6/12/24，Wilder 平滑)；KDJ(9,3,3)；BOLL(20,2σ)；OBV 对比其 20 日均线；ADX/±DI(14，Wilder)；ATR(14，Wilder)；量比 = 当日成交量 / 5 日均量；</li>
+<li>交叉校验：本地计算的最新一日 38 项指标与 westock-data 指标快照（2026-10-23）逐一比对，最大偏差 0.0000；</li>
+<li>估值与成交快照（PE、股息率、换手率、成交额、量比、年初至今涨跌幅）：westock-data，2026-10-23，非一手来源，需核实原文；</li>
+<li>图表约定：MACD 面板红柱 = 多头（DIF &gt; DEA）、绿柱 = 空头；K 线及涨跌配色遵循 A 股「红涨绿跌」。</li>
+</ul>
+<div class="disc"><b>免责声明</b>：以上内容基于公开数据和量化分析，仅供参考，不构成投资建议。市场有风险，投资需谨慎。任何投资决策应结合个人风险承受能力、资金状况和投资目标独立判断，必要时咨询持牌专业机构。过往表现不预示未来收益。</div>
+</section>
+
+</div>
+<script>
+const RAW = __RAWDATA__;
+const S300 = RAW.series.hs300;
+const S688 = RAW.series.kc50;
+const DATES = S300.dates;
+const UP = '#d64545';
+const DOWN = '#2e9e6b';
+
+function klineData(s) {
+  const out = [];
+  for (let i = 0; i < DATES.length; i++) {
+    out.push([s.open[i], s.close[i], s.low[i], s.high[i]]);
+  }
+  return out;
+}
+
+function baseAxis() {
+  return {
+    tooltip: { trigger: 'axis' },
+    grid: { left: 60, right: 18, top: 30, bottom: 26 },
+    xAxis: { type: 'category', data: DATES, axisLabel: { fontSize: 10, color: '#6b7280' } },
+    yAxis: { type: 'value', scale: true, axisLabel: { fontSize: 10, color: '#6b7280' } }
+  };
+}
+
+function initKline(id, s, name) {
+  const opt = baseAxis();
+  opt.legend = { data: [name + ' 日K', 'MA20', 'MA60', '布林上轨', '布林下轨'], top: 0, textStyle: { fontSize: 11, color: '#374151' } };
+  opt.series = [
+    { name: name + ' 日K', type: 'candlestick', data: klineData(s),
+      itemStyle: { color: UP, color0: DOWN, borderColor: UP, borderColor0: DOWN } },
+    { name: 'MA20', type: 'line', data: s.ma20, showSymbol: false, lineStyle: { width: 1.2, color: '#b45309' } },
+    { name: 'MA60', type: 'line', data: s.ma60, showSymbol: false, lineStyle: { width: 1.2, color: '#534ab7' } },
+    { name: '布林上轨', type: 'line', data: s.bb_up, showSymbol: false, lineStyle: { width: 1, type: 'dashed', color: '#9ca3af' } },
+    { name: '布林下轨', type: 'line', data: s.bb_low, showSymbol: false, lineStyle: { width: 1, type: 'dashed', color: '#9ca3af' } }
+  ];
+  echarts.init(document.getElementById(id)).setOption(opt);
+}
+
+function initMacd(id, s) {
+  const opt = baseAxis();
+  opt.legend = { data: ['MACD柱', 'DIF', 'DEA'], top: 0, textStyle: { fontSize: 11, color: '#374151' } };
+  const bars = s.macd.map(function (v) {
+    return { value: v, itemStyle: { color: v >= 0 ? UP : DOWN } };
+  });
+  opt.series = [
+    { name: 'MACD柱', type: 'bar', data: bars, barWidth: 2 },
+    { name: 'DIF', type: 'line', data: s.dif, showSymbol: false, lineStyle: { width: 1.4, color: '#1f2937' } },
+    { name: 'DEA', type: 'line', data: s.dea, showSymbol: false, lineStyle: { width: 1.4, color: '#b45309' } }
+  ];
+  echarts.init(document.getElementById(id)).setOption(opt);
+}
+
+function initRsi(id) {
+  const opt = baseAxis();
+  opt.legend = { data: ['300 RSI6', '688 RSI6', '300 RSI12', '688 RSI12'], top: 0, textStyle: { fontSize: 11, color: '#374151' } };
+  opt.yAxis = { type: 'value', min: 0, max: 100, axisLabel: { fontSize: 10, color: '#6b7280' } };
+  opt.series = [
+    { name: '300 RSI6', type: 'line', data: S300.rsi6, showSymbol: false, lineStyle: { width: 1.2, color: '#185fa5' },
+      markLine: { silent: true, symbol: 'none', lineStyle: { color: '#9ca3af', type: 'dashed' }, label: { fontSize: 10, color: '#6b7280' }, data: [{ yAxis: 70 }, { yAxis: 30 }] } },
+    { name: '688 RSI6', type: 'line', data: S688.rsi6, showSymbol: false, lineStyle: { width: 1.2, color: '#c2410c' } },
+    { name: '300 RSI12', type: 'line', data: S300.rsi12, showSymbol: false, lineStyle: { width: 1.2, type: 'dashed', color: '#185fa5' } },
+    { name: '688 RSI12', type: 'line', data: S688.rsi12, showSymbol: false, lineStyle: { width: 1.2, type: 'dashed', color: '#c2410c' } }
+  ];
+  echarts.init(document.getElementById(id)).setOption(opt);
+}
+
+function initKdj(id) {
+  const opt = baseAxis();
+  opt.legend = { data: ['300 K', '300 D', '688 K', '688 D'], top: 0, textStyle: { fontSize: 11, color: '#374151' } };
+  opt.series = [
+    { name: '300 K', type: 'line', data: S300.kdj_k, showSymbol: false, lineStyle: { width: 1.2, color: '#185fa5' },
+      markLine: { silent: true, symbol: 'none', lineStyle: { color: '#9ca3af', type: 'dashed' }, label: { fontSize: 10, color: '#6b7280' }, data: [{ yAxis: 80 }, { yAxis: 20 }] } },
+    { name: '300 D', type: 'line', data: S300.kdj_d, showSymbol: false, lineStyle: { width: 1.2, type: 'dashed', color: '#185fa5' } },
+    { name: '688 K', type: 'line', data: S688.kdj_k, showSymbol: false, lineStyle: { width: 1.2, color: '#c2410c' } },
+    { name: '688 D', type: 'line', data: S688.kdj_d, showSymbol: false, lineStyle: { width: 1.2, type: 'dashed', color: '#c2410c' } }
+  ];
+  echarts.init(document.getElementById(id)).setOption(opt);
+}
+
+const normChart = echarts.init(document.getElementById('chart1'));
+normChart.setOption({
+  tooltip: { trigger: 'axis' },
+  legend: { data: ['沪深300', '科创50'], top: 0, textStyle: { fontSize: 11, color: '#374151' } },
+  grid: { left: 52, right: 18, top: 30, bottom: 26 },
+  xAxis: { type: 'category', data: DATES, axisLabel: { fontSize: 10, color: '#6b7280' } },
+  yAxis: { type: 'value', scale: true, name: '基点=100', nameTextStyle: { fontSize: 10, color: '#6b7280' }, axisLabel: { fontSize: 10, color: '#6b7280' } },
+  series: [
+    { name: '沪深300', type: 'line', data: S300.norm, showSymbol: false, lineStyle: { width: 1.6, color: '#185fa5' }, areaStyle: { opacity: 0.06 } },
+    { name: '科创50', type: 'line', data: S688.norm, showSymbol: false, lineStyle: { width: 1.6, color: '#c2410c' } }
+  ]
+});
+
+function showView(v) {
+  document.getElementById('view-chart').style.display = v === 'chart' ? 'block' : 'none';
+  document.getElementById('view-table').style.display = v === 'table' ? 'block' : 'none';
+  document.getElementById('btn-chart').className = v === 'chart' ? 'seg active' : 'seg';
+  document.getElementById('btn-table').className = v === 'table' ? 'seg active' : 'seg';
+  if (v === 'chart') { normChart.resize(); }
+}
+
+initKline('chart2', S300, '沪深300');
+initKline('chart3', S688, '科创50');
+initMacd('chart4', S300);
+initMacd('chart5', S688);
+initRsi('chart6');
+initKdj('chart7');
+
+window.addEventListener('resize', function () {
+  const ids = ['chart1', 'chart2', 'chart3', 'chart4', 'chart5', 'chart6', 'chart7'];
+  for (let i = 0; i < ids.length; i++) {
+    const inst = echarts.getInstanceByDom(document.getElementById(ids[i]));
+    if (inst) { inst.resize(); }
+  }
+});
+</script>
+</body>
+</html>

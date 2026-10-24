@@ -1,0 +1,312 @@
+{
+ "meta": {
+  "scale": "60m vs 1D",
+  "source": "新浪 60 分钟 / 东财日线"
+ },
+ "hs300": {
+  "close_dev_max": 0.005,
+  "macd_lead": {
+   "n_pairs": 39,
+   "lead_median": 20.0,
+   "lead_mean": 23.4,
+   "lead_max": 69,
+   "lead_min": 0,
+   "le0_ratio": 2.6
+  },
+  "lead_pairs": [
+   {
+    "h_time": "2025-09-29 14:00",
+    "d_date": "2025-10-24",
+    "lead_days": 24
+   },
+   {
+    "h_time": "2025-10-16 10:30",
+    "d_date": "2025-10-24",
+    "lead_days": 7
+   },
+   {
+    "h_time": "2025-10-21 11:30",
+    "d_date": "2025-10-24",
+    "lead_days": 2
+   },
+   {
+    "h_time": "2025-10-23 15:00",
+    "d_date": "2025-10-24",
+    "lead_days": 0
+   },
+   {
+    "h_time": "2025-11-06 11:30",
+    "d_date": "2025-11-10",
+    "lead_days": 3
+   },
+   {
+    "h_time": "2025-11-13 11:30",
+    "d_date": "2025-12-04",
+    "lead_days": 20
+   },
+   {
+    "h_time": "2025-11-20 11:30",
+    "d_date": "2025-12-04",
+    "lead_days": 13
+   },
+   {
+    "h_time": "2025-11-25 11:30",
+    "d_date": "2025-12-04",
+    "lead_days": 8
+   },
+   {
+    "h_time": "2025-12-05 14:00",
+    "d_date": "2025-12-17",
+    "lead_days": 11
+   },
+   {
+    "h_time": "2025-12-17 15:00",
+    "d_date": "2026-02-25",
+    "lead_days": 69
+   },
+   {
+    "h_time": "2026-01-05 11:30",
+    "d_date": "2026-02-25",
+    "lead_days": 50
+   },
+   {
+    "h_time": "2026-01-21 11:30",
+    "d_date": "2026-02-25",
+    "lead_days": 34
+   }
+  ],
+  "cmp": {
+   "60分钟_n5": {
+    "bull_n": 37,
+    "bull_hit": 48.6,
+    "bull_avg": -0.44,
+    "bear_n": 43,
+    "bear_hit": 41.9,
+    "bear_avg": 0.34
+   },
+   "60分钟_n20": {
+    "bull_n": 36,
+    "bull_hit": 44.4,
+    "bull_avg": -0.92,
+    "bear_n": 37,
+    "bear_hit": 62.2,
+    "bear_avg": -1.53
+   },
+   "日线_n5": {
+    "bull_n": 24,
+    "bull_hit": 50.0,
+    "bull_avg": -0.28,
+    "bear_n": 44,
+    "bear_hit": 52.3,
+    "bear_avg": -0.14
+   },
+   "日线_n20": {
+    "bull_n": 24,
+    "bull_hit": 37.5,
+    "bull_avg": -1.87,
+    "bear_n": 37,
+    "bear_hit": 73.0,
+    "bear_avg": -1.83
+   },
+   "双确认_n5": {
+    "bull_n": 16,
+    "bull_hit": 50.0,
+    "bull_avg": -0.5,
+    "bear_n": 26,
+    "bear_hit": 30.8,
+    "bear_avg": 1.0
+   },
+   "双确认_n20": {
+    "bull_n": 16,
+    "bull_hit": 43.8,
+    "bull_avg": -2.05,
+    "bear_n": 25,
+    "bear_hit": 68.0,
+    "bear_avg": -1.74
+   }
+  },
+  "cases": {
+   "2026-06-30": {
+    "n_bars": 4,
+    "open": 4914.49,
+    "close": 4979.43,
+    "chg_pct": 1.32,
+    "intraday_low": 4914.49,
+    "intraday_high": 4987.56,
+    "late_session_chg": 0.28
+   },
+   "2026-10-22": {
+    "n_bars": 4,
+    "open": 4110.65,
+    "close": 4036.3,
+    "chg_pct": -1.81,
+    "intraday_low": 4022.87,
+    "intraday_high": 4110.65,
+    "late_session_chg": -0.34
+   },
+   "2026-10-23": {
+    "n_bars": 4,
+    "open": 3992.9,
+    "close": 4105.33,
+    "chg_pct": 2.82,
+    "intraday_low": 3958.14,
+    "intraday_high": 4109.52,
+    "late_session_chg": 1.02
+   }
+  },
+  "n_checkpoints": 136
+ },
+ "kc50": {
+  "close_dev_max": 0.005,
+  "macd_lead": {
+   "n_pairs": 40,
+   "lead_median": 21.5,
+   "lead_mean": 33.8,
+   "lead_max": 124,
+   "lead_min": 0,
+   "le0_ratio": 10.0
+  },
+  "lead_pairs": [
+   {
+    "h_time": "2025-09-30 10:30",
+    "d_date": "2025-10-27",
+    "lead_days": 26
+   },
+   {
+    "h_time": "2025-10-21 11:30",
+    "d_date": "2025-10-27",
+    "lead_days": 5
+   },
+   {
+    "h_time": "2025-11-06 10:30",
+    "d_date": "2025-12-02",
+    "lead_days": 25
+   },
+   {
+    "h_time": "2025-11-10 15:00",
+    "d_date": "2025-12-02",
+    "lead_days": 21
+   },
+   {
+    "h_time": "2025-11-13 11:30",
+    "d_date": "2025-12-02",
+    "lead_days": 18
+   },
+   {
+    "h_time": "2025-11-25 10:30",
+    "d_date": "2025-12-02",
+    "lead_days": 6
+   },
+   {
+    "h_time": "2025-12-04 15:00",
+    "d_date": "2026-04-08",
+    "lead_days": 124
+   },
+   {
+    "h_time": "2025-12-12 15:00",
+    "d_date": "2026-04-08",
+    "lead_days": 116
+   },
+   {
+    "h_time": "2025-12-18 10:30",
+    "d_date": "2026-04-08",
+    "lead_days": 110
+   },
+   {
+    "h_time": "2025-12-29 10:30",
+    "d_date": "2026-04-08",
+    "lead_days": 99
+   },
+   {
+    "h_time": "2025-12-30 14:00",
+    "d_date": "2026-04-08",
+    "lead_days": 98
+   },
+   {
+    "h_time": "2026-01-05 10:30",
+    "d_date": "2026-04-08",
+    "lead_days": 92
+   }
+  ],
+  "cmp": {
+   "60分钟_n5": {
+    "bull_n": 35,
+    "bull_hit": 51.4,
+    "bull_avg": -0.55,
+    "bear_n": 41,
+    "bear_hit": 46.3,
+    "bear_avg": 1.15
+   },
+   "60分钟_n20": {
+    "bull_n": 31,
+    "bull_hit": 61.3,
+    "bull_avg": 6.73,
+    "bear_n": 35,
+    "bear_hit": 57.1,
+    "bear_avg": 0.8
+   },
+   "日线_n5": {
+    "bull_n": 24,
+    "bull_hit": 62.5,
+    "bull_avg": 2.8,
+    "bear_n": 33,
+    "bear_hit": 45.5,
+    "bear_avg": -0.33
+   },
+   "日线_n20": {
+    "bull_n": 24,
+    "bull_hit": 58.3,
+    "bull_avg": 2.87,
+    "bear_n": 30,
+    "bear_hit": 70.0,
+    "bear_avg": -1.03
+   },
+   "双确认_n5": {
+    "bull_n": 9,
+    "bull_hit": 55.6,
+    "bull_avg": 1.26,
+    "bear_n": 19,
+    "bear_hit": 26.3,
+    "bear_avg": 2.2
+   },
+   "双确认_n20": {
+    "bull_n": 9,
+    "bull_hit": 88.9,
+    "bull_avg": 12.82,
+    "bear_n": 17,
+    "bear_hit": 58.8,
+    "bear_avg": 0.89
+   }
+  },
+  "cases": {
+   "2026-06-30": {
+    "n_bars": 4,
+    "open": 2132.88,
+    "close": 2207.86,
+    "chg_pct": 3.52,
+    "intraday_low": 2113.95,
+    "intraday_high": 2214.61,
+    "late_session_chg": 0.18
+   },
+   "2026-10-22": {
+    "n_bars": 4,
+    "open": 1346.96,
+    "close": 1305.87,
+    "chg_pct": -3.05,
+    "intraday_low": 1302.39,
+    "intraday_high": 1346.96,
+    "late_session_chg": -0.99
+   },
+   "2026-10-23": {
+    "n_bars": 4,
+    "open": 1287.88,
+    "close": 1345.52,
+    "chg_pct": 4.48,
+    "intraday_low": 1257.29,
+    "intraday_high": 1353.32,
+    "late_session_chg": 2.64
+   }
+  },
+  "n_checkpoints": 136
+ }
+}

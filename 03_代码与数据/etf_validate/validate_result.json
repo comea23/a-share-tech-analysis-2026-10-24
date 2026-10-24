@@ -1,0 +1,5507 @@
+{
+ "meta": {
+  "win_start": "2025-10-24",
+  "win_end": "2026-10-23",
+  "n": 62,
+  "verify_failed": []
+ },
+ "results": [
+  {
+   "code": "516510",
+   "name": "云计算ETF易方达",
+   "industry": "云计算",
+   "sector": "TMT",
+   "scale_yi": 24.52,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 1.501,
+    "trend": "位于MA20下方",
+    "dif": -0.0489,
+    "dea": -0.0485,
+    "macd_golden": false,
+    "rsi12": 45.8,
+    "kdj_k": 47.1,
+    "pctb": 0.4,
+    "adx": 40.7,
+    "vol_ratio": 1.89,
+    "obv_above": true,
+    "dev60": -0.0788
+   },
+   "dir_b_now": 0,
+   "score_b_now": -6.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方死叉",
+    "放量(量比1.89)",
+    "OBV位于20日均线上方"
+   ],
+   "stats_2y": {
+    "ret_pct": 111.71,
+    "ann_vol": 38.9,
+    "max_dd": -30.32,
+    "avg_amt_yi": 1.81,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -9.03,
+    "ann_vol": 37.0,
+    "max_dd": -30.32,
+    "avg_amt_yi": 1.62,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 9,
+    "bear_days": 0,
+    "neutral_days": 213,
+    "bull_hit": 0.0,
+    "bear_hit": null,
+    "bull_avg_ret": -6.84,
+    "bear_avg_ret": null,
+    "neutral_avg_abs": 6.55,
+    "dir_hit": 0.0
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 55,
+    "bear_days": 49,
+    "neutral_days": 118,
+    "bull_hit": 40.0,
+    "bear_hit": 38.8,
+    "bull_avg_ret": 0.61,
+    "bear_avg_ret": 1.14,
+    "neutral_avg_abs": 5.15,
+    "dir_hit": 39.4
+   },
+   "sim_a": {
+    "strategy_ret": -22.98,
+    "buyhold_ret": -5.45,
+    "excess": -17.52,
+    "trades": 2,
+    "in_market_ratio": 71.9,
+    "strategy_maxdd": -23.99,
+    "buyhold_maxdd": -30.34
+   },
+   "sim_b": {
+    "strategy_ret": -15.66,
+    "buyhold_ret": -5.45,
+    "excess": -10.21,
+    "trades": 11,
+    "in_market_ratio": 42.6,
+    "strategy_maxdd": -28.31,
+    "buyhold_maxdd": -30.34
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "517050",
+   "name": "互联网ETF华泰柏瑞",
+   "industry": "互联网",
+   "sector": "TMT",
+   "scale_yi": 2.17,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.609,
+    "trend": "位于MA20下方",
+    "dif": -0.0117,
+    "dea": -0.0114,
+    "macd_golden": false,
+    "rsi12": 42.6,
+    "kdj_k": 37.1,
+    "pctb": 0.3,
+    "adx": 28.3,
+    "vol_ratio": 1.2,
+    "obv_above": false,
+    "dev60": -0.0706
+   },
+   "dir_b_now": -1,
+   "score_b_now": -26.0,
+   "sig_a_now": -1,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方死叉",
+    "OBV位于20日均线下方"
+   ],
+   "stats_2y": {
+    "ret_pct": 27.14,
+    "ann_vol": 29.8,
+    "max_dd": -41.2,
+    "avg_amt_yi": 0.05,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -34.8,
+    "ann_vol": 26.3,
+    "max_dd": -39.51,
+    "avg_amt_yi": 0.03,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 9,
+    "bear_days": 52,
+    "neutral_days": 161,
+    "bull_hit": 33.3,
+    "bear_hit": 32.7,
+    "bull_avg_ret": -2.5,
+    "bear_avg_ret": 2.49,
+    "neutral_avg_abs": 7.33,
+    "dir_hit": 32.8
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 21,
+    "bear_days": 107,
+    "neutral_days": 94,
+    "bull_hit": 19.0,
+    "bear_hit": 70.1,
+    "bull_avg_ret": -3.91,
+    "bear_avg_ret": -3.21,
+    "neutral_avg_abs": 7.19,
+    "dir_hit": 61.7
+   },
+   "sim_a": {
+    "strategy_ret": -11.31,
+    "buyhold_ret": -34.2,
+    "excess": 22.9,
+    "trades": 4,
+    "in_market_ratio": 31.8,
+    "strategy_maxdd": -21.52,
+    "buyhold_maxdd": -39.47
+   },
+   "sim_b": {
+    "strategy_ret": -8.4,
+    "buyhold_ret": -34.2,
+    "excess": 25.81,
+    "trades": 6,
+    "in_market_ratio": 20.7,
+    "strategy_maxdd": -17.69,
+    "buyhold_maxdd": -39.47
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "562570",
+   "name": "信创ETF华夏",
+   "industry": "信创",
+   "sector": "TMT",
+   "scale_yi": 4.65,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 1.269,
+    "trend": "站上MA20",
+    "dif": -0.0304,
+    "dea": -0.032,
+    "macd_golden": true,
+    "rsi12": 50.9,
+    "kdj_k": 53.8,
+    "pctb": 0.5,
+    "adx": 36.2,
+    "vol_ratio": 1.2,
+    "obv_above": false,
+    "dev60": -0.0455
+   },
+   "dir_b_now": 0,
+   "score_b_now": -6.0,
+   "sig_a_now": -1,
+   "reasons": [
+    "价格站上MA20",
+    "MACD零轴下方金叉（弱势反弹）",
+    "OBV位于20日均线下方"
+   ],
+   "stats_2y": {
+    "ret_pct": 62.48,
+    "ann_vol": 38.6,
+    "max_dd": -28.7,
+    "avg_amt_yi": 0.42,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -12.66,
+    "ann_vol": 35.1,
+    "max_dd": -28.7,
+    "avg_amt_yi": 0.28,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 15,
+    "bear_days": 6,
+    "neutral_days": 201,
+    "bull_hit": 6.7,
+    "bear_hit": 0.0,
+    "bull_avg_ret": -7.7,
+    "bear_avg_ret": 20.65,
+    "neutral_avg_abs": 6.83,
+    "dir_hit": 4.8
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 38,
+    "bear_days": 89,
+    "neutral_days": 95,
+    "bull_hit": 23.7,
+    "bear_hit": 48.3,
+    "bull_avg_ret": -5.91,
+    "bear_avg_ret": 2.35,
+    "neutral_avg_abs": 6.98,
+    "dir_hit": 40.9
+   },
+   "sim_a": {
+    "strategy_ret": -29.44,
+    "buyhold_ret": -10.78,
+    "excess": -18.66,
+    "trades": 4,
+    "in_market_ratio": 65.3,
+    "strategy_maxdd": -39.22,
+    "buyhold_maxdd": -28.66
+   },
+   "sim_b": {
+    "strategy_ret": -15.16,
+    "buyhold_ret": -10.78,
+    "excess": -4.38,
+    "trades": 8,
+    "in_market_ratio": 29.8,
+    "strategy_maxdd": -15.69,
+    "buyhold_maxdd": -28.66
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "515400",
+   "name": "大数据ETF富国",
+   "industry": "大数据",
+   "sector": "TMT",
+   "scale_yi": 12.71,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.784,
+    "trend": "位于MA20下方",
+    "dif": -0.0225,
+    "dea": -0.0235,
+    "macd_golden": true,
+    "rsi12": 48.3,
+    "kdj_k": 59.0,
+    "pctb": 0.45,
+    "adx": 40.5,
+    "vol_ratio": 2.12,
+    "obv_above": true,
+    "dev60": -0.0656
+   },
+   "dir_b_now": 0,
+   "score_b_now": 2.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方金叉（弱势反弹）",
+    "放量(量比2.12)",
+    "OBV位于20日均线上方"
+   ],
+   "stats_2y": {
+    "ret_pct": 46.0,
+    "ann_vol": 38.7,
+    "max_dd": -36.65,
+    "avg_amt_yi": 1.26,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -21.76,
+    "ann_vol": 37.3,
+    "max_dd": -36.65,
+    "avg_amt_yi": 1.14,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 4,
+    "bear_days": 9,
+    "neutral_days": 209,
+    "bull_hit": 25.0,
+    "bear_hit": 0.0,
+    "bull_avg_ret": -3.26,
+    "bear_avg_ret": 12.14,
+    "neutral_avg_abs": 6.83,
+    "dir_hit": 7.7
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 20,
+    "bear_days": 73,
+    "neutral_days": 129,
+    "bull_hit": 0.0,
+    "bear_hit": 46.6,
+    "bull_avg_ret": -11.53,
+    "bear_avg_ret": 2.28,
+    "neutral_avg_abs": 5.93,
+    "dir_hit": 36.6
+   },
+   "sim_a": {
+    "strategy_ret": -16.66,
+    "buyhold_ret": -20.16,
+    "excess": 3.5,
+    "trades": 2,
+    "in_market_ratio": 41.3,
+    "strategy_maxdd": -28.37,
+    "buyhold_maxdd": -36.65
+   },
+   "sim_b": {
+    "strategy_ret": -26.06,
+    "buyhold_ret": -20.16,
+    "excess": -5.89,
+    "trades": 8,
+    "in_market_ratio": 26.0,
+    "strategy_maxdd": -26.06,
+    "buyhold_maxdd": -36.65
+   },
+   "elapsed_s": 2.4
+  },
+  {
+   "code": "159075",
+   "name": "工业互联网ETF华夏",
+   "industry": "工业互联网",
+   "sector": "TMT",
+   "scale_yi": 2.53,
+   "verify_passed": null,
+   "n_checkpoints": 0,
+   "note": "次新上市（仅 65 根K线，2026-07-17 起），无有效检查点，未回测",
+   "snap": {
+    "close": 0.787,
+    "trend": "位于MA20下方",
+    "dif": -0.0326,
+    "dea": -0.0305,
+    "macd_golden": false,
+    "rsi12": 39.5,
+    "kdj_k": 33.7,
+    "pctb": 0.34,
+    "adx": 43.4,
+    "vol_ratio": 0.59,
+    "obv_above": false,
+    "dev60": -0.106
+   },
+   "dir_b_now": -1,
+   "score_b_now": -23.0,
+   "sig_a_now": -1,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方死叉",
+    "缩量(量比0.59)",
+    "OBV位于20日均线下方",
+    "较MA60超跌-10.6%"
+   ],
+   "stats_2y": {
+    "ret_pct": -13.89,
+    "ann_vol": 33.0,
+    "max_dd": -21.9,
+    "avg_amt_yi": 0.05,
+    "n_days": 65
+   },
+   "stats_1y": {
+    "ret_pct": -13.89,
+    "ann_vol": 33.0,
+    "max_dd": -21.9,
+    "avg_amt_yi": 0.05,
+    "n_days": 65
+   },
+   "sim_a": null,
+   "sim_b": null,
+   "eval_a_n20": null,
+   "eval_b_n20": null,
+   "elapsed_s": 0.0
+  },
+  {
+   "code": "512980",
+   "name": "传媒ETF广发",
+   "industry": "影视传媒",
+   "sector": "TMT",
+   "scale_yi": 34.35,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.788,
+    "trend": "位于MA20下方",
+    "dif": -0.0102,
+    "dea": -0.0081,
+    "macd_golden": false,
+    "rsi12": 46.2,
+    "kdj_k": 36.1,
+    "pctb": 0.35,
+    "adx": 13.8,
+    "vol_ratio": 1.17,
+    "obv_above": true,
+    "dev60": -0.0395
+   },
+   "dir_b_now": 0,
+   "score_b_now": -10.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方死叉",
+    "OBV位于20日均线上方"
+   ],
+   "stats_2y": {
+    "ret_pct": 38.0,
+    "ann_vol": 34.8,
+    "max_dd": -43.8,
+    "avg_amt_yi": 2.67,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -19.18,
+    "ann_vol": 36.0,
+    "max_dd": -43.8,
+    "avg_amt_yi": 3.99,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 15,
+    "bear_days": 31,
+    "neutral_days": 176,
+    "bull_hit": 6.7,
+    "bear_hit": 67.7,
+    "bull_avg_ret": -7.7,
+    "bear_avg_ret": -2.26,
+    "neutral_avg_abs": 8.33,
+    "dir_hit": 47.8
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 24,
+    "bear_days": 82,
+    "neutral_days": 116,
+    "bull_hit": 8.3,
+    "bear_hit": 67.1,
+    "bull_avg_ret": -3.98,
+    "bear_avg_ret": -1.34,
+    "neutral_avg_abs": 8.24,
+    "dir_hit": 53.8
+   },
+   "sim_a": {
+    "strategy_ret": -15.76,
+    "buyhold_ret": -18.81,
+    "excess": 3.05,
+    "trades": 2,
+    "in_market_ratio": 11.2,
+    "strategy_maxdd": -16.03,
+    "buyhold_maxdd": -43.82
+   },
+   "sim_b": {
+    "strategy_ret": -16.95,
+    "buyhold_ret": -18.81,
+    "excess": 1.86,
+    "trades": 10,
+    "in_market_ratio": 22.7,
+    "strategy_maxdd": -34.12,
+    "buyhold_maxdd": -43.82
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "159869",
+   "name": "游戏ETF华夏",
+   "industry": "游戏动漫",
+   "sector": "TMT",
+   "scale_yi": 79.11,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 1.003,
+    "trend": "完全空头排列",
+    "dif": -0.022,
+    "dea": -0.018,
+    "macd_golden": false,
+    "rsi12": 40.2,
+    "kdj_k": 31.5,
+    "pctb": 0.2,
+    "adx": 30.7,
+    "vol_ratio": 1.36,
+    "obv_above": false,
+    "dev60": -0.0709
+   },
+   "dir_b_now": -1,
+   "score_b_now": -40.0,
+   "sig_a_now": -1,
+   "reasons": [
+    "均线完全空头排列",
+    "MACD零轴下方死叉",
+    "OBV位于20日均线下方"
+   ],
+   "stats_2y": {
+    "ret_pct": 33.91,
+    "ann_vol": 36.6,
+    "max_dd": -43.0,
+    "avg_amt_yi": 6.06,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -31.86,
+    "ann_vol": 33.1,
+    "max_dd": -43.0,
+    "avg_amt_yi": 6.12,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 15,
+    "bear_days": 26,
+    "neutral_days": 181,
+    "bull_hit": 6.7,
+    "bear_hit": 42.3,
+    "bull_avg_ret": -10.71,
+    "bear_avg_ret": 0.39,
+    "neutral_avg_abs": 6.51,
+    "dir_hit": 29.3
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 29,
+    "bear_days": 78,
+    "neutral_days": 115,
+    "bull_hit": 37.9,
+    "bear_hit": 56.4,
+    "bull_avg_ret": -2.05,
+    "bear_avg_ret": -1.57,
+    "neutral_avg_abs": 7.21,
+    "dir_hit": 51.4
+   },
+   "sim_a": {
+    "strategy_ret": -16.69,
+    "buyhold_ret": -31.16,
+    "excess": 14.47,
+    "trades": 2,
+    "in_market_ratio": 13.2,
+    "strategy_maxdd": -17.95,
+    "buyhold_maxdd": -42.98
+   },
+   "sim_b": {
+    "strategy_ret": -19.18,
+    "buyhold_ret": -31.16,
+    "excess": 11.98,
+    "trades": 10,
+    "in_market_ratio": 39.3,
+    "strategy_maxdd": -31.21,
+    "buyhold_maxdd": -42.98
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "158050",
+   "name": "创业板算力ETF易方达",
+   "industry": "算力",
+   "sector": "TMT",
+   "scale_yi": 14.77,
+   "verify_passed": null,
+   "n_checkpoints": 0,
+   "note": "次新上市（仅 20 根K线，2026-09-18 起），无有效检查点，未回测",
+   "snap": {
+    "close": 0.809,
+    "trend": "位于MA20下方",
+    "dif": -0.0541,
+    "dea": -0.0463,
+    "macd_golden": false,
+    "rsi12": 33.9,
+    "kdj_k": 24.4,
+    "pctb": 0.21,
+    "adx": NaN,
+    "vol_ratio": 1.37,
+    "obv_above": true,
+    "dev60": NaN
+   },
+   "dir_b_now": 0,
+   "score_b_now": -10.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方死叉",
+    "OBV位于20日均线上方"
+   ],
+   "stats_2y": {
+    "ret_pct": -21.3,
+    "ann_vol": 39.9,
+    "max_dd": -23.56,
+    "avg_amt_yi": 3.83,
+    "n_days": 20
+   },
+   "stats_1y": {
+    "ret_pct": -21.3,
+    "ann_vol": 39.9,
+    "max_dd": -23.56,
+    "avg_amt_yi": 3.83,
+    "n_days": 20
+   },
+   "sim_a": null,
+   "sim_b": null,
+   "eval_a_n20": null,
+   "eval_b_n20": null,
+   "elapsed_s": 0.0
+  },
+  {
+   "code": "159998",
+   "name": "计算机ETF天弘",
+   "industry": "计算机",
+   "sector": "TMT",
+   "scale_yi": 18.17,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.874,
+    "trend": "位于MA20下方",
+    "dif": -0.0266,
+    "dea": -0.027,
+    "macd_golden": true,
+    "rsi12": 45.9,
+    "kdj_k": 45.1,
+    "pctb": 0.42,
+    "adx": 44.4,
+    "vol_ratio": 1.3,
+    "obv_above": false,
+    "dev60": -0.0746
+   },
+   "dir_b_now": -1,
+   "score_b_now": -18.0,
+   "sig_a_now": -1,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方金叉（弱势反弹）",
+    "OBV位于20日均线下方"
+   ],
+   "stats_2y": {
+    "ret_pct": 54.42,
+    "ann_vol": 36.3,
+    "max_dd": -29.47,
+    "avg_amt_yi": 1.06,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -18.16,
+    "ann_vol": 33.7,
+    "max_dd": -29.47,
+    "avg_amt_yi": 1.18,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 8,
+    "bear_days": 15,
+    "neutral_days": 199,
+    "bull_hit": 12.5,
+    "bear_hit": 20.0,
+    "bull_avg_ret": -3.48,
+    "bear_avg_ret": 7.42,
+    "neutral_avg_abs": 6.89,
+    "dir_hit": 17.4
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 39,
+    "bear_days": 77,
+    "neutral_days": 106,
+    "bull_hit": 7.7,
+    "bear_hit": 46.8,
+    "bull_avg_ret": -7.26,
+    "bear_avg_ret": 1.4,
+    "neutral_avg_abs": 6.64,
+    "dir_hit": 33.6
+   },
+   "sim_a": {
+    "strategy_ret": -10.6,
+    "buyhold_ret": -16.4,
+    "excess": 5.8,
+    "trades": 2,
+    "in_market_ratio": 23.1,
+    "strategy_maxdd": -20.44,
+    "buyhold_maxdd": -29.5
+   },
+   "sim_b": {
+    "strategy_ret": -28.23,
+    "buyhold_ret": -16.4,
+    "excess": -11.83,
+    "trades": 10,
+    "in_market_ratio": 35.1,
+    "strategy_maxdd": -29.64,
+    "buyhold_maxdd": -29.5
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "159852",
+   "name": "软件ETF嘉实",
+   "industry": "软件",
+   "sector": "TMT",
+   "scale_yi": 77.97,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.661,
+    "trend": "站上MA20",
+    "dif": -0.0082,
+    "dea": -0.0111,
+    "macd_golden": true,
+    "rsi12": 57.7,
+    "kdj_k": 62.4,
+    "pctb": 0.8,
+    "adx": 29.9,
+    "vol_ratio": 1.96,
+    "obv_above": true,
+    "dev60": -0.0138
+   },
+   "dir_b_now": 0,
+   "score_b_now": 14.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "价格站上MA20",
+    "MACD零轴下方金叉（弱势反弹）",
+    "放量(量比1.96)",
+    "OBV位于20日均线上方"
+   ],
+   "stats_2y": {
+    "ret_pct": 38.28,
+    "ann_vol": 37.9,
+    "max_dd": -41.89,
+    "avg_amt_yi": 3.94,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -27.04,
+    "ann_vol": 33.4,
+    "max_dd": -41.89,
+    "avg_amt_yi": 5.38,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 4,
+    "bear_days": 32,
+    "neutral_days": 186,
+    "bull_hit": 50.0,
+    "bear_hit": 65.6,
+    "bull_avg_ret": -1.41,
+    "bear_avg_ret": -1.24,
+    "neutral_avg_abs": 7.58,
+    "dir_hit": 63.9
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 17,
+    "bear_days": 84,
+    "neutral_days": 121,
+    "bull_hit": 11.8,
+    "bear_hit": 67.9,
+    "bull_avg_ret": -9.5,
+    "bear_avg_ret": -1.86,
+    "neutral_avg_abs": 7.1,
+    "dir_hit": 58.4
+   },
+   "sim_a": {
+    "strategy_ret": -2.62,
+    "buyhold_ret": -26.12,
+    "excess": 23.5,
+    "trades": 2,
+    "in_market_ratio": 9.5,
+    "strategy_maxdd": -15.71,
+    "buyhold_maxdd": -41.92
+   },
+   "sim_b": {
+    "strategy_ret": -12.81,
+    "buyhold_ret": -26.12,
+    "excess": 13.31,
+    "trades": 8,
+    "in_market_ratio": 28.9,
+    "strategy_maxdd": -20.02,
+    "buyhold_maxdd": -41.92
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "515880",
+   "name": "通信ETF国泰",
+   "industry": "通信设备",
+   "sector": "TMT",
+   "scale_yi": 590.19,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.514,
+    "trend": "完全空头排列",
+    "dif": -0.0409,
+    "dea": -0.0337,
+    "macd_golden": false,
+    "rsi12": 28.4,
+    "kdj_k": 20.9,
+    "pctb": 0.22,
+    "adx": 34.8,
+    "vol_ratio": 1.44,
+    "obv_above": true,
+    "dev60": -0.1898
+   },
+   "dir_b_now": 0,
+   "score_b_now": -7.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "均线完全空头排列",
+    "MACD零轴下方死叉",
+    "RSI12超卖(28.4)",
+    "OBV位于20日均线上方",
+    "较MA60超跌-19.0%"
+   ],
+   "stats_2y": {
+    "ret_pct": 211.52,
+    "ann_vol": 46.9,
+    "max_dd": -46.6,
+    "avg_amt_yi": 9.22,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": 11.02,
+    "ann_vol": 50.5,
+    "max_dd": -46.6,
+    "avg_amt_yi": 18.76,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 61,
+    "bear_days": 14,
+    "neutral_days": 147,
+    "bull_hit": 67.2,
+    "bear_hit": 35.7,
+    "bull_avg_ret": 0.73,
+    "bear_avg_ret": 3.73,
+    "neutral_avg_abs": 12.64,
+    "dir_hit": 61.3
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 77,
+    "bear_days": 27,
+    "neutral_days": 118,
+    "bull_hit": 68.8,
+    "bear_hit": 51.9,
+    "bull_avg_ret": 3.51,
+    "bear_avg_ret": -0.42,
+    "neutral_avg_abs": 12.75,
+    "dir_hit": 64.4
+   },
+   "sim_a": {
+    "strategy_ret": 63.32,
+    "buyhold_ret": 17.33,
+    "excess": 45.99,
+    "trades": 1,
+    "in_market_ratio": 70.2,
+    "strategy_maxdd": -19.69,
+    "buyhold_maxdd": -46.62
+   },
+   "sim_b": {
+    "strategy_ret": 18.08,
+    "buyhold_ret": 17.33,
+    "excess": 0.76,
+    "trades": 12,
+    "in_market_ratio": 70.7,
+    "strategy_maxdd": -22.37,
+    "buyhold_maxdd": -46.62
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "159851",
+   "name": "金融科技ETF华宝",
+   "industry": "金融科技",
+   "sector": "TMT",
+   "scale_yi": 64.42,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.598,
+    "trend": "站上MA20",
+    "dif": -0.0078,
+    "dea": -0.0092,
+    "macd_golden": true,
+    "rsi12": 53.5,
+    "kdj_k": 58.2,
+    "pctb": 0.68,
+    "adx": 27.1,
+    "vol_ratio": 1.73,
+    "obv_above": true,
+    "dev60": -0.0199
+   },
+   "dir_b_now": 0,
+   "score_b_now": 14.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "价格站上MA20",
+    "MACD零轴下方金叉（弱势反弹）",
+    "放量(量比1.73)",
+    "OBV位于20日均线上方"
+   ],
+   "stats_2y": {
+    "ret_pct": 64.74,
+    "ann_vol": 40.8,
+    "max_dd": -44.55,
+    "avg_amt_yi": 4.06,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -32.35,
+    "ann_vol": 32.8,
+    "max_dd": -41.57,
+    "avg_amt_yi": 3.62,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 10,
+    "bear_days": 29,
+    "neutral_days": 183,
+    "bull_hit": 0.0,
+    "bear_hit": 41.4,
+    "bull_avg_ret": -6.33,
+    "bear_avg_ret": 0.4,
+    "neutral_avg_abs": 6.96,
+    "dir_hit": 30.8
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 27,
+    "bear_days": 79,
+    "neutral_days": 116,
+    "bull_hit": 3.7,
+    "bear_hit": 68.4,
+    "bull_avg_ret": -7.62,
+    "bear_avg_ret": -3.22,
+    "neutral_avg_abs": 6.21,
+    "dir_hit": 51.9
+   },
+   "sim_a": {
+    "strategy_ret": -4.23,
+    "buyhold_ret": -31.51,
+    "excess": 27.28,
+    "trades": 2,
+    "in_market_ratio": 7.0,
+    "strategy_maxdd": -14.1,
+    "buyhold_maxdd": -41.52
+   },
+   "sim_b": {
+    "strategy_ret": -20.56,
+    "buyhold_ret": -31.51,
+    "excess": 10.94,
+    "trades": 8,
+    "in_market_ratio": 19.4,
+    "strategy_maxdd": -28.75,
+    "buyhold_maxdd": -41.52
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "159790",
+   "name": "碳中和ETF华夏",
+   "industry": "环保",
+   "sector": "公用事业",
+   "scale_yi": 12.23,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.6,
+    "trend": "完全空头排列",
+    "dif": -0.0202,
+    "dea": -0.0172,
+    "macd_golden": false,
+    "rsi12": 28.3,
+    "kdj_k": 14.3,
+    "pctb": 0.14,
+    "adx": 42.6,
+    "vol_ratio": 1.21,
+    "obv_above": false,
+    "dev60": -0.1126
+   },
+   "dir_b_now": -1,
+   "score_b_now": -17.0,
+   "sig_a_now": -1,
+   "reasons": [
+    "均线完全空头排列",
+    "MACD零轴下方死叉",
+    "RSI12超卖(28.3)",
+    "KDJ-K超卖(14.3)",
+    "OBV位于20日均线下方",
+    "较MA60超跌-11.3%"
+   ],
+   "stats_2y": {
+    "ret_pct": 17.65,
+    "ann_vol": 26.3,
+    "max_dd": -31.74,
+    "avg_amt_yi": 0.35,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -21.67,
+    "ann_vol": 22.9,
+    "max_dd": -31.74,
+    "avg_amt_yi": 0.36,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 19,
+    "bear_days": 17,
+    "neutral_days": 186,
+    "bull_hit": 0.0,
+    "bear_hit": 58.8,
+    "bull_avg_ret": -5.38,
+    "bear_avg_ret": -2.23,
+    "neutral_avg_abs": 4.83,
+    "dir_hit": 27.8
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 54,
+    "bear_days": 53,
+    "neutral_days": 115,
+    "bull_hit": 31.5,
+    "bear_hit": 58.5,
+    "bull_avg_ret": -3.02,
+    "bear_avg_ret": -2.41,
+    "neutral_avg_abs": 4.87,
+    "dir_hit": 44.9
+   },
+   "sim_a": {
+    "strategy_ret": -12.61,
+    "buyhold_ret": -20.46,
+    "excess": 7.85,
+    "trades": 3,
+    "in_market_ratio": 54.1,
+    "strategy_maxdd": -21.78,
+    "buyhold_maxdd": -31.75
+   },
+   "sim_b": {
+    "strategy_ret": -9.39,
+    "buyhold_ret": -20.46,
+    "excess": 11.07,
+    "trades": 8,
+    "in_market_ratio": 45.9,
+    "strategy_maxdd": -13.94,
+    "buyhold_maxdd": -31.75
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "159611",
+   "name": "电力ETF广发",
+   "industry": "电力公用",
+   "sector": "公用事业",
+   "scale_yi": 87.18,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 1.02,
+    "trend": "位于MA20下方",
+    "dif": -0.0035,
+    "dea": -0.0016,
+    "macd_golden": false,
+    "rsi12": 38.1,
+    "kdj_k": 22.6,
+    "pctb": 0.09,
+    "adx": 13.9,
+    "vol_ratio": 1.03,
+    "obv_above": false,
+    "dev60": -0.026
+   },
+   "dir_b_now": -1,
+   "score_b_now": -20.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方死叉",
+    "贴合布林下轨(%B=0.09)",
+    "OBV位于20日均线下方"
+   ],
+   "stats_2y": {
+    "ret_pct": 3.66,
+    "ann_vol": 19.0,
+    "max_dd": -19.97,
+    "avg_amt_yi": 3.02,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -3.04,
+    "ann_vol": 20.9,
+    "max_dd": -19.97,
+    "avg_amt_yi": 4.52,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 31,
+    "bear_days": 17,
+    "neutral_days": 174,
+    "bull_hit": 9.7,
+    "bear_hit": 0.0,
+    "bull_avg_ret": -7.28,
+    "bear_avg_ret": 4.85,
+    "neutral_avg_abs": 4.01,
+    "dir_hit": 6.2
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 62,
+    "bear_days": 62,
+    "neutral_days": 98,
+    "bull_hit": 32.3,
+    "bear_hit": 21.0,
+    "bull_avg_ret": -1.58,
+    "bear_avg_ret": 3.49,
+    "neutral_avg_abs": 3.91,
+    "dir_hit": 26.6
+   },
+   "sim_a": {
+    "strategy_ret": -10.48,
+    "buyhold_ret": -3.38,
+    "excess": -7.1,
+    "trades": 4,
+    "in_market_ratio": 32.2,
+    "strategy_maxdd": -22.6,
+    "buyhold_maxdd": -19.97
+   },
+   "sim_b": {
+    "strategy_ret": -13.19,
+    "buyhold_ret": -3.38,
+    "excess": -9.81,
+    "trades": 13,
+    "in_market_ratio": 47.1,
+    "strategy_maxdd": -20.95,
+    "buyhold_maxdd": -19.97
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "159825",
+   "name": "农业ETF富国",
+   "industry": "农业",
+   "sector": "农业",
+   "scale_yi": 15.28,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.709,
+    "trend": "位于MA20下方",
+    "dif": -0.0077,
+    "dea": -0.0076,
+    "macd_golden": false,
+    "rsi12": 44.7,
+    "kdj_k": 56.2,
+    "pctb": 0.36,
+    "adx": 19.8,
+    "vol_ratio": 0.97,
+    "obv_above": false,
+    "dev60": -0.0283
+   },
+   "dir_b_now": -1,
+   "score_b_now": -26.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方死叉",
+    "OBV位于20日均线下方"
+   ],
+   "stats_2y": {
+    "ret_pct": 18.96,
+    "ann_vol": 23.0,
+    "max_dd": -29.32,
+    "avg_amt_yi": 0.98,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -11.26,
+    "ann_vol": 22.0,
+    "max_dd": -29.32,
+    "avg_amt_yi": 1.1,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 14,
+    "bear_days": 27,
+    "neutral_days": 181,
+    "bull_hit": 0.0,
+    "bear_hit": 51.9,
+    "bull_avg_ret": -6.46,
+    "bear_avg_ret": -0.43,
+    "neutral_avg_abs": 4.27,
+    "dir_hit": 34.1
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 90,
+    "bear_days": 33,
+    "neutral_days": 99,
+    "bull_hit": 42.2,
+    "bear_hit": 69.7,
+    "bull_avg_ret": -0.61,
+    "bear_avg_ret": -4.03,
+    "neutral_avg_abs": 5.33,
+    "dir_hit": 49.6
+   },
+   "sim_a": {
+    "strategy_ret": -22.61,
+    "buyhold_ret": -11.39,
+    "excess": -11.23,
+    "trades": 3,
+    "in_market_ratio": 33.5,
+    "strategy_maxdd": -24.8,
+    "buyhold_maxdd": -29.31
+   },
+   "sim_b": {
+    "strategy_ret": 2.85,
+    "buyhold_ret": -11.39,
+    "excess": 14.24,
+    "trades": 10,
+    "in_market_ratio": 60.3,
+    "strategy_maxdd": -11.4,
+    "buyhold_maxdd": -29.31
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "159865",
+   "name": "养殖ETF国泰",
+   "industry": "畜牧养殖",
+   "sector": "农业",
+   "scale_yi": 52.29,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.524,
+    "trend": "位于MA20下方",
+    "dif": -0.0047,
+    "dea": -0.0052,
+    "macd_golden": true,
+    "rsi12": 46.3,
+    "kdj_k": 65.4,
+    "pctb": 0.43,
+    "adx": 20.7,
+    "vol_ratio": 1.03,
+    "obv_above": true,
+    "dev60": -0.0226
+   },
+   "dir_b_now": 0,
+   "score_b_now": -2.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方金叉（弱势反弹）",
+    "OBV位于20日均线上方"
+   ],
+   "stats_2y": {
+    "ret_pct": 2.54,
+    "ann_vol": 23.2,
+    "max_dd": -30.32,
+    "avg_amt_yi": 1.66,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -17.87,
+    "ann_vol": 22.1,
+    "max_dd": -28.34,
+    "avg_amt_yi": 2.03,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 7,
+    "bear_days": 31,
+    "neutral_days": 184,
+    "bull_hit": 0.0,
+    "bear_hit": 25.8,
+    "bull_avg_ret": -6.91,
+    "bear_avg_ret": 1.61,
+    "neutral_avg_abs": 3.8,
+    "dir_hit": 21.1
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 42,
+    "bear_days": 64,
+    "neutral_days": 116,
+    "bull_hit": 45.2,
+    "bear_hit": 56.2,
+    "bull_avg_ret": -1.5,
+    "bear_avg_ret": -2.49,
+    "neutral_avg_abs": 4.01,
+    "dir_hit": 51.9
+   },
+   "sim_a": {
+    "strategy_ret": -8.43,
+    "buyhold_ret": -17.96,
+    "excess": 9.53,
+    "trades": 1,
+    "in_market_ratio": 11.6,
+    "strategy_maxdd": -11.32,
+    "buyhold_maxdd": -28.32
+   },
+   "sim_b": {
+    "strategy_ret": -13.27,
+    "buyhold_ret": -17.96,
+    "excess": 4.7,
+    "trades": 10,
+    "in_market_ratio": 29.8,
+    "strategy_maxdd": -17.24,
+    "buyhold_maxdd": -28.32
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "159698",
+   "name": "粮食ETF鹏华",
+   "industry": "种植业",
+   "sector": "农业",
+   "scale_yi": 7.86,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.844,
+    "trend": "完全空头排列",
+    "dif": -0.0241,
+    "dea": -0.0174,
+    "macd_golden": false,
+    "rsi12": 35.4,
+    "kdj_k": 15.6,
+    "pctb": 0.14,
+    "adx": 18.2,
+    "vol_ratio": 1.08,
+    "obv_above": false,
+    "dev60": -0.0774
+   },
+   "dir_b_now": -1,
+   "score_b_now": -34.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "均线完全空头排列",
+    "MACD零轴下方死叉",
+    "KDJ-K超卖(15.6)",
+    "OBV位于20日均线下方"
+   ],
+   "stats_2y": {
+    "ret_pct": 13.9,
+    "ann_vol": 26.2,
+    "max_dd": -32.28,
+    "avg_amt_yi": 0.4,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -13.08,
+    "ann_vol": 28.7,
+    "max_dd": -32.28,
+    "avg_amt_yi": 0.67,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 75,
+    "bear_days": 40,
+    "neutral_days": 107,
+    "bull_hit": 53.3,
+    "bear_hit": 65.0,
+    "bull_avg_ret": 0.3,
+    "bear_avg_ret": -3.58,
+    "neutral_avg_abs": 6.25,
+    "dir_hit": 57.4
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 84,
+    "bear_days": 36,
+    "neutral_days": 102,
+    "bull_hit": 61.9,
+    "bear_hit": 75.0,
+    "bull_avg_ret": 0.5,
+    "bear_avg_ret": -5.45,
+    "neutral_avg_abs": 6.48,
+    "dir_hit": 65.8
+   },
+   "sim_a": {
+    "strategy_ret": 6.74,
+    "buyhold_ret": -13.07,
+    "excess": 19.81,
+    "trades": 4,
+    "in_market_ratio": 52.5,
+    "strategy_maxdd": -15.62,
+    "buyhold_maxdd": -32.32
+   },
+   "sim_b": {
+    "strategy_ret": 12.11,
+    "buyhold_ret": -13.07,
+    "excess": 25.18,
+    "trades": 4,
+    "in_market_ratio": 56.6,
+    "strategy_maxdd": -15.62,
+    "buyhold_maxdd": -32.32
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "159819",
+   "name": "人工智能ETF易方达",
+   "industry": "人工智能",
+   "sector": "制造",
+   "scale_yi": 245.18,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 1.497,
+    "trend": "位于MA20下方",
+    "dif": -0.0751,
+    "dea": -0.0674,
+    "macd_golden": false,
+    "rsi12": 38.2,
+    "kdj_k": 29.9,
+    "pctb": 0.31,
+    "adx": 35.5,
+    "vol_ratio": 1.72,
+    "obv_above": true,
+    "dev60": -0.1252
+   },
+   "dir_b_now": 0,
+   "score_b_now": -1.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方死叉",
+    "放量(量比1.72)",
+    "OBV位于20日均线上方",
+    "较MA60超跌-12.5%"
+   ],
+   "stats_2y": {
+    "ret_pct": 142.63,
+    "ann_vol": 39.5,
+    "max_dd": -35.71,
+    "avg_amt_yi": 6.87,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -2.41,
+    "ann_vol": 39.8,
+    "max_dd": -35.71,
+    "avg_amt_yi": 6.81,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 50,
+    "bear_days": 3,
+    "neutral_days": 169,
+    "bull_hit": 44.0,
+    "bear_hit": 33.3,
+    "bull_avg_ret": 1.27,
+    "bear_avg_ret": 18.29,
+    "neutral_avg_abs": 8.84,
+    "dir_hit": 43.4
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 63,
+    "bear_days": 77,
+    "neutral_days": 82,
+    "bull_hit": 46.0,
+    "bear_hit": 54.5,
+    "bull_avg_ret": 0.56,
+    "bear_avg_ret": 1.02,
+    "neutral_avg_abs": 8.42,
+    "dir_hit": 50.7
+   },
+   "sim_a": {
+    "strategy_ret": -12.69,
+    "buyhold_ret": 2.46,
+    "excess": -15.16,
+    "trades": 3,
+    "in_market_ratio": 80.2,
+    "strategy_maxdd": -35.25,
+    "buyhold_maxdd": -35.7
+   },
+   "sim_b": {
+    "strategy_ret": 1.9,
+    "buyhold_ret": 2.46,
+    "excess": -0.57,
+    "trades": 8,
+    "in_market_ratio": 43.0,
+    "strategy_maxdd": -19.66,
+    "buyhold_maxdd": -35.7
+   },
+   "elapsed_s": 2.2
+  },
+  {
+   "code": "159206",
+   "name": "卫星ETF永赢",
+   "industry": "卫星导航",
+   "sector": "制造",
+   "scale_yi": 176.69,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 1.206,
+    "trend": "位于MA20下方",
+    "dif": -0.0439,
+    "dea": -0.0418,
+    "macd_golden": false,
+    "rsi12": 41.1,
+    "kdj_k": 46.6,
+    "pctb": 0.33,
+    "adx": 31.4,
+    "vol_ratio": 1.18,
+    "obv_above": false,
+    "dev60": -0.0878
+   },
+   "dir_b_now": -1,
+   "score_b_now": -26.0,
+   "sig_a_now": -1,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方死叉",
+    "OBV位于20日均线下方"
+   ],
+   "stats_2y": {
+    "ret_pct": 21.08,
+    "ann_vol": 41.2,
+    "max_dd": -47.75,
+    "avg_amt_yi": 7.11,
+    "n_days": 391
+   },
+   "stats_1y": {
+    "ret_pct": 3.34,
+    "ann_vol": 47.5,
+    "max_dd": -47.75,
+    "avg_amt_yi": 11.2,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 29,
+    "bear_days": 6,
+    "neutral_days": 187,
+    "bull_hit": 31.0,
+    "bear_hit": 0.0,
+    "bull_avg_ret": 3.32,
+    "bear_avg_ret": 6.92,
+    "neutral_avg_abs": 12.92,
+    "dir_hit": 25.7
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 39,
+    "bear_days": 58,
+    "neutral_days": 125,
+    "bull_hit": 38.5,
+    "bear_hit": 41.4,
+    "bull_avg_ret": 1.9,
+    "bear_avg_ret": 2.19,
+    "neutral_avg_abs": 14.9,
+    "dir_hit": 40.2
+   },
+   "sim_a": {
+    "strategy_ret": -8.79,
+    "buyhold_ret": 7.19,
+    "excess": -15.98,
+    "trades": 2,
+    "in_market_ratio": 60.7,
+    "strategy_maxdd": -43.63,
+    "buyhold_maxdd": -47.77
+   },
+   "sim_b": {
+    "strategy_ret": 7.56,
+    "buyhold_ret": 7.19,
+    "excess": 0.37,
+    "trades": 10,
+    "in_market_ratio": 44.6,
+    "strategy_maxdd": -41.88,
+    "buyhold_maxdd": -47.77
+   },
+   "elapsed_s": 2.4
+  },
+  {
+   "code": "512710",
+   "name": "军工龙头ETF富国",
+   "industry": "国防军工",
+   "sector": "制造",
+   "scale_yi": 76.96,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.623,
+    "trend": "站上MA20",
+    "dif": -0.0026,
+    "dea": -0.0035,
+    "macd_golden": true,
+    "rsi12": 51.1,
+    "kdj_k": 72.1,
+    "pctb": 0.56,
+    "adx": 12.3,
+    "vol_ratio": 1.09,
+    "obv_above": false,
+    "dev60": 0.0015
+   },
+   "dir_b_now": 0,
+   "score_b_now": -6.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "价格站上MA20",
+    "MACD零轴下方金叉（弱势反弹）",
+    "OBV位于20日均线下方"
+   ],
+   "stats_2y": {
+    "ret_pct": 22.16,
+    "ann_vol": 33.3,
+    "max_dd": -40.25,
+    "avg_amt_yi": 5.25,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -10.23,
+    "ann_vol": 33.5,
+    "max_dd": -40.25,
+    "avg_amt_yi": 4.98,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 15,
+    "bear_days": 16,
+    "neutral_days": 191,
+    "bull_hit": 33.3,
+    "bear_hit": 37.5,
+    "bull_avg_ret": -1.11,
+    "bear_avg_ret": 1.58,
+    "neutral_avg_abs": 8.51,
+    "dir_hit": 35.5
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 39,
+    "bear_days": 66,
+    "neutral_days": 117,
+    "bull_hit": 25.6,
+    "bear_hit": 42.4,
+    "bull_avg_ret": -0.49,
+    "bear_avg_ret": 1.06,
+    "neutral_avg_abs": 7.14,
+    "dir_hit": 36.2
+   },
+   "sim_a": {
+    "strategy_ret": -10.07,
+    "buyhold_ret": -8.24,
+    "excess": -1.83,
+    "trades": 2,
+    "in_market_ratio": 21.1,
+    "strategy_maxdd": -25.54,
+    "buyhold_maxdd": -40.24
+   },
+   "sim_b": {
+    "strategy_ret": -19.3,
+    "buyhold_ret": -8.24,
+    "excess": -11.06,
+    "trades": 12,
+    "in_market_ratio": 33.9,
+    "strategy_maxdd": -40.13,
+    "buyhold_maxdd": -40.24
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "560280",
+   "name": "工程机械ETF广发",
+   "industry": "工程机械",
+   "sector": "制造",
+   "scale_yi": 28.16,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 1.36,
+    "trend": "位于MA20下方",
+    "dif": -0.0381,
+    "dea": -0.04,
+    "macd_golden": true,
+    "rsi12": 43.4,
+    "kdj_k": 39.4,
+    "pctb": 0.41,
+    "adx": 48.1,
+    "vol_ratio": 1.31,
+    "obv_above": true,
+    "dev60": -0.0787
+   },
+   "dir_b_now": 0,
+   "score_b_now": -2.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方金叉（弱势反弹）",
+    "OBV位于20日均线上方"
+   ],
+   "stats_2y": {
+    "ret_pct": 36.14,
+    "ann_vol": 27.3,
+    "max_dd": -31.01,
+    "avg_amt_yi": 0.81,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -11.34,
+    "ann_vol": 27.1,
+    "max_dd": -31.01,
+    "avg_amt_yi": 1.49,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 26,
+    "bear_days": 18,
+    "neutral_days": 178,
+    "bull_hit": 61.5,
+    "bear_hit": 0.0,
+    "bull_avg_ret": -0.25,
+    "bear_avg_ret": 6.11,
+    "neutral_avg_abs": 5.44,
+    "dir_hit": 36.4
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 61,
+    "bear_days": 56,
+    "neutral_days": 105,
+    "bull_hit": 59.0,
+    "bear_hit": 50.0,
+    "bull_avg_ret": 0.99,
+    "bear_avg_ret": -0.07,
+    "neutral_avg_abs": 5.71,
+    "dir_hit": 54.7
+   },
+   "sim_a": {
+    "strategy_ret": -1.42,
+    "buyhold_ret": -11.06,
+    "excess": 9.64,
+    "trades": 2,
+    "in_market_ratio": 18.6,
+    "strategy_maxdd": -14.83,
+    "buyhold_maxdd": -31.0
+   },
+   "sim_b": {
+    "strategy_ret": -0.19,
+    "buyhold_ret": -11.06,
+    "excess": 10.87,
+    "trades": 7,
+    "in_market_ratio": 44.6,
+    "strategy_maxdd": -16.38,
+    "buyhold_maxdd": -31.0
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "562500",
+   "name": "机器人ETF华夏",
+   "industry": "机器人",
+   "sector": "制造",
+   "scale_yi": 174.44,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.885,
+    "trend": "站上MA20",
+    "dif": -0.0262,
+    "dea": -0.0307,
+    "macd_golden": true,
+    "rsi12": 54.5,
+    "kdj_k": 63.7,
+    "pctb": 0.59,
+    "adx": 42.1,
+    "vol_ratio": 1.61,
+    "obv_above": true,
+    "dev60": -0.0477
+   },
+   "dir_b_now": 0,
+   "score_b_now": 14.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "价格站上MA20",
+    "MACD零轴下方金叉（弱势反弹）",
+    "放量(量比1.61)",
+    "OBV位于20日均线上方"
+   ],
+   "stats_2y": {
+    "ret_pct": 59.75,
+    "ann_vol": 35.1,
+    "max_dd": -35.28,
+    "avg_amt_yi": 9.08,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -13.57,
+    "ann_vol": 32.4,
+    "max_dd": -35.28,
+    "avg_amt_yi": 9.48,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 54,
+    "bear_days": 39,
+    "neutral_days": 129,
+    "bull_hit": 33.3,
+    "bear_hit": 28.2,
+    "bull_avg_ret": -0.33,
+    "bear_avg_ret": 3.39,
+    "neutral_avg_abs": 8.39,
+    "dir_hit": 31.2
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 35,
+    "bear_days": 77,
+    "neutral_days": 110,
+    "bull_hit": 25.7,
+    "bear_hit": 63.6,
+    "bull_avg_ret": -2.73,
+    "bear_avg_ret": -1.36,
+    "neutral_avg_abs": 8.62,
+    "dir_hit": 51.8
+   },
+   "sim_a": {
+    "strategy_ret": -15.54,
+    "buyhold_ret": -12.27,
+    "excess": -3.27,
+    "trades": 4,
+    "in_market_ratio": 46.3,
+    "strategy_maxdd": -24.06,
+    "buyhold_maxdd": -35.29
+   },
+   "sim_b": {
+    "strategy_ret": 0.26,
+    "buyhold_ret": -12.27,
+    "excess": 12.53,
+    "trades": 6,
+    "in_market_ratio": 35.1,
+    "strategy_maxdd": -15.67,
+    "buyhold_maxdd": -35.29
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "588850",
+   "name": "科创机械ETF嘉实",
+   "industry": "机械",
+   "sector": "制造",
+   "scale_yi": 2.44,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 1.499,
+    "trend": "位于MA20下方",
+    "dif": -0.0864,
+    "dea": -0.0765,
+    "macd_golden": false,
+    "rsi12": 38.8,
+    "kdj_k": 39.5,
+    "pctb": 0.31,
+    "adx": 37.9,
+    "vol_ratio": 1.44,
+    "obv_above": false,
+    "dev60": -0.1248
+   },
+   "dir_b_now": -1,
+   "score_b_now": -21.0,
+   "sig_a_now": -1,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方死叉",
+    "OBV位于20日均线下方",
+    "较MA60超跌-12.5%"
+   ],
+   "stats_2y": {
+    "ret_pct": 47.83,
+    "ann_vol": 38.6,
+    "max_dd": -38.9,
+    "avg_amt_yi": 0.14,
+    "n_days": 363
+   },
+   "stats_1y": {
+    "ret_pct": 11.87,
+    "ann_vol": 44.1,
+    "max_dd": -38.9,
+    "avg_amt_yi": 0.18,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 58,
+    "bear_days": 35,
+    "neutral_days": 129,
+    "bull_hit": 72.4,
+    "bear_hit": 17.1,
+    "bull_avg_ret": 4.98,
+    "bear_avg_ret": 7.67,
+    "neutral_avg_abs": 10.85,
+    "dir_hit": 51.6
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 53,
+    "bear_days": 64,
+    "neutral_days": 105,
+    "bull_hit": 64.2,
+    "bear_hit": 34.4,
+    "bull_avg_ret": 3.1,
+    "bear_avg_ret": 2.06,
+    "neutral_avg_abs": 11.41,
+    "dir_hit": 47.9
+   },
+   "sim_a": {
+    "strategy_ret": 33.2,
+    "buyhold_ret": 14.34,
+    "excess": 18.86,
+    "trades": 4,
+    "in_market_ratio": 42.1,
+    "strategy_maxdd": -17.86,
+    "buyhold_maxdd": -38.93
+   },
+   "sim_b": {
+    "strategy_ret": 0.59,
+    "buyhold_ret": 14.34,
+    "excess": -13.74,
+    "trades": 16,
+    "in_market_ratio": 45.5,
+    "strategy_maxdd": -25.28,
+    "buyhold_maxdd": -38.93
+   },
+   "elapsed_s": 2.2
+  },
+  {
+   "code": "159227",
+   "name": "航空航天ETF华夏",
+   "industry": "航空航天",
+   "sector": "制造",
+   "scale_yi": 48.2,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 231,
+   "snap": {
+    "close": 0.983,
+    "trend": "位于MA20下方",
+    "dif": -0.01,
+    "dea": -0.0117,
+    "macd_golden": true,
+    "rsi12": 49.1,
+    "kdj_k": 69.5,
+    "pctb": 0.49,
+    "adx": 12.9,
+    "vol_ratio": 1.02,
+    "obv_above": false,
+    "dev60": -0.0168
+   },
+   "dir_b_now": -1,
+   "score_b_now": -18.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方金叉（弱势反弹）",
+    "OBV位于20日均线下方"
+   ],
+   "stats_2y": {
+    "ret_pct": -0.71,
+    "ann_vol": 33.4,
+    "max_dd": -44.83,
+    "avg_amt_yi": 2.62,
+    "n_days": 350
+   },
+   "stats_1y": {
+    "ret_pct": -14.52,
+    "ann_vol": 36.1,
+    "max_dd": -44.83,
+    "avg_amt_yi": 3.27,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 211,
+    "bull_days": 6,
+    "bear_days": 13,
+    "neutral_days": 192,
+    "bull_hit": 50.0,
+    "bear_hit": 61.5,
+    "bull_avg_ret": 0.29,
+    "bear_avg_ret": 0.38,
+    "neutral_avg_abs": 9.23,
+    "dir_hit": 57.9
+   },
+   "eval_b_n20": {
+    "n_days": 211,
+    "bull_days": 31,
+    "bear_days": 70,
+    "neutral_days": 110,
+    "bull_hit": 32.3,
+    "bear_hit": 48.6,
+    "bull_avg_ret": 0.85,
+    "bear_avg_ret": -0.55,
+    "neutral_avg_abs": 8.26,
+    "dir_hit": 43.6
+   },
+   "sim_a": {
+    "strategy_ret": -5.16,
+    "buyhold_ret": -13.55,
+    "excess": 8.39,
+    "trades": 2,
+    "in_market_ratio": 23.8,
+    "strategy_maxdd": -27.7,
+    "buyhold_maxdd": -44.84
+   },
+   "sim_b": {
+    "strategy_ret": -0.69,
+    "buyhold_ret": -13.55,
+    "excess": 12.87,
+    "trades": 8,
+    "in_market_ratio": 32.0,
+    "strategy_maxdd": -33.02,
+    "buyhold_maxdd": -44.84
+   },
+   "elapsed_s": 2.1
+  },
+  {
+   "code": "560080",
+   "name": "中药ETF汇添富",
+   "industry": "中药",
+   "sector": "医药",
+   "scale_yi": 23.05,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.951,
+    "trend": "站上MA20",
+    "dif": 0.0021,
+    "dea": 0.0005,
+    "macd_golden": true,
+    "rsi12": 49.6,
+    "kdj_k": 43.3,
+    "pctb": 0.56,
+    "adx": 17.0,
+    "vol_ratio": 0.58,
+    "obv_above": false,
+    "dev60": -0.0139
+   },
+   "dir_b_now": 0,
+   "score_b_now": 8.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "价格站上MA20",
+    "MACD零轴上方金叉",
+    "缩量(量比0.58)",
+    "OBV位于20日均线下方"
+   ],
+   "stats_2y": {
+    "ret_pct": -3.16,
+    "ann_vol": 21.6,
+    "max_dd": -31.53,
+    "avg_amt_yi": 0.68,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -12.11,
+    "ann_vol": 18.9,
+    "max_dd": -24.36,
+    "avg_amt_yi": 0.69,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 16,
+    "bear_days": 34,
+    "neutral_days": 172,
+    "bull_hit": 12.5,
+    "bear_hit": 38.2,
+    "bull_avg_ret": -2.99,
+    "bear_avg_ret": 2.64,
+    "neutral_avg_abs": 3.08,
+    "dir_hit": 30.0
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 20,
+    "bear_days": 104,
+    "neutral_days": 98,
+    "bull_hit": 20.0,
+    "bear_hit": 58.7,
+    "bull_avg_ret": -2.59,
+    "bear_avg_ret": -0.24,
+    "neutral_avg_abs": 3.69,
+    "dir_hit": 52.4
+   },
+   "sim_a": {
+    "strategy_ret": -19.21,
+    "buyhold_ret": -12.47,
+    "excess": -6.74,
+    "trades": 3,
+    "in_market_ratio": 79.3,
+    "strategy_maxdd": -23.47,
+    "buyhold_maxdd": -24.37
+   },
+   "sim_b": {
+    "strategy_ret": -10.45,
+    "buyhold_ret": -12.47,
+    "excess": 2.02,
+    "trades": 7,
+    "in_market_ratio": 25.2,
+    "strategy_maxdd": -11.4,
+    "buyhold_maxdd": -24.37
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "159992",
+   "name": "创新药ETF银华",
+   "industry": "创新药",
+   "sector": "医药",
+   "scale_yi": 159.65,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.81,
+    "trend": "位于MA20下方",
+    "dif": -0.0127,
+    "dea": -0.0106,
+    "macd_golden": false,
+    "rsi12": 44.2,
+    "kdj_k": 33.4,
+    "pctb": 0.29,
+    "adx": 12.2,
+    "vol_ratio": 1.16,
+    "obv_above": false,
+    "dev60": -0.0507
+   },
+   "dir_b_now": -1,
+   "score_b_now": -26.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方死叉",
+    "OBV位于20日均线下方"
+   ],
+   "stats_2y": {
+    "ret_pct": 33.88,
+    "ann_vol": 30.8,
+    "max_dd": -29.93,
+    "avg_amt_yi": 6.12,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -10.69,
+    "ann_vol": 30.3,
+    "max_dd": -23.32,
+    "avg_amt_yi": 7.51,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 41,
+    "bear_days": 14,
+    "neutral_days": 167,
+    "bull_hit": 53.7,
+    "bear_hit": 0.0,
+    "bull_avg_ret": -0.93,
+    "bear_avg_ret": 15.57,
+    "neutral_avg_abs": 5.18,
+    "dir_hit": 40.0
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 42,
+    "bear_days": 89,
+    "neutral_days": 91,
+    "bull_hit": 31.0,
+    "bear_hit": 60.7,
+    "bull_avg_ret": -2.98,
+    "bear_avg_ret": 0.07,
+    "neutral_avg_abs": 6.69,
+    "dir_hit": 51.1
+   },
+   "sim_a": {
+    "strategy_ret": -12.43,
+    "buyhold_ret": -10.13,
+    "excess": -2.3,
+    "trades": 3,
+    "in_market_ratio": 45.5,
+    "strategy_maxdd": -15.37,
+    "buyhold_maxdd": -23.28
+   },
+   "sim_b": {
+    "strategy_ret": -8.81,
+    "buyhold_ret": -10.13,
+    "excess": 1.32,
+    "trades": 6,
+    "in_market_ratio": 30.6,
+    "strategy_maxdd": -12.75,
+    "buyhold_maxdd": -23.28
+   },
+   "elapsed_s": 2.2
+  },
+  {
+   "code": "159883",
+   "name": "医疗器械ETF永赢",
+   "industry": "医疗器械",
+   "sector": "医药",
+   "scale_yi": 38.29,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.441,
+    "trend": "站上MA20",
+    "dif": -0.0013,
+    "dea": -0.0017,
+    "macd_golden": true,
+    "rsi12": 56.2,
+    "kdj_k": 59.3,
+    "pctb": 0.71,
+    "adx": 16.6,
+    "vol_ratio": 1.38,
+    "obv_above": false,
+    "dev60": 0.0079
+   },
+   "dir_b_now": 0,
+   "score_b_now": -6.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "价格站上MA20",
+    "MACD零轴下方金叉（弱势反弹）",
+    "OBV位于20日均线下方"
+   ],
+   "stats_2y": {
+    "ret_pct": 2.56,
+    "ann_vol": 25.4,
+    "max_dd": -30.69,
+    "avg_amt_yi": 1.03,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -17.26,
+    "ann_vol": 21.9,
+    "max_dd": -27.44,
+    "avg_amt_yi": 1.28,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 15,
+    "bear_days": 52,
+    "neutral_days": 155,
+    "bull_hit": 0.0,
+    "bear_hit": 32.7,
+    "bull_avg_ret": -4.27,
+    "bear_avg_ret": 2.46,
+    "neutral_avg_abs": 4.15,
+    "dir_hit": 25.4
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 32,
+    "bear_days": 88,
+    "neutral_days": 102,
+    "bull_hit": 18.8,
+    "bear_hit": 56.8,
+    "bull_avg_ret": -3.15,
+    "bear_avg_ret": -0.87,
+    "neutral_avg_abs": 3.81,
+    "dir_hit": 46.7
+   },
+   "sim_a": {
+    "strategy_ret": -1.67,
+    "buyhold_ret": -17.08,
+    "excess": 15.41,
+    "trades": 2,
+    "in_market_ratio": 7.9,
+    "strategy_maxdd": -9.39,
+    "buyhold_maxdd": -27.41
+   },
+   "sim_b": {
+    "strategy_ret": -10.3,
+    "buyhold_ret": -17.08,
+    "excess": 6.78,
+    "trades": 8,
+    "in_market_ratio": 23.1,
+    "strategy_maxdd": -16.59,
+    "buyhold_maxdd": -27.41
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "512170",
+   "name": "医疗ETF华宝",
+   "industry": "医药生物",
+   "sector": "医药",
+   "scale_yi": 256.24,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.334,
+    "trend": "位于MA20下方",
+    "dif": -0.0027,
+    "dea": -0.002,
+    "macd_golden": false,
+    "rsi12": 49.2,
+    "kdj_k": 50.6,
+    "pctb": 0.4,
+    "adx": 18.9,
+    "vol_ratio": 1.28,
+    "obv_above": false,
+    "dev60": -0.013
+   },
+   "dir_b_now": -1,
+   "score_b_now": -26.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方死叉",
+    "OBV位于20日均线下方"
+   ],
+   "stats_2y": {
+    "ret_pct": 22.79,
+    "ann_vol": 27.2,
+    "max_dd": -27.61,
+    "avg_amt_yi": 6.3,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -10.22,
+    "ann_vol": 23.8,
+    "max_dd": -25.38,
+    "avg_amt_yi": 5.94,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 26,
+    "bear_days": 56,
+    "neutral_days": 140,
+    "bull_hit": 15.4,
+    "bear_hit": 32.1,
+    "bull_avg_ret": -3.23,
+    "bear_avg_ret": 3.81,
+    "neutral_avg_abs": 5.66,
+    "dir_hit": 26.8
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 44,
+    "bear_days": 96,
+    "neutral_days": 82,
+    "bull_hit": 50.0,
+    "bear_hit": 67.7,
+    "bull_avg_ret": 0.89,
+    "bear_avg_ret": -1.43,
+    "neutral_avg_abs": 4.95,
+    "dir_hit": 62.1
+   },
+   "sim_a": {
+    "strategy_ret": -2.94,
+    "buyhold_ret": -9.7,
+    "excess": 6.76,
+    "trades": 3,
+    "in_market_ratio": 45.0,
+    "strategy_maxdd": -17.95,
+    "buyhold_maxdd": -25.37
+   },
+   "sim_b": {
+    "strategy_ret": 1.53,
+    "buyhold_ret": -9.7,
+    "excess": 11.23,
+    "trades": 6,
+    "in_market_ratio": 33.1,
+    "strategy_maxdd": -11.38,
+    "buyhold_maxdd": -25.37
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "562860",
+   "name": "疫苗ETF嘉实",
+   "industry": "疫苗",
+   "sector": "医药",
+   "scale_yi": 2.13,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.615,
+    "trend": "位于MA20下方",
+    "dif": -0.0104,
+    "dea": -0.0061,
+    "macd_golden": false,
+    "rsi12": 42.1,
+    "kdj_k": 22.4,
+    "pctb": 0.22,
+    "adx": 12.2,
+    "vol_ratio": 1.49,
+    "obv_above": false,
+    "dev60": -0.0486
+   },
+   "dir_b_now": -1,
+   "score_b_now": -26.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方死叉",
+    "OBV位于20日均线下方"
+   ],
+   "stats_2y": {
+    "ret_pct": 15.82,
+    "ann_vol": 29.5,
+    "max_dd": -27.78,
+    "avg_amt_yi": 0.11,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -14.58,
+    "ann_vol": 30.8,
+    "max_dd": -24.18,
+    "avg_amt_yi": 0.11,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 12,
+    "bear_days": 30,
+    "neutral_days": 180,
+    "bull_hit": 0.0,
+    "bear_hit": 23.3,
+    "bull_avg_ret": -4.65,
+    "bear_avg_ret": 4.29,
+    "neutral_avg_abs": 5.09,
+    "dir_hit": 16.7
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 52,
+    "bear_days": 77,
+    "neutral_days": 93,
+    "bull_hit": 23.1,
+    "bear_hit": 49.4,
+    "bull_avg_ret": -4.38,
+    "bear_avg_ret": 0.59,
+    "neutral_avg_abs": 4.99,
+    "dir_hit": 38.8
+   },
+   "sim_a": {
+    "strategy_ret": -23.07,
+    "buyhold_ret": -14.47,
+    "excess": -8.6,
+    "trades": 3,
+    "in_market_ratio": 69.4,
+    "strategy_maxdd": -26.69,
+    "buyhold_maxdd": -24.18
+   },
+   "sim_b": {
+    "strategy_ret": -33.95,
+    "buyhold_ret": -14.47,
+    "excess": -19.49,
+    "trades": 14,
+    "in_market_ratio": 36.4,
+    "strategy_maxdd": -34.79,
+    "buyhold_maxdd": -24.18
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "588200",
+   "name": "科创芯片ETF嘉实",
+   "industry": "半导体",
+   "sector": "半导体/电子",
+   "scale_yi": 642.79,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.922,
+    "trend": "位于MA20下方",
+    "dif": -0.0641,
+    "dea": -0.0547,
+    "macd_golden": false,
+    "rsi12": 31.2,
+    "kdj_k": 20.7,
+    "pctb": 0.25,
+    "adx": 34.6,
+    "vol_ratio": 1.55,
+    "obv_above": false,
+    "dev60": -0.1753
+   },
+   "dir_b_now": -1,
+   "score_b_now": -17.0,
+   "sig_a_now": -1,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方死叉",
+    "放量(量比1.55)",
+    "OBV位于20日均线下方",
+    "较MA60超跌-17.5%"
+   ],
+   "stats_2y": {
+    "ret_pct": 210.44,
+    "ann_vol": 50.4,
+    "max_dd": -45.96,
+    "avg_amt_yi": 13.92,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": 10.68,
+    "ann_vol": 49.7,
+    "max_dd": -45.96,
+    "avg_amt_yi": 18.74,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 72,
+    "bear_days": 18,
+    "neutral_days": 132,
+    "bull_hit": 48.6,
+    "bear_hit": 33.3,
+    "bull_avg_ret": 2.97,
+    "bear_avg_ret": 11.83,
+    "neutral_avg_abs": 11.55,
+    "dir_hit": 45.6
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 33,
+    "bear_days": 57,
+    "neutral_days": 132,
+    "bull_hit": 60.6,
+    "bear_hit": 43.9,
+    "bull_avg_ret": 5.15,
+    "bear_avg_ret": 6.43,
+    "neutral_avg_abs": 12.43,
+    "dir_hit": 50.0
+   },
+   "sim_a": {
+    "strategy_ret": 26.26,
+    "buyhold_ret": 16.68,
+    "excess": 9.58,
+    "trades": 3,
+    "in_market_ratio": 68.6,
+    "strategy_maxdd": -28.29,
+    "buyhold_maxdd": -45.94
+   },
+   "sim_b": {
+    "strategy_ret": 27.0,
+    "buyhold_ret": 16.68,
+    "excess": 10.33,
+    "trades": 6,
+    "in_market_ratio": 37.2,
+    "strategy_maxdd": -28.26,
+    "buyhold_maxdd": -45.94
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "159516",
+   "name": "半导体设备ETF国泰",
+   "industry": "半导体设备",
+   "sector": "半导体/电子",
+   "scale_yi": 441.64,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.54,
+    "trend": "完全空头排列",
+    "dif": -0.0398,
+    "dea": -0.031,
+    "macd_golden": false,
+    "rsi12": 22.7,
+    "kdj_k": 12.8,
+    "pctb": 0.14,
+    "adx": 35.6,
+    "vol_ratio": 1.51,
+    "obv_above": false,
+    "dev60": -0.2077
+   },
+   "dir_b_now": 0,
+   "score_b_now": -7.0,
+   "sig_a_now": -1,
+   "reasons": [
+    "均线完全空头排列",
+    "MACD零轴下方死叉",
+    "RSI12深度超卖(22.7)",
+    "KDJ-K超卖(12.8)",
+    "放量(量比1.51)",
+    "OBV位于20日均线下方",
+    "较MA60超跌-20.8%"
+   ],
+   "stats_2y": {
+    "ret_pct": 187.23,
+    "ann_vol": 46.3,
+    "max_dd": -46.64,
+    "avg_amt_yi": 8.71,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": 45.95,
+    "ann_vol": 52.9,
+    "max_dd": -46.64,
+    "avg_amt_yi": 17.9,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 54,
+    "bear_days": 12,
+    "neutral_days": 156,
+    "bull_hit": 55.6,
+    "bear_hit": 33.3,
+    "bull_avg_ret": 11.55,
+    "bear_avg_ret": 5.53,
+    "neutral_avg_abs": 13.15,
+    "dir_hit": 51.5
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 43,
+    "bear_days": 61,
+    "neutral_days": 118,
+    "bull_hit": 67.4,
+    "bear_hit": 49.2,
+    "bull_avg_ret": 14.29,
+    "bear_avg_ret": 1.83,
+    "neutral_avg_abs": 15.35,
+    "dir_hit": 56.7
+   },
+   "sim_a": {
+    "strategy_ret": 58.16,
+    "buyhold_ret": 52.2,
+    "excess": 5.96,
+    "trades": 4,
+    "in_market_ratio": 59.9,
+    "strategy_maxdd": -33.71,
+    "buyhold_maxdd": -46.64
+   },
+   "sim_b": {
+    "strategy_ret": 75.02,
+    "buyhold_ret": 52.2,
+    "excess": 22.82,
+    "trades": 10,
+    "in_market_ratio": 49.6,
+    "strategy_maxdd": -23.45,
+    "buyhold_maxdd": -46.64
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "159732",
+   "name": "消费电子ETF华夏",
+   "industry": "消费电子",
+   "sector": "半导体/电子",
+   "scale_yi": 59.63,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 1.127,
+    "trend": "位于MA20下方",
+    "dif": -0.0665,
+    "dea": -0.0623,
+    "macd_golden": false,
+    "rsi12": 38.7,
+    "kdj_k": 40.3,
+    "pctb": 0.33,
+    "adx": 39.7,
+    "vol_ratio": 1.24,
+    "obv_above": false,
+    "dev60": -0.1356
+   },
+   "dir_b_now": -1,
+   "score_b_now": -21.0,
+   "sig_a_now": -1,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方死叉",
+    "OBV位于20日均线下方",
+    "较MA60超跌-13.6%"
+   ],
+   "stats_2y": {
+    "ret_pct": 79.46,
+    "ann_vol": 39.4,
+    "max_dd": -44.11,
+    "avg_amt_yi": 2.45,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -1.31,
+    "ann_vol": 42.9,
+    "max_dd": -44.11,
+    "avg_amt_yi": 3.1,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 52,
+    "bear_days": 18,
+    "neutral_days": 152,
+    "bull_hit": 55.8,
+    "bear_hit": 44.4,
+    "bull_avg_ret": -0.43,
+    "bear_avg_ret": -0.69,
+    "neutral_avg_abs": 9.05,
+    "dir_hit": 52.9
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 47,
+    "bear_days": 56,
+    "neutral_days": 119,
+    "bull_hit": 53.2,
+    "bear_hit": 35.7,
+    "bull_avg_ret": 0.25,
+    "bear_avg_ret": 3.83,
+    "neutral_avg_abs": 9.41,
+    "dir_hit": 43.7
+   },
+   "sim_a": {
+    "strategy_ret": -1.94,
+    "buyhold_ret": 3.04,
+    "excess": -4.98,
+    "trades": 4,
+    "in_market_ratio": 69.8,
+    "strategy_maxdd": -30.09,
+    "buyhold_maxdd": -44.12
+   },
+   "sim_b": {
+    "strategy_ret": -20.69,
+    "buyhold_ret": 3.04,
+    "excess": -23.73,
+    "trades": 14,
+    "in_market_ratio": 52.9,
+    "strategy_maxdd": -30.76,
+    "buyhold_maxdd": -44.12
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "159997",
+   "name": "电子ETF天弘",
+   "industry": "电子",
+   "sector": "半导体/电子",
+   "scale_yi": 18.74,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 1.701,
+    "trend": "位于MA20下方",
+    "dif": -0.104,
+    "dea": -0.0914,
+    "macd_golden": false,
+    "rsi12": 31.8,
+    "kdj_k": 24.9,
+    "pctb": 0.26,
+    "adx": 39.3,
+    "vol_ratio": 1.86,
+    "obv_above": false,
+    "dev60": -0.1546
+   },
+   "dir_b_now": -1,
+   "score_b_now": -17.0,
+   "sig_a_now": -1,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方死叉",
+    "放量(量比1.86)",
+    "OBV位于20日均线下方",
+    "较MA60超跌-15.5%"
+   ],
+   "stats_2y": {
+    "ret_pct": 110.26,
+    "ann_vol": 39.6,
+    "max_dd": -42.18,
+    "avg_amt_yi": 0.53,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -0.06,
+    "ann_vol": 43.0,
+    "max_dd": -42.18,
+    "avg_amt_yi": 0.72,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 54,
+    "bear_days": 26,
+    "neutral_days": 142,
+    "bull_hit": 53.7,
+    "bear_hit": 57.7,
+    "bull_avg_ret": 2.13,
+    "bear_avg_ret": 2.53,
+    "neutral_avg_abs": 9.61,
+    "dir_hit": 55.0
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 42,
+    "bear_days": 71,
+    "neutral_days": 109,
+    "bull_hit": 40.5,
+    "bear_hit": 43.7,
+    "bull_avg_ret": -1.15,
+    "bear_avg_ret": 3.54,
+    "neutral_avg_abs": 11.21,
+    "dir_hit": 42.5
+   },
+   "sim_a": {
+    "strategy_ret": 3.7,
+    "buyhold_ret": 4.68,
+    "excess": -0.98,
+    "trades": 4,
+    "in_market_ratio": 67.8,
+    "strategy_maxdd": -25.64,
+    "buyhold_maxdd": -42.19
+   },
+   "sim_b": {
+    "strategy_ret": 15.52,
+    "buyhold_ret": 4.68,
+    "excess": 10.84,
+    "trades": 8,
+    "in_market_ratio": 31.4,
+    "strategy_maxdd": -14.88,
+    "buyhold_maxdd": -42.19
+   },
+   "elapsed_s": 2.4
+  },
+  {
+   "code": "159870",
+   "name": "化工ETF鹏华",
+   "industry": "化工",
+   "sector": "周期",
+   "scale_yi": 158.91,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.687,
+    "trend": "完全空头排列",
+    "dif": -0.0267,
+    "dea": -0.0235,
+    "macd_golden": false,
+    "rsi12": 33.9,
+    "kdj_k": 22.0,
+    "pctb": 0.21,
+    "adx": 34.9,
+    "vol_ratio": 1.32,
+    "obv_above": false,
+    "dev60": -0.1145
+   },
+   "dir_b_now": -1,
+   "score_b_now": -35.0,
+   "sig_a_now": -1,
+   "reasons": [
+    "均线完全空头排列",
+    "MACD零轴下方死叉",
+    "OBV位于20日均线下方",
+    "较MA60超跌-11.4%"
+   ],
+   "stats_2y": {
+    "ret_pct": 36.04,
+    "ann_vol": 27.8,
+    "max_dd": -31.7,
+    "avg_amt_yi": 5.41,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -1.72,
+    "ann_vol": 29.6,
+    "max_dd": -31.7,
+    "avg_amt_yi": 9.02,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 42,
+    "bear_days": 22,
+    "neutral_days": 158,
+    "bull_hit": 52.4,
+    "bear_hit": 9.1,
+    "bull_avg_ret": -0.64,
+    "bear_avg_ret": 4.2,
+    "neutral_avg_abs": 7.67,
+    "dir_hit": 37.5
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 72,
+    "bear_days": 48,
+    "neutral_days": 102,
+    "bull_hit": 31.9,
+    "bear_hit": 22.9,
+    "bull_avg_ret": -2.04,
+    "bear_avg_ret": 2.74,
+    "neutral_avg_abs": 7.16,
+    "dir_hit": 28.3
+   },
+   "sim_a": {
+    "strategy_ret": -11.8,
+    "buyhold_ret": -1.94,
+    "excess": -9.86,
+    "trades": 4,
+    "in_market_ratio": 58.7,
+    "strategy_maxdd": -28.95,
+    "buyhold_maxdd": -31.66
+   },
+   "sim_b": {
+    "strategy_ret": -9.12,
+    "buyhold_ret": -1.94,
+    "excess": -7.18,
+    "trades": 10,
+    "in_market_ratio": 58.7,
+    "strategy_maxdd": -32.26,
+    "buyhold_maxdd": -31.66
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "159745",
+   "name": "建材ETF国泰",
+   "industry": "建材",
+   "sector": "周期",
+   "scale_yi": 7.25,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.518,
+    "trend": "位于MA20下方",
+    "dif": -0.0033,
+    "dea": -0.0033,
+    "macd_golden": true,
+    "rsi12": 47.1,
+    "kdj_k": 49.9,
+    "pctb": 0.37,
+    "adx": 10.8,
+    "vol_ratio": 1.41,
+    "obv_above": true,
+    "dev60": -0.0209
+   },
+   "dir_b_now": 0,
+   "score_b_now": -2.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方金叉（弱势反弹）",
+    "OBV位于20日均线上方"
+   ],
+   "stats_2y": {
+    "ret_pct": 9.05,
+    "ann_vol": 26.6,
+    "max_dd": -32.89,
+    "avg_amt_yi": 0.71,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -20.06,
+    "ann_vol": 22.7,
+    "max_dd": -32.89,
+    "avg_amt_yi": 0.84,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 19,
+    "bear_days": 33,
+    "neutral_days": 170,
+    "bull_hit": 10.5,
+    "bear_hit": 63.6,
+    "bull_avg_ret": -6.6,
+    "bear_avg_ret": -2.74,
+    "neutral_avg_abs": 4.56,
+    "dir_hit": 44.2
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 45,
+    "bear_days": 70,
+    "neutral_days": 107,
+    "bull_hit": 33.3,
+    "bear_hit": 62.9,
+    "bull_avg_ret": -0.88,
+    "bear_avg_ret": -2.82,
+    "neutral_avg_abs": 4.42,
+    "dir_hit": 51.3
+   },
+   "sim_a": {
+    "strategy_ret": -8.7,
+    "buyhold_ret": -20.45,
+    "excess": 11.75,
+    "trades": 2,
+    "in_market_ratio": 14.9,
+    "strategy_maxdd": -17.57,
+    "buyhold_maxdd": -32.89
+   },
+   "sim_b": {
+    "strategy_ret": -2.98,
+    "buyhold_ret": -20.45,
+    "excess": 17.47,
+    "trades": 8,
+    "in_market_ratio": 31.0,
+    "strategy_maxdd": -11.87,
+    "buyhold_maxdd": -32.89
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "512400",
+   "name": "有色金属ETF南方",
+   "industry": "有色金属",
+   "sector": "周期",
+   "scale_yi": 224.89,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 1.487,
+    "trend": "完全空头排列",
+    "dif": -0.0721,
+    "dea": -0.0641,
+    "macd_golden": false,
+    "rsi12": 31.1,
+    "kdj_k": 18.6,
+    "pctb": 0.19,
+    "adx": 43.3,
+    "vol_ratio": 1.28,
+    "obv_above": false,
+    "dev60": -0.1411
+   },
+   "dir_b_now": -1,
+   "score_b_now": -29.0,
+   "sig_a_now": -1,
+   "reasons": [
+    "均线完全空头排列",
+    "MACD零轴下方死叉",
+    "KDJ-K超卖(18.6)",
+    "OBV位于20日均线下方",
+    "较MA60超跌-14.1%"
+   ],
+   "stats_2y": {
+    "ret_pct": 87.04,
+    "ann_vol": 38.8,
+    "max_dd": -42.11,
+    "avg_amt_yi": 7.48,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -8.21,
+    "ann_vol": 44.4,
+    "max_dd": -42.11,
+    "avg_amt_yi": 12.56,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 35,
+    "bear_days": 13,
+    "neutral_days": 174,
+    "bull_hit": 62.9,
+    "bear_hit": 0.0,
+    "bull_avg_ret": 0.27,
+    "bear_avg_ret": 8.02,
+    "neutral_avg_abs": 10.75,
+    "dir_hit": 45.8
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 67,
+    "bear_days": 46,
+    "neutral_days": 109,
+    "bull_hit": 46.3,
+    "bear_hit": 41.3,
+    "bull_avg_ret": 2.41,
+    "bear_avg_ret": 2.06,
+    "neutral_avg_abs": 8.53,
+    "dir_hit": 44.2
+   },
+   "sim_a": {
+    "strategy_ret": 11.74,
+    "buyhold_ret": -6.58,
+    "excess": 18.32,
+    "trades": 1,
+    "in_market_ratio": 40.9,
+    "strategy_maxdd": -30.7,
+    "buyhold_maxdd": -42.14
+   },
+   "sim_b": {
+    "strategy_ret": -10.33,
+    "buyhold_ret": -6.58,
+    "excess": -3.75,
+    "trades": 8,
+    "in_market_ratio": 55.8,
+    "strategy_maxdd": -35.06,
+    "buyhold_maxdd": -42.14
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "515220",
+   "name": "煤炭ETF国泰",
+   "industry": "煤炭",
+   "sector": "周期",
+   "scale_yi": 112.79,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 1.205,
+    "trend": "完全空头排列",
+    "dif": -0.0132,
+    "dea": -0.0052,
+    "macd_golden": false,
+    "rsi12": 36.8,
+    "kdj_k": 18.6,
+    "pctb": -0.03,
+    "adx": 12.4,
+    "vol_ratio": 1.39,
+    "obv_above": false,
+    "dev60": -0.0467
+   },
+   "dir_b_now": -1,
+   "score_b_now": -28.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "均线完全空头排列",
+    "MACD零轴下方死叉",
+    "KDJ-K超卖(18.6)",
+    "贴合布林下轨(%B=-0.03)",
+    "OBV位于20日均线下方"
+   ],
+   "stats_2y": {
+    "ret_pct": 16.54,
+    "ann_vol": 30.3,
+    "max_dd": -27.34,
+    "avg_amt_yi": 5.76,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": 4.97,
+    "ann_vol": 32.5,
+    "max_dd": -25.38,
+    "avg_amt_yi": 8.47,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 43,
+    "bear_days": 34,
+    "neutral_days": 145,
+    "bull_hit": 37.2,
+    "bear_hit": 29.4,
+    "bull_avg_ret": -0.53,
+    "bear_avg_ret": 2.16,
+    "neutral_avg_abs": 6.74,
+    "dir_hit": 33.8
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 74,
+    "bear_days": 48,
+    "neutral_days": 100,
+    "bull_hit": 50.0,
+    "bear_hit": 27.1,
+    "bull_avg_ret": 0.57,
+    "bear_avg_ret": 1.74,
+    "neutral_avg_abs": 6.92,
+    "dir_hit": 41.0
+   },
+   "sim_a": {
+    "strategy_ret": -14.89,
+    "buyhold_ret": 2.96,
+    "excess": -17.85,
+    "trades": 5,
+    "in_market_ratio": 67.4,
+    "strategy_maxdd": -31.24,
+    "buyhold_maxdd": -25.37
+   },
+   "sim_b": {
+    "strategy_ret": -12.37,
+    "buyhold_ret": 2.96,
+    "excess": -15.33,
+    "trades": 14,
+    "in_market_ratio": 62.4,
+    "strategy_maxdd": -23.81,
+    "buyhold_maxdd": -25.37
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "561360",
+   "name": "石油ETF国泰",
+   "industry": "石油",
+   "sector": "周期",
+   "scale_yi": 17.68,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 1.379,
+    "trend": "完全空头排列",
+    "dif": -0.0206,
+    "dea": -0.0114,
+    "macd_golden": false,
+    "rsi12": 36.2,
+    "kdj_k": 14.8,
+    "pctb": 0.07,
+    "adx": 14.5,
+    "vol_ratio": 1.02,
+    "obv_above": false,
+    "dev60": -0.0506
+   },
+   "dir_b_now": -1,
+   "score_b_now": -28.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "均线完全空头排列",
+    "MACD零轴下方死叉",
+    "KDJ-K超卖(14.8)",
+    "贴合布林下轨(%B=0.07)",
+    "OBV位于20日均线下方"
+   ],
+   "stats_2y": {
+    "ret_pct": 38.73,
+    "ann_vol": 25.7,
+    "max_dd": -31.48,
+    "avg_amt_yi": 1.2,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": 22.25,
+    "ann_vol": 29.5,
+    "max_dd": -31.48,
+    "avg_amt_yi": 2.4,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 50,
+    "bear_days": 16,
+    "neutral_days": 156,
+    "bull_hit": 72.0,
+    "bear_hit": 93.8,
+    "bull_avg_ret": 6.3,
+    "bear_avg_ret": -4.96,
+    "neutral_avg_abs": 6.06,
+    "dir_hit": 77.3
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 82,
+    "bear_days": 42,
+    "neutral_days": 98,
+    "bull_hit": 64.6,
+    "bear_hit": 59.5,
+    "bull_avg_ret": 4.45,
+    "bear_avg_ret": -0.54,
+    "neutral_avg_abs": 6.42,
+    "dir_hit": 62.9
+   },
+   "sim_a": {
+    "strategy_ret": 19.65,
+    "buyhold_ret": 20.65,
+    "excess": -1.0,
+    "trades": 4,
+    "in_market_ratio": 55.0,
+    "strategy_maxdd": -27.4,
+    "buyhold_maxdd": -31.48
+   },
+   "sim_b": {
+    "strategy_ret": 26.63,
+    "buyhold_ret": 20.65,
+    "excess": 5.98,
+    "trades": 7,
+    "in_market_ratio": 67.4,
+    "strategy_maxdd": -25.38,
+    "buyhold_maxdd": -31.48
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "516150",
+   "name": "稀土ETF嘉实",
+   "industry": "稀土永磁",
+   "sector": "周期",
+   "scale_yi": 78.31,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 1.498,
+    "trend": "位于MA20下方",
+    "dif": -0.0565,
+    "dea": -0.0563,
+    "macd_golden": false,
+    "rsi12": 39.3,
+    "kdj_k": 37.6,
+    "pctb": 0.36,
+    "adx": 50.8,
+    "vol_ratio": 1.28,
+    "obv_above": true,
+    "dev60": -0.0959
+   },
+   "dir_b_now": 0,
+   "score_b_now": -10.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方死叉",
+    "OBV位于20日均线上方"
+   ],
+   "stats_2y": {
+    "ret_pct": 84.26,
+    "ann_vol": 36.3,
+    "max_dd": -37.58,
+    "avg_amt_yi": 2.22,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -17.6,
+    "ann_vol": 36.2,
+    "max_dd": -37.58,
+    "avg_amt_yi": 2.81,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 17,
+    "bear_days": 26,
+    "neutral_days": 179,
+    "bull_hit": 76.5,
+    "bear_hit": 3.8,
+    "bull_avg_ret": 2.31,
+    "bear_avg_ret": 8.44,
+    "neutral_avg_abs": 8.96,
+    "dir_hit": 32.6
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 49,
+    "bear_days": 47,
+    "neutral_days": 126,
+    "bull_hit": 20.4,
+    "bear_hit": 31.9,
+    "bull_avg_ret": -8.76,
+    "bear_avg_ret": 3.0,
+    "neutral_avg_abs": 8.36,
+    "dir_hit": 26.0
+   },
+   "sim_a": {
+    "strategy_ret": -21.14,
+    "buyhold_ret": -15.7,
+    "excess": -5.44,
+    "trades": 4,
+    "in_market_ratio": 27.7,
+    "strategy_maxdd": -29.78,
+    "buyhold_maxdd": -37.56
+   },
+   "sim_b": {
+    "strategy_ret": -30.43,
+    "buyhold_ret": -15.7,
+    "excess": -14.73,
+    "trades": 10,
+    "in_market_ratio": 48.3,
+    "strategy_maxdd": -35.03,
+    "buyhold_maxdd": -37.56
+   },
+   "elapsed_s": 2.2
+  },
+  {
+   "code": "562800",
+   "name": "稀有金属ETF嘉实",
+   "industry": "稀有金属",
+   "sector": "周期",
+   "scale_yi": 68.86,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.744,
+    "trend": "位于MA20下方",
+    "dif": -0.043,
+    "dea": -0.0387,
+    "macd_golden": false,
+    "rsi12": 26.1,
+    "kdj_k": 18.1,
+    "pctb": 0.21,
+    "adx": 54.7,
+    "vol_ratio": 1.42,
+    "obv_above": false,
+    "dev60": -0.1616
+   },
+   "dir_b_now": 0,
+   "score_b_now": -3.0,
+   "sig_a_now": -1,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方死叉",
+    "RSI12超卖(26.1)",
+    "KDJ-K超卖(18.1)",
+    "OBV位于20日均线下方",
+    "较MA60超跌-16.2%"
+   ],
+   "stats_2y": {
+    "ret_pct": 84.62,
+    "ann_vol": 38.1,
+    "max_dd": -41.34,
+    "avg_amt_yi": 2.09,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -11.11,
+    "ann_vol": 41.4,
+    "max_dd": -41.34,
+    "avg_amt_yi": 3.57,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 23,
+    "bear_days": 21,
+    "neutral_days": 178,
+    "bull_hit": 47.8,
+    "bear_hit": 14.3,
+    "bull_avg_ret": -1.89,
+    "bear_avg_ret": 7.37,
+    "neutral_avg_abs": 10.56,
+    "dir_hit": 31.8
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 59,
+    "bear_days": 51,
+    "neutral_days": 112,
+    "bull_hit": 37.3,
+    "bear_hit": 33.3,
+    "bull_avg_ret": -3.0,
+    "bear_avg_ret": 2.47,
+    "neutral_avg_abs": 9.01,
+    "dir_hit": 35.5
+   },
+   "sim_a": {
+    "strategy_ret": -12.55,
+    "buyhold_ret": -9.11,
+    "excess": -3.44,
+    "trades": 4,
+    "in_market_ratio": 45.5,
+    "strategy_maxdd": -37.78,
+    "buyhold_maxdd": -41.34
+   },
+   "sim_b": {
+    "strategy_ret": -26.36,
+    "buyhold_ret": -9.11,
+    "excess": -17.24,
+    "trades": 12,
+    "in_market_ratio": 50.4,
+    "strategy_maxdd": -40.66,
+    "buyhold_maxdd": -41.34
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "515210",
+   "name": "钢铁ETF国泰",
+   "industry": "钢铁",
+   "sector": "周期",
+   "scale_yi": 10.47,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 1.081,
+    "trend": "完全空头排列",
+    "dif": -0.0165,
+    "dea": -0.0138,
+    "macd_golden": false,
+    "rsi12": 32.1,
+    "kdj_k": 25.9,
+    "pctb": 0.03,
+    "adx": 27.3,
+    "vol_ratio": 1.11,
+    "obv_above": false,
+    "dev60": -0.0602
+   },
+   "dir_b_now": -1,
+   "score_b_now": -34.0,
+   "sig_a_now": -1,
+   "reasons": [
+    "均线完全空头排列",
+    "MACD零轴下方死叉",
+    "贴合布林下轨(%B=0.03)",
+    "OBV位于20日均线下方"
+   ],
+   "stats_2y": {
+    "ret_pct": 21.46,
+    "ann_vol": 27.2,
+    "max_dd": -35.56,
+    "avg_amt_yi": 1.2,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -22.29,
+    "ann_vol": 23.6,
+    "max_dd": -35.56,
+    "avg_amt_yi": 1.27,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 32,
+    "bear_days": 53,
+    "neutral_days": 137,
+    "bull_hit": 53.1,
+    "bear_hit": 56.6,
+    "bull_avg_ret": 0.17,
+    "bear_avg_ret": -2.82,
+    "neutral_avg_abs": 5.58,
+    "dir_hit": 55.3
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 58,
+    "bear_days": 48,
+    "neutral_days": 116,
+    "bull_hit": 36.2,
+    "bear_hit": 47.9,
+    "bull_avg_ret": -2.72,
+    "bear_avg_ret": -0.97,
+    "neutral_avg_abs": 5.07,
+    "dir_hit": 41.5
+   },
+   "sim_a": {
+    "strategy_ret": -15.36,
+    "buyhold_ret": -23.17,
+    "excess": 7.81,
+    "trades": 6,
+    "in_market_ratio": 46.7,
+    "strategy_maxdd": -22.79,
+    "buyhold_maxdd": -35.55
+   },
+   "sim_b": {
+    "strategy_ret": -5.4,
+    "buyhold_ret": -23.17,
+    "excess": 17.78,
+    "trades": 7,
+    "in_market_ratio": 41.7,
+    "strategy_maxdd": -18.69,
+    "buyhold_maxdd": -35.55
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "517520",
+   "name": "黄金股ETF永赢",
+   "industry": "黄金股",
+   "sector": "周期",
+   "scale_yi": 127.61,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 1.734,
+    "trend": "完全空头排列",
+    "dif": -0.0769,
+    "dea": -0.0681,
+    "macd_golden": false,
+    "rsi12": 35.3,
+    "kdj_k": 24.6,
+    "pctb": 0.14,
+    "adx": 28.5,
+    "vol_ratio": 0.98,
+    "obv_above": false,
+    "dev60": -0.1381
+   },
+   "dir_b_now": -1,
+   "score_b_now": -35.0,
+   "sig_a_now": -1,
+   "reasons": [
+    "均线完全空头排列",
+    "MACD零轴下方死叉",
+    "OBV位于20日均线下方",
+    "较MA60超跌-13.8%"
+   ],
+   "stats_2y": {
+    "ret_pct": 61.0,
+    "ann_vol": 41.2,
+    "max_dd": -49.49,
+    "avg_amt_yi": 4.19,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -10.57,
+    "ann_vol": 48.9,
+    "max_dd": -49.49,
+    "avg_amt_yi": 6.49,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 36,
+    "bear_days": 16,
+    "neutral_days": 170,
+    "bull_hit": 27.8,
+    "bear_hit": 31.2,
+    "bull_avg_ret": -6.19,
+    "bear_avg_ret": 3.66,
+    "neutral_avg_abs": 12.82,
+    "dir_hit": 28.8
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 47,
+    "bear_days": 60,
+    "neutral_days": 115,
+    "bull_hit": 78.7,
+    "bear_hit": 63.3,
+    "bull_avg_ret": 11.75,
+    "bear_avg_ret": -4.05,
+    "neutral_avg_abs": 10.4,
+    "dir_hit": 70.1
+   },
+   "sim_a": {
+    "strategy_ret": -18.49,
+    "buyhold_ret": -10.54,
+    "excess": -7.95,
+    "trades": 4,
+    "in_market_ratio": 30.6,
+    "strategy_maxdd": -40.21,
+    "buyhold_maxdd": -49.5
+   },
+   "sim_b": {
+    "strategy_ret": 47.87,
+    "buyhold_ret": -10.54,
+    "excess": 58.41,
+    "trades": 6,
+    "in_market_ratio": 43.4,
+    "strategy_maxdd": -25.92,
+    "buyhold_maxdd": -49.5
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "159996",
+   "name": "家电ETF国泰",
+   "industry": "家电",
+   "sector": "大消费",
+   "scale_yi": 7.38,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 1.352,
+    "trend": "位于MA20下方",
+    "dif": -0.0194,
+    "dea": -0.0166,
+    "macd_golden": false,
+    "rsi12": 41.0,
+    "kdj_k": 34.0,
+    "pctb": 0.26,
+    "adx": 35.4,
+    "vol_ratio": 0.97,
+    "obv_above": false,
+    "dev60": -0.0389
+   },
+   "dir_b_now": -1,
+   "score_b_now": -26.0,
+   "sig_a_now": -1,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方死叉",
+    "OBV位于20日均线下方"
+   ],
+   "stats_2y": {
+    "ret_pct": 28.64,
+    "ann_vol": 21.5,
+    "max_dd": -18.89,
+    "avg_amt_yi": 0.77,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -11.05,
+    "ann_vol": 16.7,
+    "max_dd": -18.89,
+    "avg_amt_yi": 0.66,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 21,
+    "bear_days": 29,
+    "neutral_days": 172,
+    "bull_hit": 4.8,
+    "bear_hit": 41.4,
+    "bull_avg_ret": -4.0,
+    "bear_avg_ret": 1.32,
+    "neutral_avg_abs": 3.61,
+    "dir_hit": 26.0
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 68,
+    "bear_days": 64,
+    "neutral_days": 90,
+    "bull_hit": 30.9,
+    "bear_hit": 57.8,
+    "bull_avg_ret": -0.88,
+    "bear_avg_ret": -0.08,
+    "neutral_avg_abs": 4.24,
+    "dir_hit": 43.9
+   },
+   "sim_a": {
+    "strategy_ret": -12.35,
+    "buyhold_ret": -10.52,
+    "excess": -1.83,
+    "trades": 4,
+    "in_market_ratio": 21.1,
+    "strategy_maxdd": -14.26,
+    "buyhold_maxdd": -18.92
+   },
+   "sim_b": {
+    "strategy_ret": -4.44,
+    "buyhold_ret": -10.52,
+    "excess": 6.08,
+    "trades": 10,
+    "in_market_ratio": 45.9,
+    "strategy_maxdd": -9.39,
+    "buyhold_maxdd": -18.92
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "513360",
+   "name": "教育ETF博时",
+   "industry": "教育",
+   "sector": "大消费",
+   "scale_yi": 2.79,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.435,
+    "trend": "完全空头排列",
+    "dif": -0.0072,
+    "dea": -0.0044,
+    "macd_golden": false,
+    "rsi12": 34.3,
+    "kdj_k": 25.0,
+    "pctb": 0.04,
+    "adx": 22.3,
+    "vol_ratio": 2.29,
+    "obv_above": true,
+    "dev60": -0.0592
+   },
+   "dir_b_now": 0,
+   "score_b_now": -14.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "均线完全空头排列",
+    "MACD零轴下方死叉",
+    "贴合布林下轨(%B=0.04)",
+    "放量(量比2.29)",
+    "OBV位于20日均线上方"
+   ],
+   "stats_2y": {
+    "ret_pct": 4.07,
+    "ann_vol": 27.9,
+    "max_dd": -31.77,
+    "avg_amt_yi": 1.84,
+    "n_days": 515
+   },
+   "stats_1y": {
+    "ret_pct": -24.22,
+    "ann_vol": 20.2,
+    "max_dd": -31.2,
+    "avg_amt_yi": 0.67,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 19,
+    "bear_days": 26,
+    "neutral_days": 177,
+    "bull_hit": 26.3,
+    "bear_hit": 61.5,
+    "bull_avg_ret": -1.18,
+    "bear_avg_ret": -3.61,
+    "neutral_avg_abs": 4.93,
+    "dir_hit": 46.7
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 36,
+    "bear_days": 73,
+    "neutral_days": 113,
+    "bull_hit": 16.7,
+    "bear_hit": 71.2,
+    "bull_avg_ret": -2.68,
+    "bear_avg_ret": -3.55,
+    "neutral_avg_abs": 4.67,
+    "dir_hit": 53.2
+   },
+   "sim_a": {
+    "strategy_ret": -13.0,
+    "buyhold_ret": -23.7,
+    "excess": 10.7,
+    "trades": 3,
+    "in_market_ratio": 30.2,
+    "strategy_maxdd": -14.41,
+    "buyhold_maxdd": -31.22
+   },
+   "sim_b": {
+    "strategy_ret": -4.34,
+    "buyhold_ret": -23.7,
+    "excess": 19.36,
+    "trades": 5,
+    "in_market_ratio": 34.3,
+    "strategy_maxdd": -8.62,
+    "buyhold_maxdd": -31.22
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "159766",
+   "name": "旅游ETF富国",
+   "industry": "旅游酒店",
+   "sector": "大消费",
+   "scale_yi": 29.32,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.518,
+    "trend": "完全空头排列",
+    "dif": -0.0104,
+    "dea": -0.009,
+    "macd_golden": false,
+    "rsi12": 33.9,
+    "kdj_k": 20.5,
+    "pctb": 0.17,
+    "adx": 32.7,
+    "vol_ratio": 1.17,
+    "obv_above": false,
+    "dev60": -0.0662
+   },
+   "dir_b_now": -1,
+   "score_b_now": -40.0,
+   "sig_a_now": -1,
+   "reasons": [
+    "均线完全空头排列",
+    "MACD零轴下方死叉",
+    "OBV位于20日均线下方"
+   ],
+   "stats_2y": {
+    "ret_pct": -13.81,
+    "ann_vol": 25.4,
+    "max_dd": -38.71,
+    "avg_amt_yi": 2.06,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -28.16,
+    "ann_vol": 24.1,
+    "max_dd": -38.71,
+    "avg_amt_yi": 2.48,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 24,
+    "bear_days": 64,
+    "neutral_days": 134,
+    "bull_hit": 45.8,
+    "bear_hit": 79.7,
+    "bull_avg_ret": -1.1,
+    "bear_avg_ret": -3.74,
+    "neutral_avg_abs": 5.58,
+    "dir_hit": 70.5
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 58,
+    "bear_days": 70,
+    "neutral_days": 94,
+    "bull_hit": 51.7,
+    "bear_hit": 81.4,
+    "bull_avg_ret": -1.55,
+    "bear_avg_ret": -4.25,
+    "neutral_avg_abs": 5.6,
+    "dir_hit": 68.0
+   },
+   "sim_a": {
+    "strategy_ret": -8.27,
+    "buyhold_ret": -29.2,
+    "excess": 20.93,
+    "trades": 2,
+    "in_market_ratio": 29.8,
+    "strategy_maxdd": -12.6,
+    "buyhold_maxdd": -38.74
+   },
+   "sim_b": {
+    "strategy_ret": -6.19,
+    "buyhold_ret": -29.2,
+    "excess": 23.01,
+    "trades": 8,
+    "in_market_ratio": 38.8,
+    "strategy_maxdd": -16.13,
+    "buyhold_maxdd": -38.74
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "159928",
+   "name": "消费ETF汇添富",
+   "industry": "消费",
+   "sector": "大消费",
+   "scale_yi": 143.44,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.663,
+    "trend": "站上MA20",
+    "dif": -0.0003,
+    "dea": -0.001,
+    "macd_golden": true,
+    "rsi12": 52.5,
+    "kdj_k": 43.7,
+    "pctb": 0.71,
+    "adx": 10.5,
+    "vol_ratio": 1.28,
+    "obv_above": false,
+    "dev60": -0.0056
+   },
+   "dir_b_now": 0,
+   "score_b_now": -6.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "价格站上MA20",
+    "MACD零轴下方金叉（弱势反弹）",
+    "OBV位于20日均线下方"
+   ],
+   "stats_2y": {
+    "ret_pct": -5.42,
+    "ann_vol": 22.8,
+    "max_dd": -35.44,
+    "avg_amt_yi": 4.48,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -19.73,
+    "ann_vol": 18.3,
+    "max_dd": -29.31,
+    "avg_amt_yi": 4.31,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 12,
+    "bear_days": 44,
+    "neutral_days": 166,
+    "bull_hit": 16.7,
+    "bear_hit": 54.5,
+    "bull_avg_ret": -1.71,
+    "bear_avg_ret": 1.12,
+    "neutral_avg_abs": 3.32,
+    "dir_hit": 46.4
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 13,
+    "bear_days": 102,
+    "neutral_days": 107,
+    "bull_hit": 7.7,
+    "bear_hit": 77.5,
+    "bull_avg_ret": -2.46,
+    "bear_avg_ret": -1.7,
+    "neutral_avg_abs": 4.07,
+    "dir_hit": 69.6
+   },
+   "sim_a": {
+    "strategy_ret": -1.95,
+    "buyhold_ret": -20.47,
+    "excess": 18.53,
+    "trades": 1,
+    "in_market_ratio": 26.0,
+    "strategy_maxdd": -7.72,
+    "buyhold_maxdd": -29.3
+   },
+   "sim_b": {
+    "strategy_ret": -4.1,
+    "buyhold_ret": -20.47,
+    "excess": 16.38,
+    "trades": 4,
+    "in_market_ratio": 19.0,
+    "strategy_maxdd": -6.05,
+    "buyhold_maxdd": -29.3
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "512690",
+   "name": "酒ETF鹏华",
+   "industry": "白酒",
+   "sector": "大消费",
+   "scale_yi": 135.1,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.415,
+    "trend": "站上MA20",
+    "dif": -0.0016,
+    "dea": -0.0016,
+    "macd_golden": false,
+    "rsi12": 49.4,
+    "kdj_k": 33.6,
+    "pctb": 0.53,
+    "adx": 14.7,
+    "vol_ratio": 1.13,
+    "obv_above": true,
+    "dev60": -0.0211
+   },
+   "dir_b_now": 0,
+   "score_b_now": 2.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "价格站上MA20",
+    "MACD零轴下方死叉",
+    "OBV位于20日均线上方"
+   ],
+   "stats_2y": {
+    "ret_pct": -21.1,
+    "ann_vol": 27.2,
+    "max_dd": -47.32,
+    "avg_amt_yi": 8.24,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -28.69,
+    "ann_vol": 23.4,
+    "max_dd": -36.9,
+    "avg_amt_yi": 7.73,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 24,
+    "bear_days": 42,
+    "neutral_days": 156,
+    "bull_hit": 12.5,
+    "bear_hit": 47.6,
+    "bull_avg_ret": -3.92,
+    "bear_avg_ret": 2.06,
+    "neutral_avg_abs": 4.94,
+    "dir_hit": 34.8
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 26,
+    "bear_days": 103,
+    "neutral_days": 93,
+    "bull_hit": 11.5,
+    "bear_hit": 80.6,
+    "bull_avg_ret": -4.21,
+    "bear_avg_ret": -3.07,
+    "neutral_avg_abs": 5.96,
+    "dir_hit": 66.7
+   },
+   "sim_a": {
+    "strategy_ret": -12.99,
+    "buyhold_ret": -30.03,
+    "excess": 17.03,
+    "trades": 3,
+    "in_market_ratio": 31.4,
+    "strategy_maxdd": -15.3,
+    "buyhold_maxdd": -36.92
+   },
+   "sim_b": {
+    "strategy_ret": -10.92,
+    "buyhold_ret": -30.03,
+    "excess": 19.11,
+    "trades": 6,
+    "in_market_ratio": 21.1,
+    "strategy_maxdd": -12.99,
+    "buyhold_maxdd": -36.92
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "159736",
+   "name": "食品饮料ETF天弘",
+   "industry": "食品饮料",
+   "sector": "大消费",
+   "scale_yi": 40.83,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.576,
+    "trend": "位于MA20下方",
+    "dif": -0.0028,
+    "dea": -0.0021,
+    "macd_golden": false,
+    "rsi12": 46.1,
+    "kdj_k": 35.1,
+    "pctb": 0.35,
+    "adx": 11.1,
+    "vol_ratio": 1.04,
+    "obv_above": false,
+    "dev60": -0.0218
+   },
+   "dir_b_now": -1,
+   "score_b_now": -26.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方死叉",
+    "OBV位于20日均线下方"
+   ],
+   "stats_2y": {
+    "ret_pct": -3.19,
+    "ann_vol": 23.7,
+    "max_dd": -32.8,
+    "avg_amt_yi": 0.22,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -19.21,
+    "ann_vol": 18.4,
+    "max_dd": -26.65,
+    "avg_amt_yi": 0.26,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 8,
+    "bear_days": 26,
+    "neutral_days": 188,
+    "bull_hit": 37.5,
+    "bear_hit": 34.6,
+    "bull_avg_ret": -1.14,
+    "bear_avg_ret": 2.2,
+    "neutral_avg_abs": 3.23,
+    "dir_hit": 35.3
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 30,
+    "bear_days": 106,
+    "neutral_days": 86,
+    "bull_hit": 10.0,
+    "bear_hit": 58.5,
+    "bull_avg_ret": -3.01,
+    "bear_avg_ret": -0.75,
+    "neutral_avg_abs": 4.21,
+    "dir_hit": 47.8
+   },
+   "sim_a": {
+    "strategy_ret": -1.74,
+    "buyhold_ret": -20.24,
+    "excess": 18.5,
+    "trades": 1,
+    "in_market_ratio": 25.2,
+    "strategy_maxdd": -8.26,
+    "buyhold_maxdd": -26.66
+   },
+   "sim_b": {
+    "strategy_ret": -11.32,
+    "buyhold_ret": -20.24,
+    "excess": 8.92,
+    "trades": 8,
+    "in_market_ratio": 19.0,
+    "strategy_maxdd": -11.99,
+    "buyhold_maxdd": -26.66
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "159566",
+   "name": "储能电池ETF易方达",
+   "industry": "储能",
+   "sector": "新能源",
+   "scale_yi": 65.23,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 1.475,
+    "trend": "位于MA20下方",
+    "dif": -0.0816,
+    "dea": -0.07,
+    "macd_golden": false,
+    "rsi12": 27.8,
+    "kdj_k": 16.7,
+    "pctb": 0.19,
+    "adx": 46.0,
+    "vol_ratio": 1.47,
+    "obv_above": false,
+    "dev60": -0.1562
+   },
+   "dir_b_now": 0,
+   "score_b_now": -3.0,
+   "sig_a_now": -1,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方死叉",
+    "RSI12超卖(27.8)",
+    "KDJ-K超卖(16.7)",
+    "OBV位于20日均线下方",
+    "较MA60超跌-15.6%"
+   ],
+   "stats_2y": {
+    "ret_pct": 39.15,
+    "ann_vol": 34.1,
+    "max_dd": -42.66,
+    "avg_amt_yi": 1.99,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -28.81,
+    "ann_vol": 33.4,
+    "max_dd": -42.66,
+    "avg_amt_yi": 3.96,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 21,
+    "bear_days": 20,
+    "neutral_days": 181,
+    "bull_hit": 0.0,
+    "bear_hit": 45.0,
+    "bull_avg_ret": -6.34,
+    "bear_avg_ret": 1.02,
+    "neutral_avg_abs": 6.68,
+    "dir_hit": 22.0
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 75,
+    "bear_days": 47,
+    "neutral_days": 100,
+    "bull_hit": 38.7,
+    "bear_hit": 53.2,
+    "bull_avg_ret": -2.28,
+    "bear_avg_ret": -2.81,
+    "neutral_avg_abs": 7.26,
+    "dir_hit": 44.3
+   },
+   "sim_a": {
+    "strategy_ret": 2.3,
+    "buyhold_ret": -26.4,
+    "excess": 28.7,
+    "trades": 1,
+    "in_market_ratio": 62.4,
+    "strategy_maxdd": -14.83,
+    "buyhold_maxdd": -42.65
+   },
+   "sim_b": {
+    "strategy_ret": -19.65,
+    "buyhold_ret": -26.4,
+    "excess": 6.75,
+    "trades": 10,
+    "in_market_ratio": 52.1,
+    "strategy_maxdd": -22.1,
+    "buyhold_maxdd": -42.65
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "515790",
+   "name": "光伏ETF华泰柏瑞",
+   "industry": "光伏",
+   "sector": "新能源",
+   "scale_yi": 70.54,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.717,
+    "trend": "位于MA20下方",
+    "dif": -0.0275,
+    "dea": -0.025,
+    "macd_golden": false,
+    "rsi12": 30.0,
+    "kdj_k": 22.1,
+    "pctb": 0.23,
+    "adx": 49.5,
+    "vol_ratio": 1.32,
+    "obv_above": false,
+    "dev60": -0.1129
+   },
+   "dir_b_now": -1,
+   "score_b_now": -21.0,
+   "sig_a_now": -1,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方死叉",
+    "OBV位于20日均线下方",
+    "较MA60超跌-11.3%"
+   ],
+   "stats_2y": {
+    "ret_pct": 10.31,
+    "ann_vol": 34.1,
+    "max_dd": -40.32,
+    "avg_amt_yi": 5.24,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -23.15,
+    "ann_vol": 32.3,
+    "max_dd": -40.32,
+    "avg_amt_yi": 4.93,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 34,
+    "bear_days": 16,
+    "neutral_days": 172,
+    "bull_hit": 38.2,
+    "bear_hit": 31.2,
+    "bull_avg_ret": -2.26,
+    "bear_avg_ret": 0.6,
+    "neutral_avg_abs": 7.95,
+    "dir_hit": 36.0
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 55,
+    "bear_days": 59,
+    "neutral_days": 108,
+    "bull_hit": 36.4,
+    "bear_hit": 59.3,
+    "bull_avg_ret": -2.25,
+    "bear_avg_ret": -4.56,
+    "neutral_avg_abs": 6.49,
+    "dir_hit": 48.2
+   },
+   "sim_a": {
+    "strategy_ret": -9.01,
+    "buyhold_ret": -21.86,
+    "excess": 12.85,
+    "trades": 1,
+    "in_market_ratio": 72.3,
+    "strategy_maxdd": -28.2,
+    "buyhold_maxdd": -40.32
+   },
+   "sim_b": {
+    "strategy_ret": 5.02,
+    "buyhold_ret": -21.86,
+    "excess": 26.88,
+    "trades": 8,
+    "in_market_ratio": 47.1,
+    "strategy_maxdd": -14.34,
+    "buyhold_maxdd": -40.32
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "515030",
+   "name": "新能源车ETF华夏",
+   "industry": "新能源车",
+   "sector": "新能源",
+   "scale_yi": 30.68,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 1.327,
+    "trend": "位于MA20下方",
+    "dif": -0.0631,
+    "dea": -0.0556,
+    "macd_golden": false,
+    "rsi12": 34.2,
+    "kdj_k": 19.2,
+    "pctb": 0.23,
+    "adx": 46.8,
+    "vol_ratio": 1.27,
+    "obv_above": false,
+    "dev60": -0.1372
+   },
+   "dir_b_now": -1,
+   "score_b_now": -15.0,
+   "sig_a_now": -1,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方死叉",
+    "KDJ-K超卖(19.2)",
+    "OBV位于20日均线下方",
+    "较MA60超跌-13.7%"
+   ],
+   "stats_2y": {
+    "ret_pct": 46.47,
+    "ann_vol": 32.4,
+    "max_dd": -42.42,
+    "avg_amt_yi": 1.68,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -26.44,
+    "ann_vol": 29.8,
+    "max_dd": -42.42,
+    "avg_amt_yi": 2.1,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 23,
+    "bear_days": 25,
+    "neutral_days": 174,
+    "bull_hit": 0.0,
+    "bear_hit": 40.0,
+    "bull_avg_ret": -6.82,
+    "bear_avg_ret": -1.94,
+    "neutral_avg_abs": 6.89,
+    "dir_hit": 20.8
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 41,
+    "bear_days": 64,
+    "neutral_days": 117,
+    "bull_hit": 26.8,
+    "bear_hit": 56.2,
+    "bull_avg_ret": -3.69,
+    "bear_avg_ret": -1.29,
+    "neutral_avg_abs": 6.33,
+    "dir_hit": 44.8
+   },
+   "sim_a": {
+    "strategy_ret": -9.71,
+    "buyhold_ret": -25.21,
+    "excess": 15.5,
+    "trades": 1,
+    "in_market_ratio": 71.9,
+    "strategy_maxdd": -27.34,
+    "buyhold_maxdd": -42.41
+   },
+   "sim_b": {
+    "strategy_ret": -18.41,
+    "buyhold_ret": -25.21,
+    "excess": 6.8,
+    "trades": 10,
+    "in_market_ratio": 34.7,
+    "strategy_maxdd": -21.56,
+    "buyhold_maxdd": -42.41
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "516520",
+   "name": "智能驾驶ETF华泰柏瑞",
+   "industry": "智能汽车",
+   "sector": "新能源",
+   "scale_yi": 10.47,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.975,
+    "trend": "位于MA20下方",
+    "dif": -0.0234,
+    "dea": -0.0243,
+    "macd_golden": true,
+    "rsi12": 48.7,
+    "kdj_k": 56.9,
+    "pctb": 0.45,
+    "adx": 35.3,
+    "vol_ratio": 1.48,
+    "obv_above": false,
+    "dev60": -0.0509
+   },
+   "dir_b_now": -1,
+   "score_b_now": -18.0,
+   "sig_a_now": -1,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方金叉（弱势反弹）",
+    "OBV位于20日均线下方"
+   ],
+   "stats_2y": {
+    "ret_pct": 28.46,
+    "ann_vol": 30.8,
+    "max_dd": -36.19,
+    "avg_amt_yi": 0.43,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -25.0,
+    "ann_vol": 27.1,
+    "max_dd": -35.38,
+    "avg_amt_yi": 0.6,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 12,
+    "bear_days": 59,
+    "neutral_days": 151,
+    "bull_hit": 0.0,
+    "bear_hit": 49.2,
+    "bull_avg_ret": -6.97,
+    "bear_avg_ret": 0.35,
+    "neutral_avg_abs": 6.25,
+    "dir_hit": 40.8
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 28,
+    "bear_days": 82,
+    "neutral_days": 112,
+    "bull_hit": 25.0,
+    "bear_hit": 67.1,
+    "bull_avg_ret": -3.62,
+    "bear_avg_ret": -1.85,
+    "neutral_avg_abs": 6.43,
+    "dir_hit": 56.4
+   },
+   "sim_a": {
+    "strategy_ret": -6.61,
+    "buyhold_ret": -23.26,
+    "excess": 16.65,
+    "trades": 4,
+    "in_market_ratio": 15.3,
+    "strategy_maxdd": -13.24,
+    "buyhold_maxdd": -35.38
+   },
+   "sim_b": {
+    "strategy_ret": -5.06,
+    "buyhold_ret": -23.26,
+    "excess": 18.2,
+    "trades": 6,
+    "in_market_ratio": 26.0,
+    "strategy_maxdd": -15.92,
+    "buyhold_maxdd": -35.38
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "159755",
+   "name": "电池ETF广发",
+   "industry": "锂电池",
+   "sector": "新能源",
+   "scale_yi": 104.85,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.76,
+    "trend": "位于MA20下方",
+    "dif": -0.0393,
+    "dea": -0.0332,
+    "macd_golden": false,
+    "rsi12": 31.4,
+    "kdj_k": 16.0,
+    "pctb": 0.19,
+    "adx": 42.6,
+    "vol_ratio": 1.39,
+    "obv_above": false,
+    "dev60": -0.1524
+   },
+   "dir_b_now": -1,
+   "score_b_now": -15.0,
+   "sig_a_now": -1,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方死叉",
+    "KDJ-K超卖(16.0)",
+    "OBV位于20日均线下方",
+    "较MA60超跌-15.2%"
+   ],
+   "stats_2y": {
+    "ret_pct": 52.3,
+    "ann_vol": 33.9,
+    "max_dd": -42.68,
+    "avg_amt_yi": 4.86,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -27.41,
+    "ann_vol": 30.9,
+    "max_dd": -42.68,
+    "avg_amt_yi": 6.76,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 21,
+    "bear_days": 21,
+    "neutral_days": 180,
+    "bull_hit": 0.0,
+    "bear_hit": 42.9,
+    "bull_avg_ret": -6.73,
+    "bear_avg_ret": -2.72,
+    "neutral_avg_abs": 6.25,
+    "dir_hit": 21.4
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 49,
+    "bear_days": 73,
+    "neutral_days": 100,
+    "bull_hit": 26.5,
+    "bear_hit": 52.1,
+    "bull_avg_ret": -2.73,
+    "bear_avg_ret": -1.15,
+    "neutral_avg_abs": 6.64,
+    "dir_hit": 41.8
+   },
+   "sim_a": {
+    "strategy_ret": -10.23,
+    "buyhold_ret": -26.23,
+    "excess": 16.0,
+    "trades": 1,
+    "in_market_ratio": 72.7,
+    "strategy_maxdd": -26.15,
+    "buyhold_maxdd": -42.69
+   },
+   "sim_b": {
+    "strategy_ret": -15.97,
+    "buyhold_ret": -26.23,
+    "excess": 10.25,
+    "trades": 10,
+    "in_market_ratio": 45.9,
+    "strategy_maxdd": -19.81,
+    "buyhold_maxdd": -42.69
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "159666",
+   "name": "交通运输ETF华夏",
+   "industry": "交通运输",
+   "sector": "运输",
+   "scale_yi": 1.04,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.951,
+    "trend": "完全空头排列",
+    "dif": -0.0059,
+    "dea": -0.0019,
+    "macd_golden": false,
+    "rsi12": 37.6,
+    "kdj_k": 17.1,
+    "pctb": 0.06,
+    "adx": 20.6,
+    "vol_ratio": 1.08,
+    "obv_above": true,
+    "dev60": -0.03
+   },
+   "dir_b_now": 0,
+   "score_b_now": -12.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "均线完全空头排列",
+    "MACD零轴下方死叉",
+    "KDJ-K超卖(17.1)",
+    "贴合布林下轨(%B=0.06)",
+    "OBV位于20日均线上方"
+   ],
+   "stats_2y": {
+    "ret_pct": 9.18,
+    "ann_vol": 17.0,
+    "max_dd": -16.25,
+    "avg_amt_yi": 0.11,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -6.67,
+    "ann_vol": 16.0,
+    "max_dd": -16.25,
+    "avg_amt_yi": 0.16,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 5,
+    "bear_days": 4,
+    "neutral_days": 213,
+    "bull_hit": 40.0,
+    "bear_hit": 50.0,
+    "bull_avg_ret": -0.68,
+    "bear_avg_ret": 2.08,
+    "neutral_avg_abs": 2.51,
+    "dir_hit": 44.4
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 69,
+    "bear_days": 56,
+    "neutral_days": 97,
+    "bull_hit": 36.2,
+    "bear_hit": 55.4,
+    "bull_avg_ret": -1.15,
+    "bear_avg_ret": -0.27,
+    "neutral_avg_abs": 2.67,
+    "dir_hit": 44.8
+   },
+   "sim_a": {
+    "strategy_ret": -4.0,
+    "buyhold_ret": -7.38,
+    "excess": 3.38,
+    "trades": 1,
+    "in_market_ratio": 12.0,
+    "strategy_maxdd": -5.68,
+    "buyhold_maxdd": -16.28
+   },
+   "sim_b": {
+    "strategy_ret": -10.5,
+    "buyhold_ret": -7.38,
+    "excess": -3.12,
+    "trades": 9,
+    "in_market_ratio": 52.1,
+    "strategy_maxdd": -13.6,
+    "buyhold_maxdd": -16.28
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "159662",
+   "name": "交运ETF南方",
+   "industry": "物流交运",
+   "sector": "运输",
+   "scale_yi": 0.7,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.954,
+    "trend": "完全空头排列",
+    "dif": -0.0048,
+    "dea": -0.0015,
+    "macd_golden": false,
+    "rsi12": 38.3,
+    "kdj_k": 19.3,
+    "pctb": 0.08,
+    "adx": 19.0,
+    "vol_ratio": 1.38,
+    "obv_above": true,
+    "dev60": -0.0277
+   },
+   "dir_b_now": 0,
+   "score_b_now": -12.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "均线完全空头排列",
+    "MACD零轴下方死叉",
+    "KDJ-K超卖(19.3)",
+    "贴合布林下轨(%B=0.08)",
+    "OBV位于20日均线上方"
+   ],
+   "stats_2y": {
+    "ret_pct": 5.3,
+    "ann_vol": 17.4,
+    "max_dd": -16.67,
+    "avg_amt_yi": 0.08,
+    "n_days": 515
+   },
+   "stats_1y": {
+    "ret_pct": -8.27,
+    "ann_vol": 15.3,
+    "max_dd": -16.67,
+    "avg_amt_yi": 0.07,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 12,
+    "bear_days": 26,
+    "neutral_days": 184,
+    "bull_hit": 41.7,
+    "bear_hit": 53.8,
+    "bull_avg_ret": -0.25,
+    "bear_avg_ret": 0.25,
+    "neutral_avg_abs": 2.32,
+    "dir_hit": 50.0
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 56,
+    "bear_days": 74,
+    "neutral_days": 92,
+    "bull_hit": 21.4,
+    "bear_hit": 56.8,
+    "bull_avg_ret": -1.53,
+    "bear_avg_ret": -0.39,
+    "neutral_avg_abs": 2.21,
+    "dir_hit": 41.5
+   },
+   "sim_a": {
+    "strategy_ret": -1.01,
+    "buyhold_ret": -9.16,
+    "excess": 8.15,
+    "trades": 1,
+    "in_market_ratio": 24.0,
+    "strategy_maxdd": -5.96,
+    "buyhold_maxdd": -16.66
+   },
+   "sim_b": {
+    "strategy_ret": -8.16,
+    "buyhold_ret": -9.16,
+    "excess": 1.0,
+    "trades": 8,
+    "in_market_ratio": 50.8,
+    "strategy_maxdd": -12.29,
+    "buyhold_maxdd": -16.66
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "159257",
+   "name": "航空ETF汇添富",
+   "industry": "航空机场",
+   "sector": "运输",
+   "scale_yi": 1.35,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 181,
+   "snap": {
+    "close": 0.824,
+    "trend": "位于MA20下方",
+    "dif": -0.007,
+    "dea": -0.0088,
+    "macd_golden": true,
+    "rsi12": 47.1,
+    "kdj_k": 63.4,
+    "pctb": 0.44,
+    "adx": 22.2,
+    "vol_ratio": 0.95,
+    "obv_above": false,
+    "dev60": -0.0255
+   },
+   "dir_b_now": -1,
+   "score_b_now": -18.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方金叉（弱势反弹）",
+    "OBV位于20日均线下方"
+   ],
+   "stats_2y": {
+    "ret_pct": -18.82,
+    "ann_vol": 32.6,
+    "max_dd": -44.51,
+    "avg_amt_yi": 0.1,
+    "n_days": 300
+   },
+   "stats_1y": {
+    "ret_pct": -20.31,
+    "ann_vol": 34.1,
+    "max_dd": -44.51,
+    "avg_amt_yi": 0.1,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 161,
+    "bull_days": 14,
+    "bear_days": 38,
+    "neutral_days": 109,
+    "bull_hit": 7.1,
+    "bear_hit": 55.3,
+    "bull_avg_ret": -5.91,
+    "bear_avg_ret": -3.74,
+    "neutral_avg_abs": 6.77,
+    "dir_hit": 42.3
+   },
+   "eval_b_n20": {
+    "n_days": 161,
+    "bull_days": 20,
+    "bear_days": 51,
+    "neutral_days": 90,
+    "bull_hit": 5.0,
+    "bear_hit": 54.9,
+    "bull_avg_ret": -12.45,
+    "bear_avg_ret": -2.56,
+    "neutral_avg_abs": 5.66,
+    "dir_hit": 40.8
+   },
+   "sim_a": {
+    "strategy_ret": -14.2,
+    "buyhold_ret": -34.14,
+    "excess": 19.95,
+    "trades": 1,
+    "in_market_ratio": 22.1,
+    "strategy_maxdd": -20.75,
+    "buyhold_maxdd": -40.53
+   },
+   "sim_b": {
+    "strategy_ret": -23.9,
+    "buyhold_ret": -34.14,
+    "excess": 10.25,
+    "trades": 8,
+    "in_market_ratio": 27.1,
+    "strategy_maxdd": -25.83,
+    "buyhold_maxdd": -40.53
+   },
+   "elapsed_s": 1.6
+  },
+  {
+   "code": "560710",
+   "name": "船舶ETF富国",
+   "industry": "航运港口",
+   "sector": "运输",
+   "scale_yi": 17.28,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 50,
+   "snap": {
+    "close": 0.914,
+    "trend": "位于MA20下方",
+    "dif": -0.0086,
+    "dea": -0.0029,
+    "macd_golden": false,
+    "rsi12": 45.1,
+    "kdj_k": 29.2,
+    "pctb": 0.26,
+    "adx": 17.3,
+    "vol_ratio": 1.47,
+    "obv_above": false,
+    "dev60": -0.0083
+   },
+   "dir_b_now": -1,
+   "score_b_now": -26.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方死叉",
+    "OBV位于20日均线下方"
+   ],
+   "stats_2y": {
+    "ret_pct": -7.4,
+    "ann_vol": 32.1,
+    "max_dd": -28.75,
+    "avg_amt_yi": 1.08,
+    "n_days": 169
+   },
+   "stats_1y": {
+    "ret_pct": -7.4,
+    "ann_vol": 32.1,
+    "max_dd": -28.75,
+    "avg_amt_yi": 1.08,
+    "n_days": 169
+   },
+   "eval_a_n20": {
+    "n_days": 30,
+    "bull_days": 5,
+    "bear_days": 0,
+    "neutral_days": 25,
+    "bull_hit": 0.0,
+    "bear_hit": null,
+    "bull_avg_ret": -4.64,
+    "bear_avg_ret": null,
+    "neutral_avg_abs": 6.01,
+    "dir_hit": 0.0
+   },
+   "eval_b_n20": {
+    "n_days": 30,
+    "bull_days": 23,
+    "bear_days": 0,
+    "neutral_days": 7,
+    "bull_hit": 65.2,
+    "bear_hit": null,
+    "bull_avg_ret": 2.84,
+    "bear_avg_ret": null,
+    "neutral_avg_abs": 7.83,
+    "dir_hit": 65.2
+   },
+   "sim_a": {
+    "strategy_ret": -6.41,
+    "buyhold_ret": 2.7,
+    "excess": -9.11,
+    "trades": 1,
+    "in_market_ratio": 48.0,
+    "strategy_maxdd": -10.68,
+    "buyhold_maxdd": -10.68
+   },
+   "sim_b": {
+    "strategy_ret": -0.55,
+    "buyhold_ret": 2.7,
+    "excess": -3.24,
+    "trades": 2,
+    "in_market_ratio": 82.0,
+    "strategy_maxdd": -10.22,
+    "buyhold_maxdd": -10.68
+   },
+   "elapsed_s": 0.6
+  },
+  {
+   "code": "516970",
+   "name": "基建ETF广发",
+   "industry": "建筑基建",
+   "sector": "金融地产",
+   "scale_yi": 12.56,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 1.015,
+    "trend": "完全空头排列",
+    "dif": -0.019,
+    "dea": -0.0149,
+    "macd_golden": false,
+    "rsi12": 23.8,
+    "kdj_k": 20.0,
+    "pctb": 0.06,
+    "adx": 32.1,
+    "vol_ratio": 1.31,
+    "obv_above": false,
+    "dev60": -0.0689
+   },
+   "dir_b_now": 0,
+   "score_b_now": -10.0,
+   "sig_a_now": -1,
+   "reasons": [
+    "均线完全空头排列",
+    "MACD零轴下方死叉",
+    "RSI12深度超卖(23.8)",
+    "KDJ-K超卖(20.0)",
+    "贴合布林下轨(%B=0.06)",
+    "OBV位于20日均线下方"
+   ],
+   "stats_2y": {
+    "ret_pct": 11.17,
+    "ann_vol": 23.4,
+    "max_dd": -23.91,
+    "avg_amt_yi": 0.69,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -16.74,
+    "ann_vol": 19.4,
+    "max_dd": -23.91,
+    "avg_amt_yi": 0.55,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 32,
+    "bear_days": 21,
+    "neutral_days": 169,
+    "bull_hit": 40.6,
+    "bear_hit": 19.0,
+    "bull_avg_ret": -0.92,
+    "bear_avg_ret": 3.27,
+    "neutral_avg_abs": 3.44,
+    "dir_hit": 32.1
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 56,
+    "bear_days": 66,
+    "neutral_days": 100,
+    "bull_hit": 23.2,
+    "bear_hit": 48.5,
+    "bull_avg_ret": -2.92,
+    "bear_avg_ret": 0.11,
+    "neutral_avg_abs": 3.65,
+    "dir_hit": 36.9
+   },
+   "sim_a": {
+    "strategy_ret": -4.66,
+    "buyhold_ret": -16.89,
+    "excess": 12.22,
+    "trades": 4,
+    "in_market_ratio": 19.0,
+    "strategy_maxdd": -11.44,
+    "buyhold_maxdd": -23.87
+   },
+   "sim_b": {
+    "strategy_ret": -11.75,
+    "buyhold_ret": -16.89,
+    "excess": 5.14,
+    "trades": 11,
+    "in_market_ratio": 39.3,
+    "strategy_maxdd": -18.76,
+    "buyhold_maxdd": -23.87
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "512200",
+   "name": "房地产ETF南方",
+   "industry": "房地产",
+   "sector": "金融地产",
+   "scale_yi": 31.52,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 1.166,
+    "trend": "位于MA20下方",
+    "dif": -0.0165,
+    "dea": -0.0052,
+    "macd_golden": false,
+    "rsi12": 38.9,
+    "kdj_k": 16.6,
+    "pctb": 0.15,
+    "adx": 17.2,
+    "vol_ratio": 0.97,
+    "obv_above": false,
+    "dev60": -0.0418
+   },
+   "dir_b_now": -1,
+   "score_b_now": -20.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "价格位于MA20下方",
+    "MACD零轴下方死叉",
+    "KDJ-K超卖(16.6)",
+    "OBV位于20日均线下方"
+   ],
+   "stats_2y": {
+    "ret_pct": 2.64,
+    "ann_vol": 29.1,
+    "max_dd": -38.67,
+    "avg_amt_yi": 2.64,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -27.98,
+    "ann_vol": 24.9,
+    "max_dd": -32.02,
+    "avg_amt_yi": 1.98,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 5,
+    "bear_days": 37,
+    "neutral_days": 180,
+    "bull_hit": 0.0,
+    "bear_hit": 40.5,
+    "bull_avg_ret": -13.02,
+    "bear_avg_ret": 2.44,
+    "neutral_avg_abs": 5.13,
+    "dir_hit": 35.7
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 38,
+    "bear_days": 58,
+    "neutral_days": 126,
+    "bull_hit": 31.6,
+    "bear_hit": 51.7,
+    "bull_avg_ret": -4.0,
+    "bear_avg_ret": 0.03,
+    "neutral_avg_abs": 5.43,
+    "dir_hit": 43.8
+   },
+   "sim_a": {
+    "strategy_ret": -16.64,
+    "buyhold_ret": -28.76,
+    "excess": 12.12,
+    "trades": 2,
+    "in_market_ratio": 9.1,
+    "strategy_maxdd": -16.64,
+    "buyhold_maxdd": -32.06
+   },
+   "sim_b": {
+    "strategy_ret": -23.05,
+    "buyhold_ret": -28.76,
+    "excess": 5.71,
+    "trades": 10,
+    "in_market_ratio": 41.7,
+    "strategy_maxdd": -25.97,
+    "buyhold_maxdd": -32.06
+   },
+   "elapsed_s": 2.3
+  },
+  {
+   "code": "512880",
+   "name": "证券ETF国泰",
+   "industry": "证券",
+   "sector": "金融地产",
+   "scale_yi": 592.69,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 1.013,
+    "trend": "完全空头排列",
+    "dif": -0.0154,
+    "dea": -0.0142,
+    "macd_golden": false,
+    "rsi12": 38.8,
+    "kdj_k": 34.8,
+    "pctb": 0.24,
+    "adx": 33.3,
+    "vol_ratio": 1.28,
+    "obv_above": false,
+    "dev60": -0.0529
+   },
+   "dir_b_now": -1,
+   "score_b_now": -40.0,
+   "sig_a_now": -1,
+   "reasons": [
+    "均线完全空头排列",
+    "MACD零轴下方死叉",
+    "OBV位于20日均线下方"
+   ],
+   "stats_2y": {
+    "ret_pct": 27.74,
+    "ann_vol": 28.7,
+    "max_dd": -28.23,
+    "avg_amt_yi": 21.91,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -19.41,
+    "ann_vol": 22.4,
+    "max_dd": -22.6,
+    "avg_amt_yi": 22.13,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 21,
+    "bear_days": 22,
+    "neutral_days": 179,
+    "bull_hit": 0.0,
+    "bear_hit": 45.5,
+    "bull_avg_ret": -3.37,
+    "bear_avg_ret": 0.27,
+    "neutral_avg_abs": 4.46,
+    "dir_hit": 23.3
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 38,
+    "bear_days": 81,
+    "neutral_days": 103,
+    "bull_hit": 7.9,
+    "bear_hit": 63.0,
+    "bull_avg_ret": -3.68,
+    "bear_avg_ret": -1.13,
+    "neutral_avg_abs": 3.31,
+    "dir_hit": 45.4
+   },
+   "sim_a": {
+    "strategy_ret": -19.68,
+    "buyhold_ret": -18.69,
+    "excess": -0.99,
+    "trades": 4,
+    "in_market_ratio": 45.5,
+    "strategy_maxdd": -21.19,
+    "buyhold_maxdd": -22.65
+   },
+   "sim_b": {
+    "strategy_ret": -11.02,
+    "buyhold_ret": -18.69,
+    "excess": 7.66,
+    "trades": 10,
+    "in_market_ratio": 31.4,
+    "strategy_maxdd": -13.77,
+    "buyhold_maxdd": -22.65
+   },
+   "elapsed_s": 2.2
+  },
+  {
+   "code": "510230",
+   "name": "金融ETF国泰",
+   "industry": "金融地产",
+   "sector": "金融地产",
+   "scale_yi": 11.24,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 1.32,
+    "trend": "位于MA20下方",
+    "dif": 0.0,
+    "dea": 0.0017,
+    "macd_golden": false,
+    "rsi12": 43.5,
+    "kdj_k": 40.4,
+    "pctb": 0.22,
+    "adx": 18.3,
+    "vol_ratio": 0.99,
+    "obv_above": false,
+    "dev60": -0.0047
+   },
+   "dir_b_now": 0,
+   "score_b_now": -11.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "价格位于MA20下方",
+    "OBV位于20日均线下方"
+   ],
+   "stats_2y": {
+    "ret_pct": 32.66,
+    "ann_vol": 20.8,
+    "max_dd": -16.6,
+    "avg_amt_yi": 0.65,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": -4.49,
+    "ann_vol": 14.9,
+    "max_dd": -16.6,
+    "avg_amt_yi": 0.8,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 44,
+    "bear_days": 43,
+    "neutral_days": 135,
+    "bull_hit": 36.4,
+    "bear_hit": 81.4,
+    "bull_avg_ret": -0.68,
+    "bear_avg_ret": -1.93,
+    "neutral_avg_abs": 2.74,
+    "dir_hit": 58.6
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 65,
+    "bear_days": 60,
+    "neutral_days": 97,
+    "bull_hit": 30.8,
+    "bear_hit": 65.0,
+    "bull_avg_ret": -0.95,
+    "bear_avg_ret": -0.68,
+    "neutral_avg_abs": 3.04,
+    "dir_hit": 47.2
+   },
+   "sim_a": {
+    "strategy_ret": -3.22,
+    "buyhold_ret": -4.53,
+    "excess": 1.31,
+    "trades": 2,
+    "in_market_ratio": 46.7,
+    "strategy_maxdd": -10.83,
+    "buyhold_maxdd": -16.58
+   },
+   "sim_b": {
+    "strategy_ret": -6.5,
+    "buyhold_ret": -4.53,
+    "excess": -1.97,
+    "trades": 8,
+    "in_market_ratio": 52.5,
+    "strategy_maxdd": -11.3,
+    "buyhold_maxdd": -16.58
+   },
+   "elapsed_s": 2.4
+  },
+  {
+   "code": "512800",
+   "name": "银行ETF华宝",
+   "industry": "银行",
+   "sector": "金融地产",
+   "scale_yi": 105.6,
+   "verify_passed": true,
+   "verify_max_rel": 0.0,
+   "n_checkpoints": 242,
+   "snap": {
+    "close": 0.849,
+    "trend": "位于MA20下方",
+    "dif": 0.0074,
+    "dea": 0.0086,
+    "macd_golden": false,
+    "rsi12": 47.1,
+    "kdj_k": 41.2,
+    "pctb": 0.42,
+    "adx": 33.1,
+    "vol_ratio": 1.32,
+    "obv_above": false,
+    "dev60": 0.019
+   },
+   "dir_b_now": 0,
+   "score_b_now": -11.0,
+   "sig_a_now": 0,
+   "reasons": [
+    "价格位于MA20下方",
+    "OBV位于20日均线下方"
+   ],
+   "stats_2y": {
+    "ret_pct": 35.19,
+    "ann_vol": 17.1,
+    "max_dd": -18.98,
+    "avg_amt_yi": 6.93,
+    "n_days": 516
+   },
+   "stats_1y": {
+    "ret_pct": 2.41,
+    "ann_vol": 14.9,
+    "max_dd": -13.55,
+    "avg_amt_yi": 9.15,
+    "n_days": 242
+   },
+   "eval_a_n20": {
+    "n_days": 222,
+    "bull_days": 25,
+    "bear_days": 12,
+    "neutral_days": 185,
+    "bull_hit": 92.0,
+    "bear_hit": 0.0,
+    "bull_avg_ret": 2.01,
+    "bear_avg_ret": 2.89,
+    "neutral_avg_abs": 2.8,
+    "dir_hit": 62.2
+   },
+   "eval_b_n20": {
+    "n_days": 222,
+    "bull_days": 82,
+    "bear_days": 59,
+    "neutral_days": 81,
+    "bull_hit": 54.9,
+    "bear_hit": 49.2,
+    "bull_avg_ret": -0.03,
+    "bear_avg_ret": 0.62,
+    "neutral_avg_abs": 2.89,
+    "dir_hit": 52.5
+   },
+   "sim_a": {
+    "strategy_ret": -1.85,
+    "buyhold_ret": 1.77,
+    "excess": -3.61,
+    "trades": 2,
+    "in_market_ratio": 51.2,
+    "strategy_maxdd": -10.09,
+    "buyhold_maxdd": -13.55
+   },
+   "sim_b": {
+    "strategy_ret": 1.02,
+    "buyhold_ret": 1.77,
+    "excess": -0.74,
+    "trades": 6,
+    "in_market_ratio": 56.6,
+    "strategy_maxdd": -9.07,
+    "buyhold_maxdd": -13.55
+   },
+   "elapsed_s": 2.2
+  }
+ ]
+}

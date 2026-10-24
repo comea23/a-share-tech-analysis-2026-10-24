@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>62只行业ETF全面验证报告</title>
+<style>
+ *{margin:0;padding:0;box-sizing:border-box}
+ body{font-family:"PingFang SC","Microsoft YaHei",sans-serif;background:#f5f6f8;color:#1f2329;padding:26px 18px}
+ .wrap{max-width:1240px;margin:0 auto}
+ header,.box{background:#fff;border-radius:12px;padding:24px 28px;margin-bottom:16px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+ h1{font-size:23px;margin-bottom:10px}
+ h2{font-size:17px;margin-bottom:12px;border-left:4px solid #d54941;padding-left:10px}
+ .meta{color:#646a73;font-size:13px;line-height:1.8}
+ .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:16px 0 4px}
+ .stat{background:#f2f3f5;border-radius:10px;padding:13px 16px}
+ .stat .v{font-size:21px;font-weight:700;color:#d54941}
+ .stat .k{font-size:12px;color:#646a73;margin-top:2px}
+ table{width:100%;border-collapse:collapse;font-size:12.5px}
+ th{text-align:left;color:#646a73;font-weight:500;padding:7px 5px;border-bottom:1px solid #ebedf0;white-space:nowrap}
+ td{padding:7px 5px;border-bottom:1px solid #f2f3f5;white-space:nowrap}
+ tr:last-child td{border-bottom:none}
+ .num{font-family:Consolas,monospace}
+ .code{font-family:Consolas,monospace;color:#3370ff}
+ .ind{font-weight:600}.nm{white-space:nowrap}
+ .up{color:#d54941}.down{color:#2ea44f}.flat{color:#8f959e}
+ .sig{font-weight:600}
+ .score{font-family:Consolas,monospace;font-weight:700;color:#3370ff}
+ .flow{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+ .step{background:#eef3ff;border:1px solid #d6e2ff;color:#2b4a8f;border-radius:8px;padding:8px 12px;font-size:12.5px}
+ .arrow{align-self:center;color:#8f959e}
+ ol,ul{padding-left:20px;line-height:2}
+ footer{color:#8f959e;font-size:12px;line-height:1.9;padding:8px 6px 26px}
+ @media(max-width:900px){.cards{grid-template-columns:repeat(2,1fr)}}
+</style></head><body><div class="wrap">
+<header>
+ <h1>62 只行业 ETF 全面验证报告（技术指标 + 无未来函数回测）</h1>
+ <div class="meta">验证窗口：<b>2025-10-24 ~ 2026-10-23</b>（242 个检查点/只，次新 ETF 检查点相应减少）｜
+ 行情区间 2024-09-02 ~ 2026-10-23 ｜ 成本：单边 0.05% ｜ 信号 T 日收盘形成、T+1 生效</div>
+ <div class="cards">
+  <div class="stat"><div class="v">62</div><div class="k">验证标的数</div></div>
+  <div class="stat"><div class="v">60/62</div><div class="k">无未来函数硬校验通过</div></div>
+  <div class="stat"><div class="v">37 / 41</div><div class="k">跑赢买入持有（规则A / 规则B）</div></div>
+  <div class="stat"><div class="v">5.89% / 5.58%</div><div class="k">平均超额（规则A / 规则B）</div></div>
+ </div>
+ <div class="flow">
+  <span class="step">① fetch_kline（多源容错日K）</span><span class="arrow">→</span>
+  <span class="step">② indicators（因果指标）</span><span class="arrow">→</span>
+  <span class="step">③ judge（规则A三维投票 / 规则B多因子）</span><span class="arrow">→</span>
+  <span class="step">④ pit_backtest（截断重算 + 硬校验 + 策略模拟）</span>
+ </div>
+ <div class="meta">无未来函数三重保证：结构上每个检查点从原始行情重新截断重算（不引用全量指标表）；
+ 算法上全部为 rolling/ewm/shift 因果计算；硬校验抽样对比「截断重算 vs 全量计算」逐列一致
+ （本批 60 只通过、2 只次新未回测，最大相对偏差 0.0e+00）。</div>
+</header>
+
+<div class="box"><h2>综合验证排名（按综合分排序）</h2>
+<table><thead><tr>
+<th>#</th><th>行业</th><th>代码</th><th>名称</th><th>规模</th><th>近1年收益</th><th>年化波动</th>
+<th>近1年回撤</th><th>日均成交额</th><th>当前信号B</th><th>B评分</th>
+<th>规则A超额</th><th>规则B超额</th><th>20日方向胜率B</th><th>综合分</th>
+</tr></thead><tbody><tr>
+  <td class="num">1</td><td class="ind">旅游酒店</td><td class="code">159766</td><td class="nm">旅游ETF富国</td>
+  <td class="num">29.3亿</td><td class="num down">-28.16%</td><td class="num">24.1%</td><td class="num">-38.7%</td>
+  <td class="num">2.48亿</td><td class="sig down">看空</td><td class="num">-40.0</td>
+  <td class="num up">+20.93%</td><td class="num up">+23.01%</td>
+  <td class="num">68.0%</td><td class="score">62.0</td>
+</tr><tr>
+  <td class="num">2</td><td class="ind">软件</td><td class="code">159852</td><td class="nm">软件ETF嘉实</td>
+  <td class="num">78.0亿</td><td class="num down">-27.04%</td><td class="num">33.4%</td><td class="num">-41.9%</td>
+  <td class="num">5.38亿</td><td class="sig flat">中性</td><td class="num">14.0</td>
+  <td class="num up">+23.50%</td><td class="num up">+13.31%</td>
+  <td class="num">58.4%</td><td class="score">59.5</td>
+</tr><tr>
+  <td class="num">3</td><td class="ind">通信设备</td><td class="code">515880</td><td class="nm">通信ETF国泰</td>
+  <td class="num">590.2亿</td><td class="num up">11.02%</td><td class="num">50.5%</td><td class="num">-46.6%</td>
+  <td class="num">18.76亿</td><td class="sig flat">中性</td><td class="num">-7.0</td>
+  <td class="num up">+45.99%</td><td class="num up">+0.76%</td>
+  <td class="num">64.4%</td><td class="score">59.3</td>
+</tr><tr>
+  <td class="num">4</td><td class="ind">白酒</td><td class="code">512690</td><td class="nm">酒ETF鹏华</td>
+  <td class="num">135.1亿</td><td class="num down">-28.69%</td><td class="num">23.4%</td><td class="num">-36.9%</td>
+  <td class="num">7.73亿</td><td class="sig flat">中性</td><td class="num">2.0</td>
+  <td class="num up">+17.03%</td><td class="num up">+19.11%</td>
+  <td class="num">66.7%</td><td class="score">57.7</td>
+</tr><tr>
+  <td class="num">5</td><td class="ind">消费</td><td class="code">159928</td><td class="nm">消费ETF汇添富</td>
+  <td class="num">143.4亿</td><td class="num down">-19.73%</td><td class="num">18.3%</td><td class="num">-29.3%</td>
+  <td class="num">4.31亿</td><td class="sig flat">中性</td><td class="num">-6.0</td>
+  <td class="num up">+18.53%</td><td class="num up">+16.38%</td>
+  <td class="num">69.6%</td><td class="score">57.3</td>
+</tr><tr>
+  <td class="num">6</td><td class="ind">种植业</td><td class="code">159698</td><td class="nm">粮食ETF鹏华</td>
+  <td class="num">7.9亿</td><td class="num down">-13.08%</td><td class="num">28.7%</td><td class="num">-32.3%</td>
+  <td class="num">0.67亿</td><td class="sig down">看空</td><td class="num">-34.0</td>
+  <td class="num up">+19.81%</td><td class="num up">+25.18%</td>
+  <td class="num">65.8%</td><td class="score">56.7</td>
+</tr><tr>
+  <td class="num">7</td><td class="ind">半导体设备</td><td class="code">159516</td><td class="nm">半导体设备ETF国泰</td>
+  <td class="num">441.6亿</td><td class="num up">45.95%</td><td class="num">52.9%</td><td class="num">-46.6%</td>
+  <td class="num">17.90亿</td><td class="sig flat">中性</td><td class="num">-7.0</td>
+  <td class="num up">+5.96%</td><td class="num up">+22.82%</td>
+  <td class="num">56.7%</td><td class="score">56.4</td>
+</tr><tr>
+  <td class="num">8</td><td class="ind">光伏</td><td class="code">515790</td><td class="nm">光伏ETF华泰柏瑞</td>
+  <td class="num">70.5亿</td><td class="num down">-23.15%</td><td class="num">32.3%</td><td class="num">-40.3%</td>
+  <td class="num">4.93亿</td><td class="sig down">看空</td><td class="num">-21.0</td>
+  <td class="num up">+12.85%</td><td class="num up">+26.88%</td>
+  <td class="num">48.2%</td><td class="score">55.6</td>
+</tr><tr>
+  <td class="num">9</td><td class="ind">金融科技</td><td class="code">159851</td><td class="nm">金融科技ETF华宝</td>
+  <td class="num">64.4亿</td><td class="num down">-32.35%</td><td class="num">32.8%</td><td class="num">-41.6%</td>
+  <td class="num">3.62亿</td><td class="sig flat">中性</td><td class="num">14.0</td>
+  <td class="num up">+27.28%</td><td class="num up">+10.94%</td>
+  <td class="num">51.9%</td><td class="score">53.9</td>
+</tr><tr>
+  <td class="num">10</td><td class="ind">半导体</td><td class="code">588200</td><td class="nm">科创芯片ETF嘉实</td>
+  <td class="num">642.8亿</td><td class="num up">10.68%</td><td class="num">49.7%</td><td class="num">-46.0%</td>
+  <td class="num">18.74亿</td><td class="sig down">看空</td><td class="num">-17.0</td>
+  <td class="num up">+9.58%</td><td class="num up">+10.33%</td>
+  <td class="num">50.0%</td><td class="score">51.4</td>
+</tr><tr>
+  <td class="num">11</td><td class="ind">黄金股</td><td class="code">517520</td><td class="nm">黄金股ETF永赢</td>
+  <td class="num">127.6亿</td><td class="num down">-10.57%</td><td class="num">48.9%</td><td class="num">-49.5%</td>
+  <td class="num">6.49亿</td><td class="sig down">看空</td><td class="num">-35.0</td>
+  <td class="num down">-7.95%</td><td class="num up">+58.41%</td>
+  <td class="num">70.1%</td><td class="score">51.4</td>
+</tr><tr>
+  <td class="num">12</td><td class="ind">储能</td><td class="code">159566</td><td class="nm">储能电池ETF易方达</td>
+  <td class="num">65.2亿</td><td class="num down">-28.81%</td><td class="num">33.4%</td><td class="num">-42.7%</td>
+  <td class="num">3.96亿</td><td class="sig flat">中性</td><td class="num">-3.0</td>
+  <td class="num up">+28.70%</td><td class="num up">+6.75%</td>
+  <td class="num">44.3%</td><td class="score">51.1</td>
+</tr><tr>
+  <td class="num">13</td><td class="ind">游戏动漫</td><td class="code">159869</td><td class="nm">游戏ETF华夏</td>
+  <td class="num">79.1亿</td><td class="num down">-31.86%</td><td class="num">33.1%</td><td class="num">-43.0%</td>
+  <td class="num">6.12亿</td><td class="sig down">看空</td><td class="num">-40.0</td>
+  <td class="num up">+14.47%</td><td class="num up">+11.98%</td>
+  <td class="num">51.4%</td><td class="score">50.6</td>
+</tr><tr>
+  <td class="num">14</td><td class="ind">石油</td><td class="code">561360</td><td class="nm">石油ETF国泰</td>
+  <td class="num">17.7亿</td><td class="num up">22.25%</td><td class="num">29.5%</td><td class="num">-31.5%</td>
+  <td class="num">2.40亿</td><td class="sig down">看空</td><td class="num">-28.0</td>
+  <td class="num down">-1.00%</td><td class="num up">+5.98%</td>
+  <td class="num">62.9%</td><td class="score">50.2</td>
+</tr><tr>
+  <td class="num">15</td><td class="ind">航空航天</td><td class="code">159227</td><td class="nm">航空航天ETF华夏</td>
+  <td class="num">48.2亿</td><td class="num down">-14.52%</td><td class="num">36.1%</td><td class="num">-44.8%</td>
+  <td class="num">3.27亿</td><td class="sig down">看空</td><td class="num">-18.0</td>
+  <td class="num up">+8.39%</td><td class="num up">+12.87%</td>
+  <td class="num">43.6%</td><td class="score">49.4</td>
+</tr><tr>
+  <td class="num">16</td><td class="ind">智能汽车</td><td class="code">516520</td><td class="nm">智能驾驶ETF华泰柏瑞</td>
+  <td class="num">10.5亿</td><td class="num down">-25.00%</td><td class="num">27.1%</td><td class="num">-35.4%</td>
+  <td class="num">0.60亿</td><td class="sig down">看空</td><td class="num">-18.0</td>
+  <td class="num up">+16.65%</td><td class="num up">+18.20%</td>
+  <td class="num">56.4%</td><td class="score">49.2</td>
+</tr><tr>
+  <td class="num">17</td><td class="ind">有色金属</td><td class="code">512400</td><td class="nm">有色金属ETF南方</td>
+  <td class="num">224.9亿</td><td class="num down">-8.21%</td><td class="num">44.4%</td><td class="num">-42.1%</td>
+  <td class="num">12.56亿</td><td class="sig down">看空</td><td class="num">-29.0</td>
+  <td class="num up">+18.32%</td><td class="num down">-3.75%</td>
+  <td class="num">44.2%</td><td class="score">48.9</td>
+</tr><tr>
+  <td class="num">18</td><td class="ind">银行</td><td class="code">512800</td><td class="nm">银行ETF华宝</td>
+  <td class="num">105.6亿</td><td class="num up">2.41%</td><td class="num">14.9%</td><td class="num">-13.6%</td>
+  <td class="num">9.15亿</td><td class="sig flat">中性</td><td class="num">-11.0</td>
+  <td class="num down">-3.61%</td><td class="num down">-0.74%</td>
+  <td class="num">52.5%</td><td class="score">48.8</td>
+</tr><tr>
+  <td class="num">19</td><td class="ind">锂电池</td><td class="code">159755</td><td class="nm">电池ETF广发</td>
+  <td class="num">104.8亿</td><td class="num down">-27.41%</td><td class="num">30.9%</td><td class="num">-42.7%</td>
+  <td class="num">6.76亿</td><td class="sig down">看空</td><td class="num">-15.0</td>
+  <td class="num up">+16.00%</td><td class="num up">+10.25%</td>
+  <td class="num">41.8%</td><td class="score">48.6</td>
+</tr><tr>
+  <td class="num">20</td><td class="ind">医药生物</td><td class="code">512170</td><td class="nm">医疗ETF华宝</td>
+  <td class="num">256.2亿</td><td class="num down">-10.22%</td><td class="num">23.8%</td><td class="num">-25.4%</td>
+  <td class="num">5.94亿</td><td class="sig down">看空</td><td class="num">-26.0</td>
+  <td class="num up">+6.76%</td><td class="num up">+11.23%</td>
+  <td class="num">62.1%</td><td class="score">48.3</td>
+</tr><tr>
+  <td class="num">21</td><td class="ind">教育</td><td class="code">513360</td><td class="nm">教育ETF博时</td>
+  <td class="num">2.8亿</td><td class="num down">-24.22%</td><td class="num">20.2%</td><td class="num">-31.2%</td>
+  <td class="num">0.67亿</td><td class="sig flat">中性</td><td class="num">-14.0</td>
+  <td class="num up">+10.70%</td><td class="num up">+19.36%</td>
+  <td class="num">53.2%</td><td class="score">48.0</td>
+</tr><tr>
+  <td class="num">22</td><td class="ind">建材</td><td class="code">159745</td><td class="nm">建材ETF国泰</td>
+  <td class="num">7.2亿</td><td class="num down">-20.06%</td><td class="num">22.7%</td><td class="num">-32.9%</td>
+  <td class="num">0.84亿</td><td class="sig flat">中性</td><td class="num">-2.0</td>
+  <td class="num up">+11.75%</td><td class="num up">+17.47%</td>
+  <td class="num">51.3%</td><td class="score">47.8</td>
+</tr><tr>
+  <td class="num">23</td><td class="ind">钢铁</td><td class="code">515210</td><td class="nm">钢铁ETF国泰</td>
+  <td class="num">10.5亿</td><td class="num down">-22.29%</td><td class="num">23.6%</td><td class="num">-35.6%</td>
+  <td class="num">1.27亿</td><td class="sig down">看空</td><td class="num">-34.0</td>
+  <td class="num up">+7.81%</td><td class="num up">+17.78%</td>
+  <td class="num">41.5%</td><td class="score">47.7</td>
+</tr><tr>
+  <td class="num">24</td><td class="ind">证券</td><td class="code">512880</td><td class="nm">证券ETF国泰</td>
+  <td class="num">592.7亿</td><td class="num down">-19.41%</td><td class="num">22.4%</td><td class="num">-22.6%</td>
+  <td class="num">22.13亿</td><td class="sig down">看空</td><td class="num">-40.0</td>
+  <td class="num down">-0.99%</td><td class="num up">+7.66%</td>
+  <td class="num">45.4%</td><td class="score">46.9</td>
+</tr><tr>
+  <td class="num">25</td><td class="ind">互联网</td><td class="code">517050</td><td class="nm">互联网ETF华泰柏瑞</td>
+  <td class="num">2.2亿</td><td class="num down">-34.80%</td><td class="num">26.3%</td><td class="num">-39.5%</td>
+  <td class="num">0.03亿</td><td class="sig down">看空</td><td class="num">-26.0</td>
+  <td class="num up">+22.90%</td><td class="num up">+25.81%</td>
+  <td class="num">61.7%</td><td class="score">45.6</td>
+</tr><tr>
+  <td class="num">26</td><td class="ind">工程机械</td><td class="code">560280</td><td class="nm">工程机械ETF广发</td>
+  <td class="num">28.2亿</td><td class="num down">-11.34%</td><td class="num">27.1%</td><td class="num">-31.0%</td>
+  <td class="num">1.49亿</td><td class="sig flat">中性</td><td class="num">-2.0</td>
+  <td class="num up">+9.64%</td><td class="num up">+10.87%</td>
+  <td class="num">54.7%</td><td class="score">45.5</td>
+</tr><tr>
+  <td class="num">27</td><td class="ind">机器人</td><td class="code">562500</td><td class="nm">机器人ETF华夏</td>
+  <td class="num">174.4亿</td><td class="num down">-13.57%</td><td class="num">32.4%</td><td class="num">-35.3%</td>
+  <td class="num">9.48亿</td><td class="sig flat">中性</td><td class="num">14.0</td>
+  <td class="num down">-3.27%</td><td class="num up">+12.53%</td>
+  <td class="num">51.8%</td><td class="score">45.5</td>
+</tr><tr>
+  <td class="num">28</td><td class="ind">房地产</td><td class="code">512200</td><td class="nm">房地产ETF南方</td>
+  <td class="num">31.5亿</td><td class="num down">-27.98%</td><td class="num">24.9%</td><td class="num">-32.0%</td>
+  <td class="num">1.98亿</td><td class="sig down">看空</td><td class="num">-20.0</td>
+  <td class="num up">+12.12%</td><td class="num up">+5.71%</td>
+  <td class="num">43.8%</td><td class="score">44.8</td>
+</tr><tr>
+  <td class="num">29</td><td class="ind">航运港口</td><td class="code">560710</td><td class="nm">船舶ETF富国</td>
+  <td class="num">17.3亿</td><td class="num down">-7.40%</td><td class="num">32.1%</td><td class="num">-28.8%</td>
+  <td class="num">1.08亿</td><td class="sig down">看空</td><td class="num">-26.0</td>
+  <td class="num down">-9.11%</td><td class="num down">-3.24%</td>
+  <td class="num">65.2%</td><td class="score">44.5</td>
+</tr><tr>
+  <td class="num">30</td><td class="ind">新能源车</td><td class="code">515030</td><td class="nm">新能源车ETF华夏</td>
+  <td class="num">30.7亿</td><td class="num down">-26.44%</td><td class="num">29.8%</td><td class="num">-42.4%</td>
+  <td class="num">2.10亿</td><td class="sig down">看空</td><td class="num">-15.0</td>
+  <td class="num up">+15.50%</td><td class="num up">+6.80%</td>
+  <td class="num">44.8%</td><td class="score">44.0</td>
+</tr><tr>
+  <td class="num">31</td><td class="ind">影视传媒</td><td class="code">512980</td><td class="nm">传媒ETF广发</td>
+  <td class="num">34.4亿</td><td class="num down">-19.18%</td><td class="num">36.0%</td><td class="num">-43.8%</td>
+  <td class="num">3.99亿</td><td class="sig flat">中性</td><td class="num">-10.0</td>
+  <td class="num up">+3.05%</td><td class="num up">+1.86%</td>
+  <td class="num">53.8%</td><td class="score">43.6</td>
+</tr><tr>
+  <td class="num">32</td><td class="ind">医疗器械</td><td class="code">159883</td><td class="nm">医疗器械ETF永赢</td>
+  <td class="num">38.3亿</td><td class="num down">-17.26%</td><td class="num">21.9%</td><td class="num">-27.4%</td>
+  <td class="num">1.28亿</td><td class="sig flat">中性</td><td class="num">-6.0</td>
+  <td class="num up">+15.41%</td><td class="num up">+6.78%</td>
+  <td class="num">46.7%</td><td class="score">43.4</td>
+</tr><tr>
+  <td class="num">33</td><td class="ind">食品饮料</td><td class="code">159736</td><td class="nm">食品饮料ETF天弘</td>
+  <td class="num">40.8亿</td><td class="num down">-19.21%</td><td class="num">18.4%</td><td class="num">-26.6%</td>
+  <td class="num">0.26亿</td><td class="sig down">看空</td><td class="num">-26.0</td>
+  <td class="num up">+18.50%</td><td class="num up">+8.92%</td>
+  <td class="num">47.8%</td><td class="score">42.2</td>
+</tr><tr>
+  <td class="num">34</td><td class="ind">创新药</td><td class="code">159992</td><td class="nm">创新药ETF银华</td>
+  <td class="num">159.7亿</td><td class="num down">-10.69%</td><td class="num">30.3%</td><td class="num">-23.3%</td>
+  <td class="num">7.51亿</td><td class="sig down">看空</td><td class="num">-26.0</td>
+  <td class="num down">-2.30%</td><td class="num up">+1.32%</td>
+  <td class="num">51.1%</td><td class="score">41.8</td>
+</tr><tr>
+  <td class="num">35</td><td class="ind">煤炭</td><td class="code">515220</td><td class="nm">煤炭ETF国泰</td>
+  <td class="num">112.8亿</td><td class="num up">4.97%</td><td class="num">32.5%</td><td class="num">-25.4%</td>
+  <td class="num">8.47亿</td><td class="sig down">看空</td><td class="num">-28.0</td>
+  <td class="num down">-17.85%</td><td class="num down">-15.33%</td>
+  <td class="num">41.0%</td><td class="score">41.7</td>
+</tr><tr>
+  <td class="num">36</td><td class="ind">畜牧养殖</td><td class="code">159865</td><td class="nm">养殖ETF国泰</td>
+  <td class="num">52.3亿</td><td class="num down">-17.87%</td><td class="num">22.1%</td><td class="num">-28.3%</td>
+  <td class="num">2.03亿</td><td class="sig flat">中性</td><td class="num">-2.0</td>
+  <td class="num up">+9.53%</td><td class="num up">+4.70%</td>
+  <td class="num">51.9%</td><td class="score">41.7</td>
+</tr><tr>
+  <td class="num">37</td><td class="ind">化工</td><td class="code">159870</td><td class="nm">化工ETF鹏华</td>
+  <td class="num">158.9亿</td><td class="num down">-1.72%</td><td class="num">29.6%</td><td class="num">-31.7%</td>
+  <td class="num">9.02亿</td><td class="sig down">看空</td><td class="num">-35.0</td>
+  <td class="num down">-9.86%</td><td class="num down">-7.18%</td>
+  <td class="num">28.3%</td><td class="score">41.6</td>
+</tr><tr>
+  <td class="num">38</td><td class="ind">人工智能</td><td class="code">159819</td><td class="nm">人工智能ETF易方达</td>
+  <td class="num">245.2亿</td><td class="num down">-2.41%</td><td class="num">39.8%</td><td class="num">-35.7%</td>
+  <td class="num">6.81亿</td><td class="sig flat">中性</td><td class="num">-1.0</td>
+  <td class="num down">-15.16%</td><td class="num down">-0.57%</td>
+  <td class="num">50.7%</td><td class="score">41.0</td>
+</tr><tr>
+  <td class="num">39</td><td class="ind">航空机场</td><td class="code">159257</td><td class="nm">航空ETF汇添富</td>
+  <td class="num">1.4亿</td><td class="num down">-20.31%</td><td class="num">34.1%</td><td class="num">-44.5%</td>
+  <td class="num">0.10亿</td><td class="sig down">看空</td><td class="num">-18.0</td>
+  <td class="num up">+19.95%</td><td class="num up">+10.25%</td>
+  <td class="num">40.8%</td><td class="score">40.5</td>
+</tr><tr>
+  <td class="num">40</td><td class="ind">建筑基建</td><td class="code">516970</td><td class="nm">基建ETF广发</td>
+  <td class="num">12.6亿</td><td class="num down">-16.74%</td><td class="num">19.4%</td><td class="num">-23.9%</td>
+  <td class="num">0.55亿</td><td class="sig flat">中性</td><td class="num">-10.0</td>
+  <td class="num up">+12.22%</td><td class="num up">+5.14%</td>
+  <td class="num">36.9%</td><td class="score">40.2</td>
+</tr><tr>
+  <td class="num">41</td><td class="ind">电子</td><td class="code">159997</td><td class="nm">电子ETF天弘</td>
+  <td class="num">18.7亿</td><td class="num down">-0.06%</td><td class="num">43.0%</td><td class="num">-42.2%</td>
+  <td class="num">0.72亿</td><td class="sig down">看空</td><td class="num">-17.0</td>
+  <td class="num down">-0.98%</td><td class="num up">+10.84%</td>
+  <td class="num">42.5%</td><td class="score">40.1</td>
+</tr><tr>
+  <td class="num">42</td><td class="ind">金融地产</td><td class="code">510230</td><td class="nm">金融ETF国泰</td>
+  <td class="num">11.2亿</td><td class="num down">-4.49%</td><td class="num">14.9%</td><td class="num">-16.6%</td>
+  <td class="num">0.80亿</td><td class="sig flat">中性</td><td class="num">-11.0</td>
+  <td class="num up">+1.31%</td><td class="num down">-1.97%</td>
+  <td class="num">47.2%</td><td class="score">40.0</td>
+</tr><tr>
+  <td class="num">43</td><td class="ind">电力公用</td><td class="code">159611</td><td class="nm">电力ETF广发</td>
+  <td class="num">87.2亿</td><td class="num down">-3.04%</td><td class="num">20.9%</td><td class="num">-20.0%</td>
+  <td class="num">4.52亿</td><td class="sig down">看空</td><td class="num">-20.0</td>
+  <td class="num down">-7.10%</td><td class="num down">-9.81%</td>
+  <td class="num">26.6%</td><td class="score">39.3</td>
+</tr><tr>
+  <td class="num">44</td><td class="ind">农业</td><td class="code">159825</td><td class="nm">农业ETF富国</td>
+  <td class="num">15.3亿</td><td class="num down">-11.26%</td><td class="num">22.0%</td><td class="num">-29.3%</td>
+  <td class="num">1.10亿</td><td class="sig down">看空</td><td class="num">-26.0</td>
+  <td class="num down">-11.23%</td><td class="num up">+14.24%</td>
+  <td class="num">49.6%</td><td class="score">38.9</td>
+</tr><tr>
+  <td class="num">45</td><td class="ind">国防军工</td><td class="code">512710</td><td class="nm">军工龙头ETF富国</td>
+  <td class="num">77.0亿</td><td class="num down">-10.23%</td><td class="num">33.5%</td><td class="num">-40.2%</td>
+  <td class="num">4.98亿</td><td class="sig flat">中性</td><td class="num">-6.0</td>
+  <td class="num down">-1.83%</td><td class="num down">-11.06%</td>
+  <td class="num">36.2%</td><td class="score">38.5</td>
+</tr><tr>
+  <td class="num">46</td><td class="ind">环保</td><td class="code">159790</td><td class="nm">碳中和ETF华夏</td>
+  <td class="num">12.2亿</td><td class="num down">-21.67%</td><td class="num">22.9%</td><td class="num">-31.7%</td>
+  <td class="num">0.36亿</td><td class="sig down">看空</td><td class="num">-17.0</td>
+  <td class="num up">+7.85%</td><td class="num up">+11.07%</td>
+  <td class="num">44.9%</td><td class="score">38.5</td>
+</tr><tr>
+  <td class="num">47</td><td class="ind">卫星导航</td><td class="code">159206</td><td class="nm">卫星ETF永赢</td>
+  <td class="num">176.7亿</td><td class="num up">3.34%</td><td class="num">47.5%</td><td class="num">-47.8%</td>
+  <td class="num">11.20亿</td><td class="sig down">看空</td><td class="num">-26.0</td>
+  <td class="num down">-15.98%</td><td class="num up">+0.37%</td>
+  <td class="num">40.2%</td><td class="score">37.5</td>
+</tr><tr>
+  <td class="num">48</td><td class="ind">稀有金属</td><td class="code">562800</td><td class="nm">稀有金属ETF嘉实</td>
+  <td class="num">68.9亿</td><td class="num down">-11.11%</td><td class="num">41.4%</td><td class="num">-41.3%</td>
+  <td class="num">3.57亿</td><td class="sig flat">中性</td><td class="num">-3.0</td>
+  <td class="num down">-3.44%</td><td class="num down">-17.24%</td>
+  <td class="num">35.5%</td><td class="score">37.1</td>
+</tr><tr>
+  <td class="num">49</td><td class="ind">中药</td><td class="code">560080</td><td class="nm">中药ETF汇添富</td>
+  <td class="num">23.1亿</td><td class="num down">-12.11%</td><td class="num">18.9%</td><td class="num">-24.4%</td>
+  <td class="num">0.69亿</td><td class="sig flat">中性</td><td class="num">8.0</td>
+  <td class="num down">-6.74%</td><td class="num up">+2.02%</td>
+  <td class="num">52.4%</td><td class="score">36.8</td>
+</tr><tr>
+  <td class="num">50</td><td class="ind">家电</td><td class="code">159996</td><td class="nm">家电ETF国泰</td>
+  <td class="num">7.4亿</td><td class="num down">-11.05%</td><td class="num">16.7%</td><td class="num">-18.9%</td>
+  <td class="num">0.66亿</td><td class="sig down">看空</td><td class="num">-26.0</td>
+  <td class="num down">-1.83%</td><td class="num up">+6.08%</td>
+  <td class="num">43.9%</td><td class="score">36.1</td>
+</tr><tr>
+  <td class="num">51</td><td class="ind">计算机</td><td class="code">159998</td><td class="nm">计算机ETF天弘</td>
+  <td class="num">18.2亿</td><td class="num down">-18.16%</td><td class="num">33.7%</td><td class="num">-29.5%</td>
+  <td class="num">1.18亿</td><td class="sig down">看空</td><td class="num">-18.0</td>
+  <td class="num up">+5.80%</td><td class="num down">-11.83%</td>
+  <td class="num">33.6%</td><td class="score">34.6</td>
+</tr><tr>
+  <td class="num">52</td><td class="ind">机械</td><td class="code">588850</td><td class="nm">科创机械ETF嘉实</td>
+  <td class="num">2.4亿</td><td class="num up">11.87%</td><td class="num">44.1%</td><td class="num">-38.9%</td>
+  <td class="num">0.18亿</td><td class="sig down">看空</td><td class="num">-21.0</td>
+  <td class="num up">+18.86%</td><td class="num down">-13.74%</td>
+  <td class="num">47.9%</td><td class="score">34.5</td>
+</tr><tr>
+  <td class="num">53</td><td class="ind">物流交运</td><td class="code">159662</td><td class="nm">交运ETF南方</td>
+  <td class="num">0.7亿</td><td class="num down">-8.27%</td><td class="num">15.3%</td><td class="num">-16.7%</td>
+  <td class="num">0.07亿</td><td class="sig flat">中性</td><td class="num">-12.0</td>
+  <td class="num up">+8.15%</td><td class="num up">+1.00%</td>
+  <td class="num">41.5%</td><td class="score">34.4</td>
+</tr><tr>
+  <td class="num">54</td><td class="ind">交通运输</td><td class="code">159666</td><td class="nm">交通运输ETF华夏</td>
+  <td class="num">1.0亿</td><td class="num down">-6.67%</td><td class="num">16.0%</td><td class="num">-16.2%</td>
+  <td class="num">0.16亿</td><td class="sig flat">中性</td><td class="num">-12.0</td>
+  <td class="num up">+3.38%</td><td class="num down">-3.12%</td>
+  <td class="num">44.8%</td><td class="score">34.2</td>
+</tr><tr>
+  <td class="num">55</td><td class="ind">疫苗</td><td class="code">562860</td><td class="nm">疫苗ETF嘉实</td>
+  <td class="num">2.1亿</td><td class="num down">-14.58%</td><td class="num">30.8%</td><td class="num">-24.2%</td>
+  <td class="num">0.11亿</td><td class="sig down">看空</td><td class="num">-26.0</td>
+  <td class="num down">-8.60%</td><td class="num down">-19.49%</td>
+  <td class="num">38.8%</td><td class="score">33.0</td>
+</tr><tr>
+  <td class="num">56</td><td class="ind">消费电子</td><td class="code">159732</td><td class="nm">消费电子ETF华夏</td>
+  <td class="num">59.6亿</td><td class="num down">-1.31%</td><td class="num">42.9%</td><td class="num">-44.1%</td>
+  <td class="num">3.10亿</td><td class="sig down">看空</td><td class="num">-21.0</td>
+  <td class="num down">-4.98%</td><td class="num down">-23.73%</td>
+  <td class="num">43.7%</td><td class="score">32.6</td>
+</tr><tr>
+  <td class="num">57</td><td class="ind">云计算</td><td class="code">516510</td><td class="nm">云计算ETF易方达</td>
+  <td class="num">24.5亿</td><td class="num down">-9.03%</td><td class="num">37.0%</td><td class="num">-30.3%</td>
+  <td class="num">1.62亿</td><td class="sig flat">中性</td><td class="num">-6.0</td>
+  <td class="num down">-17.52%</td><td class="num down">-10.21%</td>
+  <td class="num">39.4%</td><td class="score">32.2</td>
+</tr><tr>
+  <td class="num">58</td><td class="ind">稀土永磁</td><td class="code">516150</td><td class="nm">稀土ETF嘉实</td>
+  <td class="num">78.3亿</td><td class="num down">-17.60%</td><td class="num">36.2%</td><td class="num">-37.6%</td>
+  <td class="num">2.81亿</td><td class="sig flat">中性</td><td class="num">-10.0</td>
+  <td class="num down">-5.44%</td><td class="num down">-14.73%</td>
+  <td class="num">26.0%</td><td class="score">30.8</td>
+</tr><tr>
+  <td class="num">59</td><td class="ind">大数据</td><td class="code">515400</td><td class="nm">大数据ETF富国</td>
+  <td class="num">12.7亿</td><td class="num down">-21.76%</td><td class="num">37.3%</td><td class="num">-36.6%</td>
+  <td class="num">1.14亿</td><td class="sig flat">中性</td><td class="num">2.0</td>
+  <td class="num up">+3.50%</td><td class="num down">-5.89%</td>
+  <td class="num">36.6%</td><td class="score">30.0</td>
+</tr><tr>
+  <td class="num">60</td><td class="ind">信创</td><td class="code">562570</td><td class="nm">信创ETF华夏</td>
+  <td class="num">4.7亿</td><td class="num down">-12.66%</td><td class="num">35.1%</td><td class="num">-28.7%</td>
+  <td class="num">0.28亿</td><td class="sig flat">中性</td><td class="num">-6.0</td>
+  <td class="num down">-18.66%</td><td class="num down">-4.38%</td>
+  <td class="num">40.9%</td><td class="score">29.5</td>
+</tr><tr>
+  <td class="num">61</td><td class="ind">工业互联网</td><td class="code">159075</td><td class="nm">工业互联网ETF华夏</td>
+  <td class="num">2.5亿</td><td class="num down">-13.89%</td><td class="num">33.0%</td><td class="num">-21.9%</td>
+  <td class="num">0.05亿</td><td class="sig down">看空</td><td class="num">-23.0</td>
+  <td class="num flat">—</td><td class="num flat">—</td>
+  <td class="num">—</td><td class="score">未回测</td>
+</tr><tr>
+  <td class="num">62</td><td class="ind">算力</td><td class="code">158050</td><td class="nm">创业板算力ETF易方达</td>
+  <td class="num">14.8亿</td><td class="num down">-21.30%</td><td class="num">39.9%</td><td class="num">-23.6%</td>
+  <td class="num">3.83亿</td><td class="sig flat">中性</td><td class="num">-10.0</td>
+  <td class="num flat">—</td><td class="num flat">—</td>
+  <td class="num">—</td><td class="score">未回测</td>
+</tr></tbody></table></div>
+
+<div class="box"><h2>重点案例</h2>
+<h3 style="font-size:14px;margin-bottom:6px">综合分最高 5 只</h3><ol><li><b>旅游ETF富国</b>（159766，旅游酒店）：综合分 62.0 ｜ 近1年 -28.16%｜ 规则A超额 +20.93% / 规则B超额 +23.01% ｜ 当前信号「看空」</li><li><b>软件ETF嘉实</b>（159852，软件）：综合分 59.5 ｜ 近1年 -27.04%｜ 规则A超额 +23.50% / 规则B超额 +13.31% ｜ 当前信号「中性」</li><li><b>通信ETF国泰</b>（515880，通信设备）：综合分 59.3 ｜ 近1年 11.02%｜ 规则A超额 +45.99% / 规则B超额 +0.76% ｜ 当前信号「中性」</li><li><b>酒ETF鹏华</b>（512690，白酒）：综合分 57.7 ｜ 近1年 -28.69%｜ 规则A超额 +17.03% / 规则B超额 +19.11% ｜ 当前信号「中性」</li><li><b>消费ETF汇添富</b>（159928，消费）：综合分 57.3 ｜ 近1年 -19.73%｜ 规则A超额 +18.53% / 规则B超额 +16.38% ｜ 当前信号「中性」</li></ol>
+<h3 style="font-size:14px;margin:14px 0 6px">综合分最低 5 只</h3><ol><li><b>消费电子ETF华夏</b>（159732，消费电子）：综合分 32.6 ｜ 近1年 -1.31%｜ 规则A超额 -4.98% / 规则B超额 -23.73% ｜ 当前信号「看空」</li><li><b>云计算ETF易方达</b>（516510，云计算）：综合分 32.2 ｜ 近1年 -9.03%｜ 规则A超额 -17.52% / 规则B超额 -10.21% ｜ 当前信号「中性」</li><li><b>稀土ETF嘉实</b>（516150，稀土永磁）：综合分 30.8 ｜ 近1年 -17.60%｜ 规则A超额 -5.44% / 规则B超额 -14.73% ｜ 当前信号「中性」</li><li><b>大数据ETF富国</b>（515400，大数据）：综合分 30.0 ｜ 近1年 -21.76%｜ 规则A超额 +3.50% / 规则B超额 -5.89% ｜ 当前信号「中性」</li><li><b>信创ETF华夏</b>（562570，信创）：综合分 29.5 ｜ 近1年 -12.66%｜ 规则A超额 -18.66% / 规则B超额 -4.38% ｜ 当前信号「中性」</li></ol></div>
+
+<div class="box"><h2>解读与局限</h2>
+<ul>
+<li><b>超额来源</b>：与指数结论一致——规则的超额主要来自回避主跌段（空头排列/超买时离场），而非精准抄底；做多信号胜率普遍低于做空信号。</li>
+<li><b>规则B评分</b>是慢变量（均线/MACD/RSI 组合），适合中期择时；规则A三维投票更敏感但假信号更多，两者共振时置信度更高。</li>
+<li><b>样本局限</b>：单窗口（近1年）回测、每只约 242 个检查点，统计显著性有限；不同行业波动率差异大（年化 20%~60%），横向比较需结合波动与回撤列。</li>
+<li><b>次新 ETF</b>：159075（65 根）、158050（20 根）上市晚、无有效检查点未回测；159257（300 根）、560710（169 根）历史较短，检查点与回统计量偏少，结论仅供参考。</li>
+<li><b>规模口径</b>：净资产规模为 2026-06-30 披露值；日均成交额为近1年均值。</li>
+</ul></div>
+
+<footer>数据来源：东方财富/腾讯行情接口（fetch_kline 多源容错）｜生成时间：2026-10-24｜
+本报告为量化方法验证，不构成投资建议。</footer>
+</div></body></html>
